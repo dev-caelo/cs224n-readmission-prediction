@@ -1,6 +1,6 @@
 # Forked and edited from original authors: https://github.com/haidog-yaqub/Clinical_HybridFusion/tree/main
 
-from models import Hybrid_Fusion
+from models.hybrid_fusion import Hybrid_Fusion
 from dataset.diag import Diag
 from config import config
 from utils.utils import Evaluate
@@ -31,27 +31,51 @@ language_model = "clinical_longformer"
 
 if __name__ == "__main__":
 
-    options_name, bert_features, activation_func = config(language_model)
+    options_name, bert_features, activation_func = config.get_config(language_model)
     bert_features = bert_features[0]
 
     model = Hybrid_Fusion(options_name, bert_features, activation_func,
-                          hidden=768, others_ratio=4, input=feature, output=cls, if_others=False)
+                          hidden=768, others_ratio=4, input=feature, output=cls, if_others=True)
     model = model.to(device)
+
+    data_file = "cs224n-readmission-prediction/dataset/dummy_data/mimic_discharge_summaries.csv"
 
     # loss_func = nn.CrossEntropyLoss()
     loss_func = FocalLoss(None, 2)
     optimizer = torch.optim.Adam(model.parameters(), lr=lr_rate, weight_decay=weight_decay)
 
     # train
-    train_data = Diag(df='data/new_dataset3.csv', subset='train', options_name=options_name)
+    train_data = Diag(
+        df=data_file,  # Path to your consolidated dataset
+        subset='train',
+        label="diagnosis_description",
+        options_name=options_name,
+        text='text',  # Using the discharge summary text field
+        others=['los_days', 'prior_ed_visits_count', 'raw_comorbidity_score']  # Only these numeric fields
+    )
     train_loader = DataLoader(train_data, batch_size=batch_size, shuffle=True, num_workers=num_works)
 
     # val
-    val_data = Diag(df='data/val_test.csv', subset='val', options_name=options_name)
+    
+    val_data = Diag(
+        df=data_file,  # Path to your consolidated dataset
+        subset='val',
+        label="diagnosis_description",
+        options_name=options_name,
+        text='text',  # Using the discharge summary text field
+        others=['los_days', 'prior_ed_visits_count', 'raw_comorbidity_score']  # Only these numeric fields
+    )
     val_loader = DataLoader(val_data, batch_size=batch_size, shuffle=False)
 
     # test
-    test_data = Diag(df='data/val_test.csv', subset='test', options_name=options_name)
+    test_data = Diag(
+        df=data_file,  # Path to your consolidated dataset
+        subset='test',
+        label="diagnosis_description",
+        options_name=options_name,
+        text='text',  # Using the discharge summary text field
+        others=['los_days', 'prior_ed_visits_count', 'raw_comorbidity_score']  # Only these numeric fields
+    )
     test_loader = DataLoader(test_data, batch_size=batch_size, shuffle=False)
 
     step = 0
