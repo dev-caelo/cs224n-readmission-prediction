@@ -6,6 +6,8 @@ import re
 import torch
 import random
 from torch.utils.data import DataLoader, Dataset
+from sklearn.model_selection import train_test_split
+
 
 from transformers import AutoTokenizer, AutoModelForMaskedLM
 
@@ -21,9 +23,19 @@ class Diag(Dataset):
             age=['Age_new'],
             others=None,
             # others=['Sex', 'Fire_Involvement'],
-            text='Narrative_multi',
+            text='text',
     ):
         df = pd.read_csv(df)
+
+        if 'subset' not in df.columns:
+            # For example, split 80% train, 10% val, 10% test
+            train_idx, temp_idx = train_test_split(df.index, test_size=0.2, random_state=42)
+            val_idx, test_idx = train_test_split(temp_idx, test_size=0.5, random_state=42)
+    
+            df['subset'] = 'train'
+            df.loc[val_idx, 'subset'] = 'val'
+            df.loc[test_idx, 'subset'] = 'test'
+
         df = df[df['subset'] == subset]
         df = df[df[label].notna()]
 
