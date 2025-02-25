@@ -88,4 +88,4 @@ class Hybrid_Fusion(nn.Module):
 #
 # M = BERT_multi(options_name, 768, nn.Tanh(), 384, 0, 8)
 #
-# y = M(text, mask, age, others)
+# y = M(text, mask, age, othe

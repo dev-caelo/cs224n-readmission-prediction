@@ -132,6 +132,4 @@ if __name__ == "__main__":
             n.close()
         else:
             torch.save(model.state_dict(), 'save/'+language_model+'_model_last.pt')
-            n = open('log/'+language_model + '_' + log_val, mode='a')
-            n.write('  save=Last')
-            n.close()
+            n = open('log
