@@ -323,3 +323,55 @@ discharge_summaries_df.to_csv('mimic_discharge_summaries.csv', index=False)
 lace_scores_df.to_csv('mimic_lace_scores.csv', index=False)
 
 print("\nCSV files exported successfully.")
+
+consolidated_df = admissions_df.copy()
+
+# Add discharge summaries
+consolidated_df = consolidated_df.merge(
+    discharge_summaries_df[['subject_id', 'hadm_id', 'text']], 
+    on=['subject_id', 'hadm_id'], 
+    how='left'
+)
+
+# Add diagnosis information - need to aggregate since there can be multiple diagnoses per admission
+diagnoses_agg = diagnoses_df.groupby(['subject_id', 'hadm_id']).agg({
+    'icd_code': lambda x: ', '.join(x),
+    'diagnosis_description': lambda x: ', '.join(set(x))  # Remove duplicates in descriptions
+}).reset_index()
+
+consolidated_df = consolidated_df.merge(
+    diagnoses_agg,
+    on=['subject_id', 'hadm_id'],
+    how='left'
+)
+
+# Add prior ED visits count
+prior_ed_counts = prior_ed_visits_df.groupby('subject_id').size().reset_index(name='prior_ed_visits_count')
+consolidated_df = consolidated_df.merge(
+    prior_ed_counts,
+    on='subject_id',
+    how='left'
+)
+consolidated_df['prior_ed_visits_count'] = consolidated_df['prior_ed_visits_count'].fillna(0).astype(int)
+
+# Add detailed comorbidity information from the comorbidity_scores dictionary
+comorbidity_details = []
+for subject_id, details in comorbidity_scores.items():
+    comorbidity_details.append({
+        'subject_id': subject_id,
+        'raw_comorbidity_score': details['raw_score'],
+        'comorbidity_details': '; '.join(details['details'])
+    })
+
+comorbidity_df = pd.DataFrame(comorbidity_details)
+consolidated_df = consolidated_df.merge(
+    comorbidity_df,
+    on='subject_id',
+    how='left'
+)
+
+# Export consolidated data
+consolidated_df.to_csv('mimic_consolidated_patient_data.csv', index=False)
+
+print("\nCSV files exported successfully.")
+print("Consolidated patient data with all measures exported to mimic_consolidated_patient_data.csv")

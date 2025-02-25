@@ -1,7 +1,7 @@
 subject_id,hadm_id,l_score,a_score,c_score,e_score,lace_total,readmission_risk
 10001,20001,2,0,5,1,8,Moderate
 10002,20002,2,3,5,1,11,High
-10003,20003,1,0,5,4,10,High
+10003,20003,1,0,3,4,8,Moderate
 10004,20004,2,3,5,0,10,High
 10005,20005,1,3,5,1,10,High
 10006,20006,5,3,5,1,14,High
@@ -52,7 +52,7 @@ subject_id,hadm_id,l_score,a_score,c_score,e_score,lace_total,readmission_risk
 10051,20051,4,0,5,4,13,High
 10052,20052,1,3,5,1,10,High
 10053,20053,7,3,5,1,16,High
-10054,20054,4,3,5,1,13,High
+10054,20054,4,3,3,1,11,High
 10055,20055,2,3,5,3,13,High
 10056,20056,7,3,5,1,16,High
 10057,20057,7,3,5,4,19,High
@@ -1053,7 +1053,7 @@ subject_id,hadm_id,l_score,a_score,c_score,e_score,lace_total,readmission_risk
 11052,21052,4,3,5,1,13,High
 11053,21053,7,0,5,3,15,High
 11054,21054,2,3,5,3,13,High
-11055,21055,2,3,3,3,11,High
+11055,21055,2,3,5,3,13,High
 11056,21056,2,0,5,4,11,High
 11057,21057,4,3,5,2,14,High
 11058,21058,3,3,5,2,13,High
@@ -1379,7 +1379,7 @@ subject_id,hadm_id,l_score,a_score,c_score,e_score,lace_total,readmission_risk
 11378,21378,1,3,5,4,13,High
 11379,21379,4,3,5,4,16,High
 11380,21380,2,3,5,2,12,High
-11381,21381,4,3,3,4,14,High
+11381,21381,4,3,5,4,16,High
 11382,21382,2,0,5,0,7,Moderate
 11383,21383,7,3,5,4,19,High
 11384,21384,4,3,5,4,16,High
@@ -1408,7 +1408,7 @@ subject_id,hadm_id,l_score,a_score,c_score,e_score,lace_total,readmission_risk
 11407,21407,3,3,5,4,15,High
 11408,21408,2,3,5,0,10,High
 11409,21409,5,3,5,4,17,High
-11410,21410,5,0,5,1,11,High
+11410,21410,5,0,3,1,9,Moderate
 11411,21411,1,0,5,3,9,Moderate
 11412,21412,2,0,5,4,11,High
 11413,21413,3,3,5,0,11,High
@@ -1626,7 +1626,7 @@ subject_id,hadm_id,l_score,a_score,c_score,e_score,lace_total,readmission_risk
 11625,21625,7,3,5,1,16,High
 11626,21626,5,0,5,1,11,High
 11627,21627,4,3,5,4,16,High
-11628,21628,4,3,5,4,16,High
+11628,21628,4,3,3,4,14,High
 11629,21629,4,0,5,4,13,High
 11630,21630,2,0,5,3,10,High
 11631,21631,3,3,5,0,11,High
@@ -2255,7 +2255,7 @@ subject_id,hadm_id,l_score,a_score,c_score,e_score,lace_total,readmission_risk
 12254,22254,3,3,5,4,15,High
 12255,22255,2,0,5,4,11,High
 12256,22256,4,0,5,3,12,High
-12257,22257,3,3,3,1,10,High
+12257,22257,3,3,5,1,12,High
 12258,22258,5,3,5,3,16,High
 12259,22259,4,0,5,3,12,High
 12260,22260,3,0,5,3,11,High
@@ -2284,7 +2284,7 @@ subject_id,hadm_id,l_score,a_score,c_score,e_score,lace_total,readmission_risk
 12283,22283,1,3,5,0,9,Moderate
 12284,22284,5,0,5,4,14,High
 12285,22285,1,3,5,4,13,High
-12286,22286,3,3,3,2,11,High
+12286,22286,3,3,5,2,13,High
 12287,22287,1,3,5,3,12,High
 12288,22288,2,3,5,4,14,High
 12289,22289,2,3,5,3,13,High
@@ -2310,7 +2310,7 @@ subject_id,hadm_id,l_score,a_score,c_score,e_score,lace_total,readmission_risk
 12309,22309,4,3,5,1,13,High
 12310,22310,2,3,5,0,10,High
 12311,22311,5,0,5,2,12,High
-12312,22312,2,3,5,2,12,High
+12312,22312,2,3,3,2,10,High
 12313,22313,4,3,5,4,16,High
 12314,22314,7,0,5,0,12,High
 12315,22315,4,3,5,4,16,High
@@ -2659,7 +2659,7 @@ subject_id,hadm_id,l_score,a_score,c_score,e_score,lace_total,readmission_risk
 12658,22658,4,0,5,4,13,High
 12659,22659,5,3,5,4,17,High
 12660,22660,3,3,5,2,13,High
-12661,22661,3,3,3,0,9,Moderate
+12661,22661,3,3,5,0,11,High
 12662,22662,7,3,5,0,15,High
 12663,22663,1,0,5,4,10,High
 12664,22664,5,3,5,4,17,High
@@ -3109,7 +3109,7 @@ subject_id,hadm_id,l_score,a_score,c_score,e_score,lace_total,readmission_risk
 13108,23108,5,3,5,0,13,High
 13109,23109,2,3,5,4,14,High
 13110,23110,3,3,5,3,14,High
-13111,23111,3,0,3,4,10,High
+13111,23111,3,0,5,4,12,High
 13112,23112,3,0,5,1,9,Moderate
 13113,23113,5,3,5,0,13,High
 13114,23114,4,0,5,2,11,High
@@ -3549,7 +3549,7 @@ subject_id,hadm_id,l_score,a_score,c_score,e_score,lace_total,readmission_risk
 13548,23548,4,3,5,2,14,High
 13549,23549,5,0,5,0,10,High
 13550,23550,3,3,5,4,15,High
-13551,23551,4,3,5,0,12,High
+13551,23551,4,3,3,0,10,High
 13552,23552,1,3,5,0,9,Moderate
 13553,23553,3,3,5,3,14,High
 13554,23554,4,3,5,3,15,High
@@ -3787,10 +3787,10 @@ subject_id,hadm_id,l_score,a_score,c_score,e_score,lace_total,readmission_risk
 13786,23786,7,3,5,2,17,High
 13787,23787,4,3,5,3,15,High
 13788,23788,5,3,5,1,14,High
-13789,23789,4,3,5,1,13,High
+13789,23789,4,3,3,1,11,High
 13790,23790,7,3,5,1,16,High
 13791,23791,5,3,5,3,16,High
-13792,23792,3,3,5,3,14,High
+13792,23792,3,3,3,3,12,High
 13793,23793,3,3,5,0,11,High
 13794,23794,5,3,5,0,13,High
 13795,23795,2,3,5,0,10,High
@@ -3904,7 +3904,7 @@ subject_id,hadm_id,l_score,a_score,c_score,e_score,lace_total,readmission_risk
 13903,23903,7,3,5,4,19,High
 13904,23904,4,0,5,3,12,High
 13905,23905,4,0,5,4,13,High
-13906,23906,5,3,3,4,15,High
+13906,23906,5,3,5,4,17,High
 13907,23907,2,3,5,1,11,High
 13908,23908,3,3,5,4,15,High
 13909,23909,2,3,5,2,12,High
@@ -4378,7 +4378,7 @@ subject_id,hadm_id,l_score,a_score,c_score,e_score,lace_total,readmission_risk
 14377,24377,2,0,5,4,11,High
 14378,24378,4,3,5,0,12,High
 14379,24379,4,3,5,2,14,High
-14380,24380,4,0,3,0,7,Moderate
+14380,24380,4,0,5,0,9,Moderate
 14381,24381,4,0,5,1,10,High
 14382,24382,3,0,5,4,12,High
 14383,24383,5,3,5,2,15,High
@@ -4543,7 +4543,7 @@ subject_id,hadm_id,l_score,a_score,c_score,e_score,lace_total,readmission_risk
 14542,24542,3,3,5,4,15,High
 14543,24543,4,3,5,2,14,High
 14544,24544,4,3,5,4,16,High
-14545,24545,5,3,3,1,12,High
+14545,24545,5,3,5,1,14,High
 14546,24546,3,3,5,3,14,High
 14547,24547,2,3,5,0,10,High
 14548,24548,4,3,5,4,16,High
@@ -5452,7 +5452,7 @@ subject_id,hadm_id,l_score,a_score,c_score,e_score,lace_total,readmission_risk
 15451,25451,3,3,5,4,15,High
 15452,25452,7,3,5,1,16,High
 15453,25453,7,3,5,2,17,High
-15454,25454,4,3,5,4,16,High
+15454,25454,4,3,3,4,14,High
 15455,25455,4,3,5,1,13,High
 15456,25456,5,3,5,1,14,High
 15457,25457,4,3,5,4,16,High
@@ -6706,7 +6706,7 @@ subject_id,hadm_id,l_score,a_score,c_score,e_score,lace_total,readmission_risk
 16705,26705,4,0,5,3,12,High
 16706,26706,1,3,5,0,9,Moderate
 16707,26707,1,3,5,4,13,High
-16708,26708,5,0,5,4,14,High
+16708,26708,5,0,3,4,12,High
 16709,26709,2,3,5,3,13,High
 16710,26710,4,3,5,1,13,High
 16711,26711,2,0,5,1,8,Moderate
@@ -6916,7 +6916,7 @@ subject_id,hadm_id,l_score,a_score,c_score,e_score,lace_total,readmission_risk
 16915,26915,3,3,5,4,15,High
 16916,26916,3,0,5,0,8,Moderate
 16917,26917,3,3,5,4,15,High
-16918,26918,4,3,5,4,16,High
+16918,26918,4,3,3,4,14,High
 16919,26919,4,0,5,0,9,Moderate
 16920,26920,4,3,5,4,16,High
 16921,26921,2,3,5,4,14,High
@@ -7233,7 +7233,7 @@ subject_id,hadm_id,l_score,a_score,c_score,e_score,lace_total,readmission_risk
 17232,27232,2,3,5,4,14,High
 17233,27233,7,3,5,4,19,High
 17234,27234,1,3,5,4,13,High
-17235,27235,3,3,3,3,12,High
+17235,27235,3,3,5,3,14,High
 17236,27236,4,3,5,1,13,High
 17237,27237,5,3,5,0,13,High
 17238,27238,5,3,5,0,13,High
@@ -7282,7 +7282,7 @@ subject_id,hadm_id,l_score,a_score,c_score,e_score,lace_total,readmission_risk
 17281,27281,7,3,5,4,19,High
 17282,27282,4,3,5,2,14,High
 17283,27283,2,0,5,1,8,Moderate
-17284,27284,1,0,5,1,7,Moderate
+17284,27284,1,0,3,1,5,Moderate
 17285,27285,4,3,5,2,14,High
 17286,27286,7,3,5,4,19,High
 17287,27287,4,3,5,1,13,High
@@ -7757,7 +7757,7 @@ subject_id,hadm_id,l_score,a_score,c_score,e_score,lace_total,readmission_risk
 17756,27756,4,3,5,1,13,High
 17757,27757,3,3,5,1,12,High
 17758,27758,4,3,5,1,13,High
-17759,27759,5,3,5,3,16,High
+17759,27759,5,3,3,3,14,High
 17760,27760,3,0,5,3,11,High
 17761,27761,2,3,5,4,14,High
 17762,27762,2,3,5,2,12,High
@@ -8055,7 +8055,7 @@ subject_id,hadm_id,l_score,a_score,c_score,e_score,lace_total,readmission_risk
 18054,28054,5,3,5,0,13,High
 18055,28055,4,0,5,3,12,High
 18056,28056,5,3,5,3,16,High
-18057,28057,5,3,5,1,14,High
+18057,28057,5,3,3,1,12,High
 18058,28058,2,3,5,4,14,High
 18059,28059,3,3,5,3,14,High
 18060,28060,4,0,5,4,13,High
@@ -8184,7 +8184,7 @@ subject_id,hadm_id,l_score,a_score,c_score,e_score,lace_total,readmission_risk
 18183,28183,7,0,5,2,14,High
 18184,28184,4,3,5,4,16,High
 18185,28185,4,0,5,2,11,High
-18186,28186,3,0,3,0,6,Moderate
+18186,28186,3,0,5,0,8,Moderate
 18187,28187,3,3,5,2,13,High
 18188,28188,4,3,5,4,16,High
 18189,28189,3,0,5,3,11,High
@@ -8475,7 +8475,7 @@ subject_id,hadm_id,l_score,a_score,c_score,e_score,lace_total,readmission_risk
 18474,28474,5,3,5,0,13,High
 18475,28475,1,3,5,4,13,High
 18476,28476,4,3,5,0,12,High
-18477,28477,4,3,3,2,12,High
+18477,28477,4,3,5,2,14,High
 18478,28478,5,0,5,0,10,High
 18479,28479,5,3,5,4,17,High
 18480,28480,5,3,5,3,16,High
@@ -8515,7 +8515,7 @@ subject_id,hadm_id,l_score,a_score,c_score,e_score,lace_total,readmission_risk
 18514,28514,1,3,5,4,13,High
 18515,28515,7,0,5,4,16,High
 18516,28516,4,0,5,0,9,Moderate
-18517,28517,3,3,5,3,14,High
+18517,28517,3,3,3,3,12,High
 18518,28518,7,3,5,1,16,High
 18519,28519,7,3,5,1,16,High
 18520,28520,1,3,5,0,9,Moderate
@@ -8546,7 +8546,7 @@ subject_id,hadm_id,l_score,a_score,c_score,e_score,lace_total,readmission_risk
 18545,28545,2,3,5,2,12,High
 18546,28546,2,0,5,4,11,High
 18547,28547,2,3,5,4,14,High
-18548,28548,5,3,5,4,17,High
+18548,28548,5,3,3,4,15,High
 18549,28549,2,0,5,3,10,High
 18550,28550,4,0,5,2,11,High
 18551,28551,1,3,5,2,11,High
@@ -8637,7 +8637,7 @@ subject_id,hadm_id,l_score,a_score,c_score,e_score,lace_total,readmission_risk
 18636,28636,7,3,5,3,18,High
 18637,28637,5,3,5,4,17,High
 18638,28638,5,0,5,2,12,High
-18639,28639,4,3,3,4,14,High
+18639,28639,4,3,5,4,16,High
 18640,28640,1,3,5,2,11,High
 18641,28641,5,3,5,4,17,High
 18642,28642,4,3,5,2,14,High
@@ -8741,7 +8741,7 @@ subject_id,hadm_id,l_score,a_score,c_score,e_score,lace_total,readmission_risk
 18740,28740,2,3,5,4,14,High
 18741,28741,4,3,5,1,13,High
 18742,28742,7,0,5,4,16,High
-18743,28743,4,3,5,4,16,High
+18743,28743,4,3,3,4,14,High
 18744,28744,1,0,5,4,10,High
 18745,28745,1,3,5,1,10,High
 18746,28746,2,3,5,4,14,High
@@ -9073,7 +9073,7 @@ subject_id,hadm_id,l_score,a_score,c_score,e_score,lace_total,readmission_risk
 19072,29072,3,0,5,0,8,Moderate
 19073,29073,2,3,5,4,14,High
 19074,29074,4,3,5,1,13,High
-19075,29075,1,0,5,1,7,Moderate
+19075,29075,1,0,3,1,5,Moderate
 19076,29076,4,3,5,4,16,High
 19077,29077,5,3,5,0,13,High
 19078,29078,1,3,5,4,13,High
@@ -9398,7 +9398,7 @@ subject_id,hadm_id,l_score,a_score,c_score,e_score,lace_total,readmission_risk
 19397,29397,4,0,5,0,9,Moderate
 19398,29398,1,3,5,3,12,High
 19399,29399,2,3,5,2,12,High
-19400,29400,7,3,3,4,17,High
+19400,29400,7,3,5,4,19,High
 19401,29401,5,3,5,2,15,High
 19402,29402,2,3,5,1,11,High
 19403,29403,4,0,5,1,10,High
@@ -9512,7 +9512,7 @@ subject_id,hadm_id,l_score,a_score,c_score,e_score,lace_total,readmission_risk
 19511,29511,3,3,5,4,15,High
 19512,29512,3,3,5,4,15,High
 19513,29513,1,3,5,2,11,High
-19514,29514,5,3,3,0,11,High
+19514,29514,5,3,5,0,13,High
 19515,29515,1,3,5,1,10,High
 19516,29516,4,0,5,4,13,High
 19517,29517,1,3,5,2,11,High
@@ -9745,7 +9745,7 @@ subject_id,hadm_id,l_score,a_score,c_score,e_score,lace_total,readmission_risk
 19744,29744,3,3,5,3,14,High
 19745,29745,4,0,5,4,13,High
 19746,29746,1,0,5,1,7,Moderate
-19747,29747,3,0,3,0,6,Moderate
+19747,29747,3,0,5,0,8,Moderate
 19748,29748,5,3,5,4,17,High
 19749,29749,7,3,5,2,17,High
 19750,29750,1,3,5,1,10,High
@@ -9845,7 +9845,7 @@ subject_id,hadm_id,l_score,a_score,c_score,e_score,lace_total,readmission_risk
 19844,29844,3,3,5,2,13,High
 19845,29845,3,3,5,3,14,High
 19846,29846,4,0,5,0,9,Moderate
-19847,29847,3,3,3,0,9,Moderate
+19847,29847,3,3,5,0,11,High
 19848,29848,4,0,5,3,12,High
 19849,29849,3,3,5,0,11,High
 19850,29850,7,3,5,2,17,High
@@ -9945,7 +9945,7 @@ subject_id,hadm_id,l_score,a_score,c_score,e_score,lace_total,readmission_risk
 19944,29944,4,0,5,3,12,High
 19945,29945,5,3,5,0,13,High
 19946,29946,4,3,5,1,13,High
-19947,29947,3,0,5,3,11,High
+19947,29947,3,0,3,3,9,Moderate
 19948,29948,4,0,5,1,10,High
 19949,29949,5,3,5,4,17,High
 19950,29950,4,3,5,1,13,High
@@ -9989,7 +9989,7 @@ subject_id,hadm_id,l_score,a_score,c_score,e_score,lace_total,readmission_risk
 19988,29988,4,3,5,4,16,High
 19989,29989,7,0,5,4,16,High
 19990,29990,4,0,5,0,9,Moderate
-19991,29991,5,3,3,4,15,High
+19991,29991,5,3,5,4,17,High
 19992,29992,2,3,5,4,14,High
 19993,29993,4,3,5,3,15,High
 19994,29994,4,3,5,0,12,High
