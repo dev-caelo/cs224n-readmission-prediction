@@ -1,30 +1,38 @@
 import torch
 from torch import nn
 
-from transformers import AutoTokenizer, AutoModelForSequenceClassification
+from transformers import AutoTokenizer, AutoModel, AutoModelForSequenceClassification
+from transformers import RobertaTokenizer, RobertaForSequenceClassification, RobertaConfig
 
 
 class Hybrid_Fusion(nn.Module):
 
-    def __init__(self, options_name="bert-base-uncased", bert_features=768, activation_func=nn.Tanh(),
-                 hidden=384, others_ratio=4, input=0, output=24, if_others=False):
+    def __init__(self, bert_features=768, activation_func=nn.Tanh(),
+                 hidden=384, others_ratio=4, input=0, output=24, if_others=False,
+                 bert_model : str = "roberta"):
 
         super(Hybrid_Fusion, self).__init__()
         self.if_others = if_others
 
-        # self.bert = torch.hub.load('huggingface/pytorch-transformers', 'modelForSequenceClassification', options_name)
-        self.bert = AutoModelForSequenceClassification.from_pretrained(options_name, output_hidden_states=False)
-        self.bert.classifier = nn.Identity()
-
+        # Import BERT and strip classification layer
+        if bert_model.lower() == "roberta":
+            self.tokenizer = RobertaTokenizer.from_pretrained('roberta-base')
+            self.bert = RobertaForSequenceClassification.from_pretrained('roberta-base')
+            self.bert.classifier = nn.Identity()
+        elif bert_model.lower() == "clinicalbert":
+            self.tokenizer = AutoTokenizer.from_pretrained("medicalai/ClinicalBERT")
+            self.bert = AutoModel.from_pretrained("medicalai/ClinicalBERT")
+        else:
+            raise Exception("Unexpected BERT model name:", bert_model, "|| Please select from 'RoBERTa' or 'ClinicalBERT'.")
+        
+        # Post-BERT hidden layer for training embeddings
         self.bert_hidden = nn.Sequential(nn.Dropout(0.1),
                                          nn.Linear(bert_features, hidden, bias=True),
                                          activation_func,
                                          nn.Dropout(0.1),
                                          )
 
-        self.age_embedding = nn.Sequential(nn.Linear(1, 3), nn.Tanh(), nn.Dropout(0.1),)
-        self.binary_embedding = nn.Embedding(3, 3)
-
+        # TODO: Plug in XGBoost Model
         self.others = nn.Sequential(nn.Linear((input+1)*3, hidden//others_ratio),
                                     nn.LayerNorm(hidden//others_ratio, eps=1e-12),
                                     activation_func,
@@ -46,24 +54,13 @@ class Hybrid_Fusion(nn.Module):
                                     nn.Linear(hidden, output)
         )
 
-    def forward(self, text, mask, age, others):
-
+    def forward(self, text, mask, others):
+        # TODO: FIX FORWARD PASS!!
         x_t = self.bert(text, token_type_ids=None, attention_mask=mask).logits
         if len(x_t.shape) == 3:
             x_t = self.bert_hidden(x_t[:, 0, :])
         else:
             x_t = self.bert_hidden(x_t)
-
-        # age = torch.log(age+1)/2
-        x_age = self.age_embedding(age)
-        b, h = x_age.shape
-        x_age = torch.reshape(x_age, (b, 1, h))
-
-        if self.if_others:
-            x_others = self.binary_embedding(others.long())
-            x_o = torch.cat((x_age, x_others), 1)
-        else:
-            x_o = x_age
 
         b, w, h = x_o.shape
         x_o = torch.reshape(x_o, (b, w*h))
@@ -88,4 +85,4 @@ class Hybrid_Fusion(nn.Module):
 #
 # M = BERT_multi(options_name, 768, nn.Tanh(), 384, 0, 8)
 #
-# y = M(text, mask, age, othe
+# y = M(text, mask, age, others)

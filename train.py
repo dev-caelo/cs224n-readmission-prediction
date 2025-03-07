@@ -22,9 +22,9 @@ weight_decay = 1e-5
 epochs = 10
 report_step = 800
 
-log_val = 'log_val.txt'
-log_test = 'log_test.txt'
-log_train = 'log_train.txt'
+log_val = 'logs/log_val.txt'
+log_test = 'logs/log_test.txt'
+log_train = 'logs/log_train.txt'
 pre_train = None
 #  pre_train = 'save/roberta_model.pt'
 language_model = "clinical_longformer"
