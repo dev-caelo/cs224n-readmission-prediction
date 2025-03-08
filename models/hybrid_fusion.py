@@ -60,28 +60,60 @@ class Hybrid_Fusion(nn.Module):
                                     nn.Linear(hidden, output)
         )
 
-    def forward(self, text, mask, age, others):
-        x_t = self.bert(text, token_type_ids=None, attention_mask=mask).logits
-        if len(x_t.shape) == 3:
-            x_t = self.bert_hidden(x_t[:, 0, :])
+    def forward(self, input_ids, attention_mask, age, others=None):
+        """
+        Forward pass for the Hybrid_Fusion model.
+        
+        Args:
+            input_ids (torch.Tensor): Token ids for the text input to BERT
+            attention_mask (torch.Tensor): Attention mask for BERT
+            age (torch.Tensor): Age values of shape [batch_size, 1]
+            others (torch.Tensor, optional): Other features if if_others is True
+            
+        Returns:
+            torch.Tensor: Model outputs
+        """
+        # Process text through BERT (maintaining compatibility with all model types)
+        bert_outputs = self.bert(input_ids=input_ids, attention_mask=attention_mask)
+        
+        # Handle different output formats from various BERT models
+        if hasattr(bert_outputs, 'logits'):
+            x_t = bert_outputs.logits
         else:
-            x_t = self.bert_hidden(x_t)
-        # age = torch.log(age+1)/2
+            # For models that return last_hidden_state
+            x_t = bert_outputs.last_hidden_state[:, 0, :]
+
+        if len(x_t.shape) == 3:
+            x_t = x_t[:, 0, :]  # Take the first token ([CLS]) representation BEFORE bert_hidden
+
+        # Pass through BERT hidden layer
+        x_t = self.bert_hidden(x_t)
+        
+        # Process age data
         x_age = self.age_embedding(age)
-        b, h = x_age.shape
-        x_age = torch.reshape(x_age, (b, 1, h))
-        if self.if_others:
+        batch_size, hidden_dim = x_age.shape
+        x_age = x_age.view(batch_size, 1, hidden_dim)  # Reshape to 3D: [batch, 1, hidden//others_ratio]
+        
+        # Process other features if applicable
+        if self.if_others and others is not None:
             x_others = self.binary_embedding(others.long())
-            x_o = torch.cat((x_age, x_others), 1)
+            x_o = torch.cat((x_age, x_others), dim=1)  # Concatenate along sequence dimension
         else:
             x_o = x_age
-        b, w, h = x_o.shape
-        x_o = torch.reshape(x_o, (b, w*h))
         
+        # Flatten the 3D tensor to 2D for the others network
+        batch_size, seq_len, hidden_dim = x_o.shape
+        x_o = x_o.reshape(batch_size, seq_len * hidden_dim)
+        
+        # Process through the others network
         x_o = self.others(x_o)
         
-        x = torch.cat((x_t, x_o), 1)
+        # Concatenate BERT and others embeddings
+        x = torch.cat((x_t, x_o), dim=1)
+        
+        # Pass through output layer
         x = self.output(x)
+        
         return x
 
 

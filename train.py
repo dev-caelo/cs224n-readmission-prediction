@@ -14,7 +14,7 @@ import time
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 cls = 28
-feature = 0
+feature = 31
 batch_size = 20
 num_works = 8
 lr_rate = 1e-5
@@ -27,7 +27,7 @@ log_test = 'logs/log_test.txt'
 log_train = 'logs/log_train.txt'
 pre_train = None
 #  pre_train = 'save/roberta_model.pt'
-language_model = "clinical_longformer"
+language_model = "roberta"
 
 
 if __name__ == "__main__":
@@ -41,7 +41,7 @@ if __name__ == "__main__":
         others_ratio=4,
         input=feature,
         output=cls,
-        if_others=True,
+        if_others=False,
         bert_model=options_name  # Pass the model name here
     )
     model = model.to(device)
