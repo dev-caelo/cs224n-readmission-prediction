@@ -19,7 +19,7 @@ class Diag(Dataset):
             subset='train',
             options_name='bert-base-uncased',
             max_length=256,
-            age=['Age_new'],
+            age=['anchor_age'],
             others=None,
             # others=['Sex', 'Fire_Involvement'],
             text='text',
@@ -66,6 +66,25 @@ class Diag(Dataset):
         text = text.lower()
         label = item[self.label]
 
+        # Handle special label values
+        if isinstance(label, str):
+            # Remove any non-numeric characters (like '+') and handle special cases
+            if '+' in label:
+                # Strip the '+' and any other non-numeric characters
+                label = label.replace('+', '')
+            # Add other special case handling as needed
+            
+            # Now convert to float then int
+            try:
+                label_int = int(float(label))
+            except ValueError:
+                # Fallback for completely non-numeric labels - map to a default value
+                # or skip this sample by returning None
+                print(f"Warning: Unable to convert label '{label}' to a number. Using default value.")
+                label_int = 0  # Or some appropriate default
+        else:
+            label_int = int(label)
+
         age = np.array(item[self.age], dtype=np.float32)
 
         if self.others is not None:
@@ -75,4 +94,10 @@ class Diag(Dataset):
 
         inputs = self.tokenizer(text, padding='max_length', truncation=True, return_tensors="pt")
 
-        return inputs['input_ids'].squeeze(0), inputs['attention_mask'].squeeze(0), age, others, int(label)
+        if isinstance(label, str):
+            label_int = int(float(label))
+        else:
+            label_int = int(label)
+
+        return inputs['input_ids'].squeeze(0), inputs['attention_mask'].squeeze(0), age, others, label_int
+        

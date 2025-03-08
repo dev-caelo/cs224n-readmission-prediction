@@ -29,16 +29,24 @@ pre_train = None
 #  pre_train = 'save/roberta_model.pt'
 language_model = "clinical_longformer"
 
+
 if __name__ == "__main__":
 
     options_name, bert_features, activation_func = config.get_config(language_model)
     bert_features = bert_features[0]
 
-    model = Hybrid_Fusion(options_name, bert_features, activation_func,
-                          hidden=768, others_ratio=4, input=feature, output=cls, if_others=True)
+    model = Hybrid_Fusion(
+        bert_features=768,  # Explicitly set this to 768
+        activation_func=activation_func,
+        others_ratio=4,
+        input=feature,
+        output=cls,
+        if_others=True,
+        bert_model=options_name  # Pass the model name here
+    )
     model = model.to(device)
 
-    data_file = "cs224n-readmission-prediction/dataset/dummy_data/mimic_discharge_summaries.csv"
+    data_file = "/Users/shriyareddy/Downloads/discharge_master.csv"
 
     # loss_func = nn.CrossEntropyLoss()
     loss_func = FocalLoss(None, 2)
@@ -48,10 +56,10 @@ if __name__ == "__main__":
     train_data = Diag(
         df=data_file,  # Path to your consolidated dataset
         subset='train',
-        label="diagnosis_description",
+        label="time_until_next_admission",
         options_name=options_name,
         text='text',  # Using the discharge summary text field
-        others=['los_days', 'prior_ed_visits_count', 'raw_comorbidity_score']  # Only these numeric fields
+        #others=['los_days', 'prior_ed_visits_count', 'raw_comorbidity_score']  # Only these numeric fields
     )
     train_loader = DataLoader(train_data, batch_size=batch_size, shuffle=True, num_workers=num_works)
 
@@ -60,10 +68,10 @@ if __name__ == "__main__":
     val_data = Diag(
         df=data_file,  # Path to your consolidated dataset
         subset='val',
-        label="diagnosis_description",
+        label="time_until_next_admission",
         options_name=options_name,
         text='text',  # Using the discharge summary text field
-        others=['los_days', 'prior_ed_visits_count', 'raw_comorbidity_score']  # Only these numeric fields
+        #others=['los_days', 'prior_ed_visits_count', 'raw_comorbidity_score']  # Only these numeric fields
     )
     val_loader = DataLoader(val_data, batch_size=batch_size, shuffle=False)
 
@@ -71,10 +79,10 @@ if __name__ == "__main__":
     test_data = Diag(
         df=data_file,  # Path to your consolidated dataset
         subset='test',
-        label="diagnosis_description",
+        label="time_until_next_admission",
         options_name=options_name,
         text='text',  # Using the discharge summary text field
-        others=['los_days', 'prior_ed_visits_count', 'raw_comorbidity_score']  # Only these numeric fields
+        #others=['los_days', 'prior_ed_visits_count', 'raw_comorbidity_score']  # Only these numeric fields
     )
     test_loader = DataLoader(test_data, batch_size=batch_size, shuffle=False)
 

@@ -22,6 +22,9 @@ class Hybrid_Fusion(nn.Module):
         elif bert_model.lower() == "clinicalbert":
             self.tokenizer = AutoTokenizer.from_pretrained("medicalai/ClinicalBERT")
             self.bert = AutoModel.from_pretrained("medicalai/ClinicalBERT")
+        elif bert_model.lower() == "clinical-longformer" or bert_model == "yikuan8/Clinical-Longformer":
+            self.tokenizer = AutoTokenizer.from_pretrained("yikuan8/Clinical-Longformer")
+            self.bert = AutoModel.from_pretrained("yikuan8/Clinical-Longformer")
         else:
             raise Exception("Unexpected BERT model name:", bert_model, "|| Please select from 'RoBERTa' or 'ClinicalBERT'.")
         
@@ -55,18 +58,20 @@ class Hybrid_Fusion(nn.Module):
         )
 
     def forward(self, text, mask, others):
-        # TODO: FIX FORWARD PASS!!
         x_t = self.bert(text, token_type_ids=None, attention_mask=mask).logits
         if len(x_t.shape) == 3:
             x_t = self.bert_hidden(x_t[:, 0, :])
         else:
             x_t = self.bert_hidden(x_t)
-
+        
+        # Fix this section - 'others' should be processed here
+        x_o = others  # Process this according to your data structure
+        
         b, w, h = x_o.shape
         x_o = torch.reshape(x_o, (b, w*h))
-
+        
         x_o = self.others(x_o)
-
+        
         x = torch.cat((x_t, x_o), 1)
         x = self.output(x)
         return x
