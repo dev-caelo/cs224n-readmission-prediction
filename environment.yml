@@ -1,0 +1,8 @@
+name: readmission_prediction
+channels:
+  - https://repo.anaconda.com/pkgs/main
+  - https://repo.anaconda.com/pkgs/r
+dependencies:
+  - pip
+  - pytorch==2.5.1
+prefix: /opt/anaconda3/envs/readmission_prediction

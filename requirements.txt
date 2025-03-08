@@ -1,6 +1,27 @@
 # This file may be used to create an environment using:
 # $ conda create --name <env> --file <this file>
-huggingface-hub==0.29.1
-torch==2.3.1
+# platform: osx-arm64
+# created-by: conda 24.9.2
+
+# Core ML frameworks
+torch==2.5.1
 transformers==4.49.0
+tokenizers==0.21.0
+huggingface-hub==0.29.1
+scikit-learn==1.6.1
+numpy==2.2.3
+
+# Data processing
+pandas==2.2.3
+scipy==1.15.2
+
+# Utilities
+tqdm==4.67.1
+joblib==1.4.2
 typing_extensions==4.12.2
+filelock==3.17.0
+fsspec==2025.2.0
+pyyaml==6.0.2
+regex==2024.11.6
+safetensors==0.5.2
+threadpoolctl==3.5.0
