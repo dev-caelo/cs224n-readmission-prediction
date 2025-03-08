@@ -15,7 +15,7 @@ class Hybrid_Fusion(nn.Module):
         self.if_others = if_others
 
         # Import BERT and strip classification layer
-        if bert_model.lower() == "roberta":
+        if bert_model.lower() == "roberta-base":
             self.tokenizer = RobertaTokenizer.from_pretrained('roberta-base')
             self.bert = RobertaForSequenceClassification.from_pretrained('roberta-base')
             self.bert.classifier = nn.Identity()
