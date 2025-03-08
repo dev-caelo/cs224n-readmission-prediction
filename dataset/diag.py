@@ -17,7 +17,7 @@ class Diag(Dataset):
             df,
             label='Diagnosis_new',
             subset='train',
-            options_name='bert-base-uncased',
+            tokenizer=None,
             max_length=256,
             age=['anchor_age'],
             others=None,
@@ -47,8 +47,11 @@ class Diag(Dataset):
         #     for i in range(25):
         #         others.append('Body_Part_'+str(i))
         #     others.remove('Body_Part_new')
-        self.tokenizer = AutoTokenizer.from_pretrained(options_name, model_max_length=max_length)
-        # self.tokenizer = torch.hub.load('huggingface/pytorch-transformers', 'tokenizer', options_name)
+
+        # FIX THIS???
+        if tokenizer is None:
+            raise AssertionError("Tokenizer is None in Diag")
+        self.tokenizer = tokenizer
         self.df = df
         self.subset = subset
         self.label = label

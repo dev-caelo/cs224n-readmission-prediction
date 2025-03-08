@@ -52,35 +52,34 @@ if __name__ == "__main__":
     loss_func = FocalLoss(None, 2)
     optimizer = torch.optim.Adam(model.parameters(), lr=lr_rate, weight_decay=weight_decay)
 
-    # train
+    # load training data into Diag -> pass in model tokenizer
     train_data = Diag(
         df=data_file,  # Path to your consolidated dataset
         subset='train',
         label="time_until_next_admission",
-        options_name=options_name,
+        tokenizer=model.tokenizer,
         text='text',  # Using the discharge summary text field
         #others=['los_days', 'prior_ed_visits_count', 'raw_comorbidity_score']  # Only these numeric fields
     )
     train_loader = DataLoader(train_data, batch_size=batch_size, shuffle=True, num_workers=num_works)
 
-    # val
-    
+    # load validation data into Diag -> pass in model tokenizer
     val_data = Diag(
         df=data_file,  # Path to your consolidated dataset
         subset='val',
         label="time_until_next_admission",
-        options_name=options_name,
+        tokenizer=model.tokenizer,
         text='text',  # Using the discharge summary text field
         #others=['los_days', 'prior_ed_visits_count', 'raw_comorbidity_score']  # Only these numeric fields
     )
     val_loader = DataLoader(val_data, batch_size=batch_size, shuffle=False)
 
-    # test
+    # load test data into Diag -> pass in model tokenizer
     test_data = Diag(
         df=data_file,  # Path to your consolidated dataset
         subset='test',
         label="time_until_next_admission",
-        options_name=options_name,
+        tokenizer=model.tokenizer,
         text='text',  # Using the discharge summary text field
         #others=['los_days', 'prior_ed_visits_count', 'raw_comorbidity_score']  # Only these numeric fields
     )
