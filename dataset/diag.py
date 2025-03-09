@@ -104,8 +104,8 @@ class Diag(Dataset):
         if days == None or days == 0:  # No readmission recorded
             return 0
         elif int(days) < 180:  # Within 180 days 
-            return days
-        else:  # More than nine years or no readmission
+            return int(days)
+        else:  # More than 6 months or no readmission
             return 180
 
     def __len__(self):
@@ -152,10 +152,5 @@ class Diag(Dataset):
 
         inputs = self.tokenizer(text, padding='max_length', truncation=True, return_tensors="pt")
 
-        if isinstance(label, str):
-            label_int = int(float(label))
-        else:
-            label_int = int(label)
-
+        assert 0 <= label_int <= 180, f"Label out of bounds: {label_int} from original value {label}"
         return inputs['input_ids'].squeeze(0), inputs['attention_mask'].squeeze(0), age, others, label_int
-    
