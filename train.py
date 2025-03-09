@@ -1,7 +1,8 @@
 # Forked and edited from original authors: https://github.com/haidog-yaqub/Clinical_HybridFusion/tree/main
 
 from models.hybrid_fusion import Hybrid_Fusion
-from dataset.diag import Diag
+# Import DiagTorch instead of Diag
+from dataset.torch_diag import DiagTorch
 from config import config
 from utils.utils import Evaluate
 from utils.focal_loss import FocalLoss
@@ -51,16 +52,17 @@ if __name__ == "__main__":
         bert_model=options_name  # Pass the model name here
     )
     model = model.to(device)
+    model.enable_grad_checkpointing()
 
-    data_file = "discharge_master.csv"
+    data_file = "dataset/discharge_master.csv"
 
     # loss_func = nn.CrossEntropyLoss()
     loss_func = FocalLoss(None, 2)
     optimizer = torch.optim.Adam(model.parameters(), lr=lr_rate, weight_decay=weight_decay)
 
-    # load training data into Diag -> pass in model tokenizer
-    train_data = Diag(
-        df=data_file,  # Path to your consolidated dataset
+    # load training data into DiagTorch -> pass in model tokenizer
+    train_data = DiagTorch(
+        data_path=data_file,  # Changed parameter name from df to data_path
         subset='train',
         label="time_until_next_admission",
         tokenizer=model.tokenizer,
@@ -69,9 +71,9 @@ if __name__ == "__main__":
     )
     train_loader = DataLoader(train_data, batch_size=batch_size, shuffle=True, num_workers=num_works)
 
-    # load validation data into Diag -> pass in model tokenizer
-    val_data = Diag(
-        df=data_file,  # Path to your consolidated dataset
+    # load validation data into DiagTorch -> pass in model tokenizer
+    val_data = DiagTorch(
+        data_path=data_file,  # Changed parameter name from df to data_path
         subset='val',
         label="time_until_next_admission",
         tokenizer=model.tokenizer,
@@ -80,9 +82,9 @@ if __name__ == "__main__":
     )
     val_loader = DataLoader(val_data, batch_size=batch_size, shuffle=False)
 
-    # load test data into Diag -> pass in model tokenizer
-    test_data = Diag(
-        df=data_file,  # Path to your consolidated dataset
+    # load test data into DiagTorch -> pass in model tokenizer
+    test_data = DiagTorch(
+        data_path=data_file,  # Changed parameter name from df to data_path
         subset='test',
         label="time_until_next_admission",
         tokenizer=model.tokenizer,
@@ -134,7 +136,7 @@ if __name__ == "__main__":
 
             step += 1
             end = time.time()
-            print("Step", i+1, "duration:", end-start, "seconds.")
+            progress_bar.set_postfix({"Loss": loss.item(), "Time": end-start})
             
             if (i + 1) % report_step == 0:
                 n = open('log/' + language_model + '_' + log_train, mode='a')

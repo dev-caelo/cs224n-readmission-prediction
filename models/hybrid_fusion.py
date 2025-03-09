@@ -30,6 +30,9 @@ class Hybrid_Fusion(nn.Module):
         
         self.age_embedding = nn.Linear(1, hidden//others_ratio)
         self.binary_embedding = nn.Embedding(2, hidden//others_ratio)
+        self.bert.eval()
+        for param in self.bert.parameters():
+            param.requires_grad = False
         
         # Post-BERT hidden layer for training embeddings
         self.bert_hidden = nn.Sequential(nn.Dropout(0.1),
@@ -116,18 +119,7 @@ class Hybrid_Fusion(nn.Module):
         
         return x
 
-
-# options_name = "yikuan8/Clinical-Longformer"
-# tokenizer = AutoTokenizer.from_pretrained(options_name, model_max_length=256)
-# text = 'lets go'
-#
-# inputs = tokenizer(text, padding='max_length', truncation=True, return_tensors="pt")
-# text = inputs['input_ids']
-# mask = inputs['attention_mask']
-#
-# age = torch.rand(1, 1)
-# others = torch.tensor([[1, 0]])
-#
-# M = BERT_multi(options_name, 768, nn.Tanh(), 384, 0, 8)
-#
-# y = M(text, mask, age, others)
+    def enable_grad_checkpointing(self):
+        """Enable gradient checkpointing for memory efficiency during training"""
+        if hasattr(self.bert, 'gradient_checkpointing_enable'):
+            self.bert.gradient_checkpointing_enable()
