@@ -101,14 +101,14 @@ if __name__ == "__main__":
     if pre_train:
         model.load_state_dict(torch.load(pre_train))
         eval_loss, top_1 = Evaluate(model, val_loader, loss_func, cls, device, 0,
-                                    path='val/', language_model=language_model, log=log_val)
+                                    path='log/', language_model=language_model, log=log_val)
         evaluations.append(eval_loss)
         accs.append(top_1)
         print('Val Acc: {:.2f} %'.format(top_1 * 100))
 
         _, _ = Evaluate(model, test_loader, loss_func, cls,
                         device, 0,
-                        path='test/', language_model=language_model, log=log_test)
+                        path='log/', language_model=language_model, log=log_test)
 
     model.train()
 
@@ -154,7 +154,7 @@ if __name__ == "__main__":
         # evaluation
         eval_loss, top_1 = Evaluate(model, val_loader, loss_func, cls,
                                     device, epoch,
-                                    path='val/', language_model=language_model, log=log_val)
+                                    path='log/', language_model=language_model, log=log_val)
 
         evaluations.append(eval_loss)
         accs.append(top_1)
@@ -162,7 +162,7 @@ if __name__ == "__main__":
 
         _, _ = Evaluate(model, test_loader, loss_func, cls,
                         device, epoch,
-                        path='test/', language_model=language_model, log=log_test)
+                        path='log/', language_model=language_model, log=log_test)
 
         # save model
         if len(evaluations) == 1:
