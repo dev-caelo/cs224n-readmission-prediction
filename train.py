@@ -5,6 +5,7 @@ from dataset.diag import Diag
 from config import config
 from utils.utils import Evaluate
 from utils.focal_loss import FocalLoss
+from tqdm import tqdm # For progress bar
 
 import torch
 from torch.utils.data import DataLoader
@@ -106,7 +107,9 @@ if __name__ == "__main__":
     for epoch in range(epochs):
         print("\nEpoch is " + str(epoch + 1))
 
-        for i, (text, mask, age, others, label) in enumerate(train_loader):
+        progress_bar = tqdm(train_loader, desc=f"Epoch {epoch+1}/{epochs}")
+
+        for i, (text, mask, age, others, label) in enumerate(progress_bar):
             optimizer.zero_grad()
             text = text.to(device)
             mask = mask.to(device)
