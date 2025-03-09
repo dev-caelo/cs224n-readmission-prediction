@@ -13,7 +13,7 @@ import time
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-cls = 28
+cls = 181
 feature = 31
 batch_size = 20
 num_works = 8
@@ -33,7 +33,6 @@ language_model = "roberta"
 if __name__ == "__main__":
 
     options_name, bert_features, activation_func = config.get_config(language_model)
-    bert_features = bert_features[0]
 
     model = Hybrid_Fusion(
         bert_features=768,  # Explicitly set this to 768
@@ -46,7 +45,7 @@ if __name__ == "__main__":
     )
     model = model.to(device)
 
-    data_file = "/Users/shriyareddy/Downloads/discharge_master.csv"
+    data_file = "discharge_master.csv"
 
     # loss_func = nn.CrossEntropyLoss()
     loss_func = FocalLoss(None, 2)

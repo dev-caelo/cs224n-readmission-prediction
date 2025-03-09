@@ -59,6 +59,55 @@ class Diag(Dataset):
         self.others = others
         self.text = text
 
+        # Print label statistics for debugging
+        if subset == 'train':
+            self._print_label_stats()
+
+    def _print_label_stats(self):
+        """Print statistics about the distribution of labels in the dataset"""
+        labels = self.df[self.label].values
+        numeric_labels = []
+        
+        for label in labels:
+            if isinstance(label, str):
+                try:
+                    numeric_labels.append(float(label.replace('+', '')))
+                except ValueError:
+                    print(f"Warning: Skipping non-numeric label: {label}")
+            else:
+                numeric_labels.append(float(label))
+                
+        numeric_labels = np.array(numeric_labels)
+        print(f"\nLabel statistics for {self.label}:")
+        print(f"Min: {np.min(numeric_labels)}, Max: {np.max(numeric_labels)}")
+        print(f"Mean: {np.mean(numeric_labels):.2f}, Median: {np.median(numeric_labels):.2f}")
+        
+        # Print bin distribution
+        bins = self.bin_distribution(numeric_labels)
+        print("\nLabel distribution after binning:")
+        for bin_idx, count in enumerate(bins):
+            print(f"Bin {bin_idx}: {count} samples")
+
+    def bin_distribution(self, values):
+        """Count how many values fall into each bin"""
+        bins = np.zeros (181, dtype=int)  # 28 classes
+        for val in values:
+            bin_idx = self.bin_readmission_time(val)
+            if bin_idx < 181:
+                bins[bin_idx] += 1
+        return bins
+    
+    def bin_readmission_time(self, days):
+        """
+        Bin readmission time into meaningful categories
+        """
+        if days == None or days == 0:  # No readmission recorded
+            return 0
+        elif int(days) < 180:  # Within 180 days 
+            return days
+        else:  # More than nine years or no readmission
+            return 180
+
     def __len__(self):
         return len(self.df)
 
@@ -79,14 +128,20 @@ class Diag(Dataset):
             
             # Now convert to float then int
             try:
-                label_int = int(float(label))
+                label_float = int(float(label))
             except ValueError:
                 # Fallback for completely non-numeric labels - map to a default value
                 # or skip this sample by returning None
                 print(f"Warning: Unable to convert label '{label}' to a number. Using default value.")
-                label_int = 0  # Or some appropriate default
+                label_float = 0  # Or some appropriate default
         else:
             label_int = int(label)
+                # Bin the label value into appropriate class (0-27)
+        
+        label_int = self.bin_readmission_time(label_float)
+
+        # Process age feature
+        age = np.array(item[self.age], dtype=np.float32)
 
         age = np.array(item[self.age], dtype=np.float32)
 
@@ -103,4 +158,4 @@ class Diag(Dataset):
             label_int = int(label)
 
         return inputs['input_ids'].squeeze(0), inputs['attention_mask'].squeeze(0), age, others, label_int
-        
+    
