@@ -11,6 +11,7 @@ import torch
 from torch.utils.data import DataLoader
 import numpy as np
 import time
+import os
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
@@ -23,13 +24,18 @@ weight_decay = 1e-5
 epochs = 10
 report_step = 800
 
-log_val = 'logs/log_val.txt'
-log_test = 'logs/log_test.txt'
-log_train = 'logs/log_train.txt'
+log_val = 'log_val.txt'
+log_test = 'log_test.txt'
+log_train = 'log_train.txt'
 pre_train = None
+
 #  pre_train = 'save/roberta_model.pt'
 language_model = "roberta"
 
+# Create necessary directories
+directories = ['log', 'logs', 'save', 'visualizations']
+for directory in directories:
+    os.makedirs(directory, exist_ok=True)
 
 if __name__ == "__main__":
 
@@ -129,6 +135,7 @@ if __name__ == "__main__":
             step += 1
             end = time.time()
             print("Step", i+1, "duration:", end-start, "seconds.")
+            
             if (i + 1) % report_step == 0:
                 n = open('log/' + language_model + '_' + log_train, mode='a')
                 n.write(time.asctime(time.localtime(time.time())))
@@ -140,7 +147,7 @@ if __name__ == "__main__":
                 # writer.add_scalar('TrainLoss', report_loss / report_step, step)
                 report_loss = 0.0
                 # prevent overheating
-                time.sleep(10)
+                #time.sleep(10)
 
         # evaluation
         eval_loss, top_1 = Evaluate(model, val_loader, loss_func, cls,
