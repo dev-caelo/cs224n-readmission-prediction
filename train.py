@@ -110,6 +110,7 @@ if __name__ == "__main__":
         progress_bar = tqdm(train_loader, desc=f"Epoch {epoch+1}/{epochs}")
 
         for i, (text, mask, age, others, label) in enumerate(progress_bar):
+            start = time.time()
             optimizer.zero_grad()
             text = text.to(device)
             mask = mask.to(device)
@@ -126,6 +127,8 @@ if __name__ == "__main__":
             optimizer.step()
 
             step += 1
+            end = time.time()
+            print("Step", i+1, "duration:", end-start, "seconds.")
             if (i + 1) % report_step == 0:
                 n = open('log/' + language_model + '_' + log_train, mode='a')
                 n.write(time.asctime(time.localtime(time.time())))
