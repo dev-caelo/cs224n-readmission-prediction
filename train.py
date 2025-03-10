@@ -20,8 +20,8 @@ cls = 181
 feature = 31
 batch_size = 20
 num_works = 8
-lr_rate = 1e-5
-weight_decay = 1e-5
+lr_rate = 1e-3
+weight_decay = 1e-3
 epochs = 10
 report_step = 800
 
