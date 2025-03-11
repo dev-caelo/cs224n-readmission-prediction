@@ -20,9 +20,10 @@ cls = 181
 feature = 31
 batch_size = 20
 num_works = 8
-lr_rate = 1e-5
-weight_decay = 1e-5
+lr_rate = 1e-3
+weight_decay = 1e-3
 epochs = 10
+
 report_step = 800
 
 log_val = 'log_val.txt'
@@ -31,7 +32,7 @@ log_train = 'log_train.txt'
 pre_train = None
 
 #  pre_train = 'save/roberta_model.pt'
-language_model = "roberta"
+language_model = "clinical_bert"
 
 # Create necessary directories
 directories = ['log', 'logs', 'save', 'visualizations']

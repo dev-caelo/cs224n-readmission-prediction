@@ -118,7 +118,7 @@ dependencies:
   - pixman=0.40.0=h7f8727e_1
   - pysocks=1.7.1=py311h06a4308_0
   - python=3.11.11=he870216_0
-  - pytorch=2.3.1=cpu_py311hece47aa_0
+  - pytorch=2.3.1=cuda_py311
   - pytorch-cuda=12.4=hc786d27_7
   - pytorch-mutex=1.0=cuda
   - pyyaml=6.0.2=py311h5eee18b_0

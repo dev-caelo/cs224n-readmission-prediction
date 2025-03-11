@@ -16,7 +16,7 @@ def get_config(language_model):
         bert_features = 768
         activation_func = Tanh()
     elif language_model == "clinical_bert":
-        model_name = "emilyalsentzer/Bio_ClinicalBERT"
+        model_name = "clinicalbert"
         bert_features = 768
         activation_func = Tanh()
     else:

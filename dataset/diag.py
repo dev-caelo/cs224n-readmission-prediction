@@ -103,7 +103,7 @@ class Diag(Dataset):
         """
         if days == None or days == 0:  # No readmission recorded
             return 0
-        elif int(days) < 180:  # Within 180 days 
+        elif int(days) < 180 and int(days) > 0:  # Within 180 days 
             return int(days)
         else:  # More than 6 months or no readmission
             return 180
