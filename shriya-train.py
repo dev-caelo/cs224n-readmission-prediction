@@ -16,8 +16,8 @@ import h5py
 from tqdm import tqdm
 
 # Import our modules
-from shriya_data_processor import StreamingDataProcessor, StreamingPatientDataset, StreamingDataLoader, PatientDataIndex
-from shriya_model import create_model, NeuralNetworkModel, XGBoostWrapper, ModelInterpreter
+from shriya-data-processor import StreamingDataProcessor, StreamingPatientDataset, StreamingDataLoader, PatientDataIndex
+from shriya-model import create_model, NeuralNetworkModel, XGBoostWrapper, ModelInterpreter
 
 ## Set up logging
 logging.basicConfig(
