@@ -487,15 +487,30 @@ class StreamingPatientDataset:
             }
     
     def get_batch_indices(self, indices):
-        """Get a batch of data by indices for more efficient reading"""
+        # Get the data indices for the patient indices
         data_indices = [self.indices[i].data_index for i in indices]
         
+        # Create a mapping from original position to sorted position
+        sorted_indices_map = {idx: i for i, idx in enumerate(sorted(data_indices))}
+        
+        # Sort indices for HDF5 (required)
+        sorted_indices = sorted(data_indices)
+        
         with h5py.File(self.data_path, 'r') as f:
+            # Get data using sorted indices
+            batch_data = {
+                'text_embedding': f['text_embeddings'][sorted_indices],
+                'demographics': f['demographics'][sorted_indices],
+                'diagnoses': f['diagnoses'][sorted_indices],
+                'targets': f['targets'][sorted_indices].flatten()
+            }
+            
+            # Convert to tensors and return in original order
             return {
-                'text_embedding': torch.tensor(f['text_embeddings'][data_indices], dtype=torch.float32),
-                'demographics': torch.tensor(f['demographics'][data_indices], dtype=torch.float32),
-                'diagnoses': torch.tensor(f['diagnoses'][data_indices], dtype=torch.float32),
-                'target': torch.tensor(f['targets'][data_indices].flatten(), dtype=torch.float32)
+                'text_embedding': torch.tensor(batch_data['text_embedding'], dtype=torch.float32),
+                'demographics': torch.tensor(batch_data['demographics'], dtype=torch.float32),
+                'diagnoses': torch.tensor(batch_data['diagnoses'], dtype=torch.float32),
+                'target': torch.tensor(batch_data['targets'], dtype=torch.float32)
             }
 
 
