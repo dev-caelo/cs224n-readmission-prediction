@@ -6,83 +6,33 @@ import pandas as pd
 import torch
 import torch.nn as nn
 import torch.optim as optim
-from torch.utils.data import DataLoader, Dataset
 from sklearn.metrics import mean_squared_error, mean_absolute_error, r2_score
 import matplotlib.pyplot as plt
 from typing import List, Dict, Tuple, Optional, Union
 import json
 from datetime import datetime
 import logging
+import h5py
+from tqdm import tqdm
 
 # Import our modules
-from data_processor import PatientData, DataProcessor
-from model import create_model, NeuralNetworkModel, XGBoostWrapper, ModelInterpreter
+from shriya_data_processor import StreamingDataProcessor, StreamingPatientDataset, StreamingDataLoader, PatientDataIndex
+from shriya_model import create_model, NeuralNetworkModel, XGBoostWrapper, ModelInterpreter
 
-# Set up logging
+## Set up logging
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
 )
 logger = logging.getLogger(__name__)
 
-class PatientDataset(Dataset):
-    """PyTorch Dataset for patient data"""
-    def __init__(self, patient_data_list: List[PatientData]):
-        """
-        Initialize the dataset
-        
-        Args:
-            patient_data_list: List of PatientData objects
-        """
-        self.patient_data = patient_data_list
-        
-    def __len__(self):
-        return len(self.patient_data)
-    
-    def __getitem__(self, idx):
-        patient = self.patient_data[idx]
-        
-        return {
-            'text_embedding': torch.tensor(patient.text_embedding, dtype=torch.float32),
-            'demographics': torch.tensor(patient.demographics, dtype=torch.float32),
-            'diagnoses': torch.tensor(patient.diagnoses, dtype=torch.float32),
-            'target': torch.tensor(patient.time_until_next_admission, dtype=torch.float32)
-        }
-
-
-def prepare_data_loaders(
-    train_data: List[PatientData],
-    val_data: List[PatientData],
-    test_data: List[PatientData],
-    batch_size: int = 32
-) -> Tuple[DataLoader, DataLoader, DataLoader]:
-    """
-    Prepare PyTorch DataLoaders from the data
-    
-    Args:
-        train_data: List of training PatientData objects
-        val_data: List of validation PatientData objects
-        test_data: List of test PatientData objects
-        batch_size: Batch size for the DataLoaders
-        
-    Returns:
-        Tuple of (train_loader, val_loader, test_loader)
-    """
-    train_dataset = PatientDataset(train_data)
-    val_dataset = PatientDataset(val_data)
-    test_dataset = PatientDataset(test_data)
-    
-    train_loader = DataLoader(train_dataset, batch_size=batch_size, shuffle=True)
-    val_loader = DataLoader(val_dataset, batch_size=batch_size, shuffle=False)
-    test_loader = DataLoader(test_dataset, batch_size=batch_size, shuffle=False)
-    
-    return train_loader, val_loader, test_loader
-
+device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+logger.info(f"Using device for training: {device}")
 
 def train_neural_network(
     model: NeuralNetworkModel,
-    train_loader: DataLoader,
-    val_loader: DataLoader,
+    train_loader: StreamingDataLoader,
+    val_loader: StreamingDataLoader,
     device: torch.device,
     learning_rate: float = 0.001,
     weight_decay: float = 1e-5,
@@ -136,9 +86,9 @@ def train_neural_network(
         train_preds = []
         train_targets = []
         
-        for batch in train_loader:
+        for batch in tqdm(train_loader, desc=f"Epoch {epoch+1}/{num_epochs} - Training"):
             # Move data to device
-            text_embeddings = batch['text_embedding'].to(device)
+            text_embedding = batch['text_embedding'].to(device)
             demographics = batch['demographics'].to(device)
             diagnoses = batch['diagnoses'].to(device)
             targets = batch['target'].to(device).view(-1, 1)
@@ -147,7 +97,7 @@ def train_neural_network(
             optimizer.zero_grad()
             
             # Forward pass
-            outputs = model(text_embeddings, demographics, diagnoses)
+            outputs = model(text_embedding, demographics, diagnoses)
             
             # Calculate loss
             loss = criterion(outputs, targets)
@@ -157,12 +107,12 @@ def train_neural_network(
             optimizer.step()
             
             # Track loss and predictions
-            train_loss += loss.item() * text_embeddings.size(0)
+            train_loss += loss.item() * text_embedding.size(0)
             train_preds.extend(outputs.detach().cpu().numpy())
             train_targets.extend(targets.detach().cpu().numpy())
         
         # Calculate average training loss and metrics
-        train_loss /= len(train_loader.dataset)
+        train_loss /= len(train_loader.dataset.indices)
         train_rmse = np.sqrt(mean_squared_error(train_targets, train_preds))
         
         # Validation phase
@@ -172,26 +122,26 @@ def train_neural_network(
         val_targets = []
         
         with torch.no_grad():
-            for batch in val_loader:
+            for batch in tqdm(val_loader, desc=f"Epoch {epoch+1}/{num_epochs} - Validation"):
                 # Move data to device
-                text_embeddings = batch['text_embedding'].to(device)
+                text_embedding = batch['text_embedding'].to(device)
                 demographics = batch['demographics'].to(device)
                 diagnoses = batch['diagnoses'].to(device)
                 targets = batch['target'].to(device).view(-1, 1)
                 
                 # Forward pass
-                outputs = model(text_embeddings, demographics, diagnoses)
+                outputs = model(text_embedding, demographics, diagnoses)
                 
                 # Calculate loss
                 loss = criterion(outputs, targets)
                 
                 # Track loss and predictions
-                val_loss += loss.item() * text_embeddings.size(0)
+                val_loss += loss.item() * text_embedding.size(0)
                 val_preds.extend(outputs.cpu().numpy())
                 val_targets.extend(targets.cpu().numpy())
         
         # Calculate average validation loss and metrics
-        val_loss /= len(val_loader.dataset)
+        val_loss /= len(val_loader.dataset.indices)
         val_rmse = np.sqrt(mean_squared_error(val_targets, val_preds))
         
         # Update training history
@@ -232,20 +182,22 @@ def train_neural_network(
 
 def train_xgboost(
     model: XGBoostWrapper,
-    train_data: List[PatientData],
-    val_data: List[PatientData],
+    train_dataset: StreamingPatientDataset,
+    val_dataset: StreamingPatientDataset,
     early_stopping_rounds: int = 10,
-    output_dir: str = "models"
+    output_dir: str = "models",
+    batch_size: int = 10000  # Process data in batches to avoid memory issues
 ) -> Tuple[XGBoostWrapper, Dict]:
     """
-    Train an XGBoost model
+    Train an XGBoost model with streaming data
     
     Args:
         model: The XGBoost model wrapper to train
-        train_data: List of training PatientData objects
-        val_data: List of validation PatientData objects
+        train_dataset: Training dataset
+        val_dataset: Validation dataset
         early_stopping_rounds: Number of rounds to wait for improvement before early stopping
         output_dir: Directory to save model checkpoints
+        batch_size: Number of samples to process at once
         
     Returns:
         Tuple of (trained_model, training_history)
@@ -253,22 +205,47 @@ def train_xgboost(
     # Create output directory if it doesn't exist
     os.makedirs(output_dir, exist_ok=True)
     
-    # Prepare input features and targets
+    logger.info("Preparing data for XGBoost training")
+    
+    # Prepare data in batches to avoid memory issues
+    X_train = {'text_embedding': [], 'demographics': [], 'diagnoses': []}
+    y_train = []
+    
+    # Process training data in batches
+    train_loader = StreamingDataLoader(train_dataset, batch_size=batch_size, shuffle=False)
+    for batch in tqdm(train_loader, desc="Loading training data"):
+        X_train['text_embedding'].append(batch['text_embedding'].numpy())
+        X_train['demographics'].append(batch['demographics'].numpy())
+        X_train['diagnoses'].append(batch['diagnoses'].numpy())
+        y_train.append(batch['target'].numpy())
+    
+    # Concatenate batches
     X_train = {
-        'text_embeddings': np.array([p.text_embedding for p in train_data]),
-        'demographics': np.array([p.demographics for p in train_data]),
-        'diagnoses': np.array([p.diagnoses for p in train_data])
+        'text_embedding': np.vstack(X_train['text_embedding']),
+        'demographics': np.vstack(X_train['demographics']),
+        'diagnoses': np.vstack(X_train['diagnoses'])
     }
+    y_train = np.concatenate(y_train)
     
-    y_train = np.array([p.time_until_next_admission for p in train_data])
+    # Prepare validation data
+    X_val = {'text_embedding': [], 'demographics': [], 'diagnoses': []}
+    y_val = []
     
+    # Process validation data in batches
+    val_loader = StreamingDataLoader(val_dataset, batch_size=batch_size, shuffle=False)
+    for batch in tqdm(val_loader, desc="Loading validation data"):
+        X_val['text_embedding'].append(batch['text_embedding'].numpy())
+        X_val['demographics'].append(batch['demographics'].numpy())
+        X_val['diagnoses'].append(batch['diagnoses'].numpy())
+        y_val.append(batch['target'].numpy())
+    
+    # Concatenate batches
     X_val = {
-        'text_embeddings': np.array([p.text_embedding for p in val_data]),
-        'demographics': np.array([p.demographics for p in val_data]),
-        'diagnoses': np.array([p.diagnoses for p in val_data])
+        'text_embedding': np.vstack(X_val['text_embedding']),
+        'demographics': np.vstack(X_val['demographics']),
+        'diagnoses': np.vstack(X_val['diagnoses'])
     }
-    
-    y_val = np.array([p.time_until_next_admission for p in val_data])
+    y_val = np.concatenate(y_val)
     
     logger.info("Starting XGBoost training")
     
@@ -297,18 +274,20 @@ def train_xgboost(
 
 def evaluate_model(
     model: Union[NeuralNetworkModel, XGBoostWrapper],
-    test_data: List[PatientData],
+    test_dataset: StreamingPatientDataset,
     device: Optional[torch.device] = None,
-    output_dir: str = "results"
+    output_dir: str = "results",
+    batch_size: int = 1000
 ) -> Dict:
     """
     Evaluate a trained model on test data
     
     Args:
         model: The trained model to evaluate
-        test_data: List of test PatientData objects
+        test_dataset: Test dataset
         device: Device to evaluate on (for neural networks)
         output_dir: Directory to save evaluation results
+        batch_size: Batch size for evaluation
         
     Returns:
         Dictionary of evaluation metrics
@@ -318,28 +297,25 @@ def evaluate_model(
     
     logger.info("Evaluating model on test data")
     
+    test_loader = StreamingDataLoader(test_dataset, batch_size=batch_size, shuffle=False)
+    predictions = []
+    targets = []
+    
     if isinstance(model, NeuralNetworkModel):
         # Move model to device
         model = model.to(device)
         model.eval()
         
-        # Create DataLoader
-        test_loader = DataLoader(PatientDataset(test_data), batch_size=32, shuffle=False)
-        
-        # Make predictions
-        predictions = []
-        targets = []
-        
         with torch.no_grad():
-            for batch in test_loader:
+            for batch in tqdm(test_loader, desc="Evaluating"):
                 # Move data to device
-                text_embeddings = batch['text_embedding'].to(device)
+                text_embedding = batch['text_embedding'].to(device)
                 demographics = batch['demographics'].to(device)
                 diagnoses = batch['diagnoses'].to(device)
                 target = batch['target'].numpy()
                 
                 # Forward pass
-                outputs = model(text_embeddings, demographics, diagnoses)
+                outputs = model(text_embedding, demographics, diagnoses)
                 pred = outputs.cpu().numpy()
                 
                 # Store predictions and targets
@@ -347,17 +323,20 @@ def evaluate_model(
                 targets.extend(target)
                 
     elif isinstance(model, XGBoostWrapper):
-        # Prepare input features
-        X_test = {
-            'text_embeddings': np.array([p.text_embedding for p in test_data]),
-            'demographics': np.array([p.demographics for p in test_data]),
-            'diagnoses': np.array([p.diagnoses for p in test_data])
-        }
-        
-        targets = [p.time_until_next_admission for p in test_data]
-        
-        # Make predictions
-        predictions = model.predict(X_test)
+        for batch in tqdm(test_loader, desc="Evaluating"):
+            # Prepare input features
+            X_batch = {
+                'text_embedding': batch['text_embedding'].numpy(),
+                'demographics': batch['demographics'].numpy(),
+                'diagnoses': batch['diagnoses'].numpy()
+            }
+            
+            # Make predictions
+            batch_preds = model.predict(X_batch)
+            
+            # Store predictions and targets
+            predictions.extend(batch_preds)
+            targets.extend(batch['target'].numpy())
     
     # Calculate metrics
     predictions = np.array(predictions).flatten()
@@ -396,12 +375,13 @@ def evaluate_model(
     return metrics
 
 
-def plot_training_history(history: Dict, output_dir: str = "results"):
+def plot_training_history(history: Dict, model_type: str, output_dir: str = "results"):
     """
     Plot training history
     
     Args:
         history: Dictionary of training history
+        model_type: Type of model ('neural_network' or 'xgboost')
         output_dir: Directory to save plots
     """
     # Create output directory if it doesn't exist
@@ -423,7 +403,7 @@ def plot_training_history(history: Dict, output_dir: str = "results"):
         plt.figure(figsize=(10, 6))
         plt.plot(history['train_rmse'], label='Training RMSE')
         plt.plot(history['val_rmse'], label='Validation RMSE')
-        plt.xlabel('Epoch' if isinstance(model, NeuralNetworkModel) else 'Boosting Round')
+        plt.xlabel('Epoch' if model_type == 'neural_network' else 'Boosting Round')
         plt.ylabel('RMSE')
         plt.title('Training and Validation RMSE')
         plt.legend()
@@ -433,80 +413,91 @@ def plot_training_history(history: Dict, output_dir: str = "results"):
 def main():
     """Main function to train and evaluate models"""
     parser = argparse.ArgumentParser(description="Train a model to predict time until next admission")
-    parser.add_argument("--data_path", type=str, required=True, help="Path to the CSV data file")
-    parser.add_argument("--processed_data_dir", type=str, default="processed_data", help="Directory to save/load processed data")
-    parser.add_argument("--model_type", type=str, choices=["neural_network", "xgboost"], default="neural_network", help="Type of model to train")
-    parser.add_argument("--model_dir", type=str, default="models", help="Directory to save trained models")
-    parser.add_argument("--results_dir", type=str, default="results", help="Directory to save evaluation results")
-    parser.add_argument("--batch_size", type=int, default=32, help="Batch size for training")
-    parser.add_argument("--learning_rate", type=float, default=0.001, help="Learning rate for neural network")
-    parser.add_argument("--num_epochs", type=int, default=50, help="Maximum number of epochs for neural network")
-    parser.add_argument("--patience", type=int, default=5, help="Patience for early stopping")
-    parser.add_argument("--embedding_model", type=str, default="emilyalsentzer/Bio_ClinicalBERT", help="Pre-trained model for text embeddings")
-    parser.add_argument("--force_preprocess", action="store_true", help="Force preprocessing even if processed data exists")
+    parser.add_argument("--data_path", type=str, default=None, 
+                        help="Path to the CSV data file (only needed if processing from scratch)")
+    parser.add_argument("--processed_data_dir", type=str, default="streamed_data", 
+                        help="Directory with processed data")
+    parser.add_argument("--model_type", type=str, choices=["neural_network", "xgboost"], 
+                        default="neural_network", help="Type of model to train")
+    parser.add_argument("--model_dir", type=str, default="models", 
+                        help="Directory to save trained models")
+    parser.add_argument("--results_dir", type=str, default="results", 
+                        help="Directory to save evaluation results")
+    parser.add_argument("--batch_size", type=int, default=256, 
+                        help="Batch size for training")
+    parser.add_argument("--learning_rate", type=float, default=0.001, 
+                        help="Learning rate for neural network")
+    parser.add_argument("--num_epochs", type=int, default=50, 
+                        help="Maximum number of epochs for neural network")
+    parser.add_argument("--patience", type=int, default=5, 
+                        help="Patience for early stopping")
+    parser.add_argument("--chunk_size", type=int, default=1000, 
+                        help="Chunk size for processing data")
+    parser.add_argument("--embedding_model", type=str, default="emilyalsentzer/Bio_ClinicalBERT", 
+                        help="Pre-trained model for text embeddings")
+    parser.add_argument("--force_preprocess", action="store_true", 
+                        help="Force preprocessing even if processed data exists")
     args = parser.parse_args()
     
     # Create directories
-    os.makedirs(args.processed_data_dir, exist_ok=True)
     os.makedirs(args.model_dir, exist_ok=True)
     os.makedirs(args.results_dir, exist_ok=True)
     
     # Check if processed data exists
     processed_data_exists = (
-        os.path.exists(os.path.join(args.processed_data_dir, "train_data.pkl")) and
-        os.path.exists(os.path.join(args.processed_data_dir, "val_data.pkl")) and
-        os.path.exists(os.path.join(args.processed_data_dir, "test_data.pkl")) and
+        os.path.exists(os.path.join(args.processed_data_dir, "processed_data.h5")) and
+        os.path.exists(os.path.join(args.processed_data_dir, "patient_indices.pkl")) and
         os.path.exists(os.path.join(args.processed_data_dir, "processor_data.pkl"))
     )
     
     # Process data or load from disk
     if not processed_data_exists or args.force_preprocess:
-        logger.info("Processing data from CSV")
-        processor = DataProcessor(embedding_model_name=args.embedding_model)
-        train_data, val_data, test_data = processor.preprocess_data(args.data_path)
-        processor.save_preprocessed_data(
-            train_data, val_data, test_data, 
-            output_dir=args.processed_data_dir
-        )
-    else:
-        logger.info("Loading preprocessed data from disk")
-        # Load processor
-        processor = DataProcessor.load_processor(
-            os.path.join(args.processed_data_dir, "processor_data.pkl")
-        )
-        
-        # Load data
-        with open(os.path.join(args.processed_data_dir, "train_data.pkl"), 'rb') as f:
-            train_data = pickle.load(f)
-        
-        with open(os.path.join(args.processed_data_dir, "val_data.pkl"), 'rb') as f:
-            val_data = pickle.load(f)
+        if not args.data_path:
+            raise ValueError("data_path must be provided when processing data from scratch")
             
-        with open(os.path.join(args.processed_data_dir, "test_data.pkl"), 'rb') as f:
-            test_data = pickle.load(f)
+        logger.info("Processing data from CSV")
+        processor = StreamingDataProcessor(
+            output_dir=args.processed_data_dir,
+            embedding_model_name=args.embedding_model,
+            chunk_size=args.chunk_size
+        )
+        split_counts = processor.preprocess_data(args.data_path)
+        logger.info(f"Processed data split counts: {split_counts}")
+    else:
+        logger.info("Loading processor from disk")
+        processor = StreamingDataProcessor.load_processor(args.processed_data_dir)
     
-    # Determine model dimensions
-    embedding_dim = train_data[0].text_embedding.shape[0]
-    demographics_dim = train_data[0].demographics.shape[0]
-    diagnoses_dim = train_data[0].diagnoses.shape[0]
+    # Get split indices
+    train_indices = processor.get_split_indices('train')
+    val_indices = processor.get_split_indices('val')
+    test_indices = processor.get_split_indices('test')
+    
+    logger.info(f"Split sizes - Train: {len(train_indices)}, Val: {len(val_indices)}, Test: {len(test_indices)}")
+    
+    # Create datasets
+    data_path = os.path.join(args.processed_data_dir, "processed_data.h5")
+    train_dataset = StreamingPatientDataset(data_path, train_indices, batch_size=args.batch_size)
+    val_dataset = StreamingPatientDataset(data_path, val_indices, batch_size=args.batch_size)
+    test_dataset = StreamingPatientDataset(data_path, test_indices, batch_size=args.batch_size)
+    
+    # Create data loaders
+    train_loader = StreamingDataLoader(train_dataset, batch_size=args.batch_size, shuffle=True)
+    val_loader = StreamingDataLoader(val_dataset, batch_size=args.batch_size, shuffle=False)
+    
+    # Get feature dimensions
+    feature_dims = processor.get_feature_dims()
     
     # Create model
     logger.info(f"Creating {args.model_type} model")
     model = create_model(
         model_type=args.model_type,
-        embedding_dim=embedding_dim,
-        demographics_dim=demographics_dim,
-        diagnoses_dim=diagnoses_dim
+        embedding_dim=feature_dims['text_embedding'],
+        demographics_dim=feature_dims['demographics'],
+        diagnoses_dim=feature_dims['diagnoses']
     )
     
     # Train model
     if args.model_type == "neural_network":
-        # Prepare data loaders
-        train_loader, val_loader, test_loader = prepare_data_loaders(
-            train_data, val_data, test_data, 
-            batch_size=args.batch_size
-        )
-        
         # Determine device
         device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
         logger.info(f"Using device: {device}")
@@ -526,17 +517,18 @@ def main():
         # Evaluate model
         metrics = evaluate_model(
             model=model,
-            test_data=test_data,
+            test_dataset=test_dataset,
             device=device,
-            output_dir=args.results_dir
+            output_dir=args.results_dir,
+            batch_size=args.batch_size
         )
         
     elif args.model_type == "xgboost":
         # Train model
         model, history = train_xgboost(
             model=model,
-            train_data=train_data,
-            val_data=val_data,
+            train_dataset=train_dataset,
+            val_dataset=val_dataset,
             early_stopping_rounds=args.patience,
             output_dir=args.model_dir
         )
@@ -544,12 +536,13 @@ def main():
         # Evaluate model
         metrics = evaluate_model(
             model=model,
-            test_data=test_data,
-            output_dir=args.results_dir
+            test_dataset=test_dataset,
+            output_dir=args.results_dir,
+            batch_size=args.batch_size
         )
     
     # Plot training history
-    plot_training_history(history, output_dir=args.results_dir)
+    plot_training_history(history, args.model_type, output_dir=args.results_dir)
     
     logger.info("Training and evaluation complete")
     
@@ -557,9 +550,9 @@ def main():
     summary = {
         'model_type': args.model_type,
         'embedding_model': args.embedding_model,
-        'train_data_size': len(train_data),
-        'val_data_size': len(val_data),
-        'test_data_size': len(test_data),
+        'train_data_size': len(train_indices),
+        'val_data_size': len(val_indices),
+        'test_data_size': len(test_indices),
         'metrics': metrics,
         'timestamp': datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     }
