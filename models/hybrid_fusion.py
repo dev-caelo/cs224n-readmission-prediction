@@ -42,7 +42,7 @@ class Hybrid_Fusion(nn.Module):
                                          )
 
         # TODO: Plug in XGBoost Model
-        self.others = nn.Sequential(nn.Linear((input+1)*3, hidden//others_ratio),
+        self.others = nn.Sequential(nn.Linear((input)*3, hidden//others_ratio),
                                     nn.LayerNorm(hidden//others_ratio, eps=1e-12),
                                     activation_func,
                                     nn.Dropout(0.1),

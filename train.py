@@ -55,7 +55,7 @@ if __name__ == "__main__":
     model = model.to(device)
     model.enable_grad_checkpointing()
 
-    data_file = "dataset/discharge_master.csv"
+    data_file = "discharge_master.csv"
 
     # loss_func = nn.CrossEntropyLoss()
     loss_func = FocalLoss(None, 2)
