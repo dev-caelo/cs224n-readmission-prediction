@@ -40,7 +40,7 @@ batch_size = 20  # Keeping original batch size
 num_works = 8
 lr_rate = 8e-4  # Adjusted learning rate for frozen BERT setup
 weight_decay = 1e-4
-epochs = 5  # Increased epochs
+epochs = 3  # Increased epochs
 report_step = 500  # Report more frequently
 
 log_val = 'log_val.txt'
