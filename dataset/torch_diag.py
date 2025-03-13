@@ -17,7 +17,8 @@ class DiagTorch(Dataset):
             total_bins=2,
             columns_to_include=None,  # List of columns to include in text
             columns_to_exclude=None,  # List of columns to exclude from text
-            separator=" "  # Separator between concatenated fields
+            separator=" ",  # Separator between concatenated fields
+            age=['anchor_age']
     ):
        # Load data using pandas
         df = pd.read_csv(data_path)
@@ -49,6 +50,7 @@ class DiagTorch(Dataset):
         self.max_length = max_length
         self.total_bins = total_bins
         self.separator = separator
+        self.age = age
         
         # Determine which columns to include/exclude
         if columns_to_include is not None:
@@ -105,10 +107,26 @@ class DiagTorch(Dataset):
         """
         Bin readmission time into meaningful categories
         """
-        if 0 <= days <= 30:  # Readmission within 30 days inclusive
-            return 0
-        else:
-            return 1
+        days = int(days)
+        if self.total_bins == 2:
+            if 0 <= days <= 30:  # Readmission within 30 days inclusive
+                return 0
+            else:
+                return 1
+        elif self.total_bins == 6:
+            if days <= 0:  # No readmission
+                return 0
+            elif 1 <= days <= 30:  # 1-30 days
+                return 1
+            elif 31 <= days <= 90:  # 31-90 days
+                return 2
+            elif 91 <= days <= 180:  # 91-180 days
+                return 3
+            elif 181 <= days <= 365:  # 181-365 days
+                return 4
+            else:  # More than 365 days
+                return 5
+                
     
     def _build_text_input(self, item):
         """
@@ -143,8 +161,6 @@ class DiagTorch(Dataset):
         
         # Build concatenated text from all relevant columns
         text = self._build_text_input(item)
-        
-        # Convert to lowercase if needed
         text = text.lower()
         
         # Tokenize text
@@ -170,16 +186,34 @@ class DiagTorch(Dataset):
                 label_float = 0
         else:
             label_float = float(label)
+
+        # Process age feature - directly from pandas
+        if isinstance(self.age, list):
+            age_values = []
+            for age_key in self.age:
+                val = item[age_key]
+                if pd.isna(val):
+                    age_values.append(0.0)
+                else:
+                    age_values.append(float(val))
+            age = torch.tensor(age_values, dtype=torch.float32)
+        else:
+            val = item[self.age]
+            if pd.isna(val):
+                age = torch.tensor([0.0], dtype=torch.float32)
+            else:
+                age = torch.tensor([float(val)], dtype=torch.float32)
         
         # Bin the label value
         label_int = self.bin_readmission_time(label_float)
         
         # Return only the text inputs and label
-        return {
-            'input_ids': inputs['input_ids'].squeeze(0),
-            'attention_mask': inputs['attention_mask'].squeeze(0),
-            'label': torch.tensor(label_int, dtype=torch.long)
-        }
+        # return {
+        #     'input_ids': inputs['input_ids'].squeeze(0),
+        #     'attention_mask': inputs['attention_mask'].squeeze(0),
+        #     'label': torch.tensor(label_int, dtype=torch.long)
+        # }
+        return inputs['input_ids'].squeeze(0), inputs['attention_mask'].squeeze(0), age, torch.tensor(label_int, dtype=torch.long)
 
 # class DiagTorch(Dataset):
 #     def __init__(
@@ -192,7 +226,7 @@ class DiagTorch(Dataset):
 #             age=['anchor_age'],
 #             others=None,
 #             text='text',
-#             total_bins=5,
+#             total_bins=2,
 #     ):
 #        # Load data using pandas - same as original Diag class
 #         df = pd.read_csv(data_path)
@@ -269,18 +303,10 @@ class DiagTorch(Dataset):
 #         """
 #         Bin readmission time into meaningful categories
 #         """
-#         if days is None or days <= 0:  # No readmission recorded
+#         if 0 <= days <= 30:  # Readmission within 30 days inclusive
 #             return 0
-#         elif int(days) > 0 and int(days) <= 30:
-#             return 1
-#         elif int(days) > 30 and int(days) <= 90:
-#             return 2
-#         elif int(days) > 90 and int(days) <= 180:
-#             return 3
-#         elif int(days) > 180 and int(days) <= 365:
-#             return 4
 #         else:
-#             return 5
+#             return 1
 
 #     def __len__(self):
 #         return len(self.df)
