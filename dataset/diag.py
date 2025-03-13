@@ -90,10 +90,10 @@ class Diag(Dataset):
 
     def bin_distribution(self, values):
         """Count how many values fall into each bin"""
-        bins = np.zeros (181, dtype=int)  # 28 classes
+        bins = np.zeros (2, dtype=int)  # 28 classes
         for val in values:
             bin_idx = self.bin_readmission_time(val)
-            if bin_idx < 181:
+            if bin_idx < 2:
                 bins[bin_idx] += 1
         return bins
     
@@ -101,12 +101,10 @@ class Diag(Dataset):
         """
         Bin readmission time into meaningful categories
         """
-        if days == None or days == 0:  # No readmission recorded
-            return 0
-        elif int(days) < 180 and int(days) > 0:  # Within 180 days 
-            return int(days)
+        if int(days) < 30 and int(days) > -1:  # Within 180 days 
+            return 1
         else:  # More than 6 months or no readmission
-            return 180
+            return 0
 
     def __len__(self):
         return len(self.df)
