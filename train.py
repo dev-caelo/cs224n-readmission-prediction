@@ -16,7 +16,7 @@ import os
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-cls = 2
+cls = 6
 feature = 31
 batch_size = 20
 num_works = 8
@@ -55,7 +55,7 @@ if __name__ == "__main__":
     model = model.to(device)
     model.enable_grad_checkpointing()
 
-    data_file = "dataset/discharge_master.csv"
+    data_file = "discharge_master.csv"
 
     # loss_func = nn.CrossEntropyLoss()
     loss_func = FocalLoss(None, 2)

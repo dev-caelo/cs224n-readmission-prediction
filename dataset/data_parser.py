@@ -2,6 +2,7 @@ import numpy as np
 import h5py
 import pickle
 import os
+from shriya_data_processor import PatientDataIndex
 
 def extract_embeddings_in_original_order(data_dir, output_path=None):
     """
