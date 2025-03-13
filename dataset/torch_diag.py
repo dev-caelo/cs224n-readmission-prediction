@@ -81,10 +81,10 @@ class DiagTorch(Dataset):
 
     def bin_distribution(self, values):
         """Count how many values fall into each bin"""
-        bins = np.zeros(2, dtype=int)
+        bins = np.zeros(6, dtype=int)
         for val in values:
             bin_idx = self.bin_readmission_time(val)
-            if isinstance(bin_idx, int) and bin_idx < 2:
+            if isinstance(bin_idx, int) and bin_idx < 6:
                 bins[bin_idx] += 1
         return bins
     
@@ -92,10 +92,19 @@ class DiagTorch(Dataset):
         """
         Bin readmission time into meaningful categories
         """
-        if int(days) < 30 and int(days) > -1:  # Within 180 days 
-            return 1
-        else:  # More than 6 months or no readmission
+        days = int(days)
+        if days <= 0:  # No readmission
             return 0
+        elif 1 <= days <= 30:  # 1-30 days
+            return 1
+        elif 31 <= days <= 90:  # 31-90 days
+            return 2
+        elif 91 <= days <= 180:  # 91-180 days
+            return 3
+        elif 181 <= days <= 365:  # 181-365 days
+            return 4
+        else:  # More than 365 days
+            return 5
 
     def __len__(self):
         return len(self.df)
@@ -171,5 +180,5 @@ class DiagTorch(Dataset):
         else:
             others = torch.tensor(0.0, dtype=torch.float32)
         
-        assert 0 <= label_int <= 1, f"Label out of bounds: {label_int} from original value {label}"
+        assert 0 <= label_int <= 6, f"Label out of bounds: {label_int} from original value {label}"
         return inputs['input_ids'].squeeze(0), inputs['attention_mask'].squeeze(0), age, others, label_int

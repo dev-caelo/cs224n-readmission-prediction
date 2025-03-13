@@ -16,7 +16,7 @@ import os
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-cls = 2
+cls = 6
 feature = 31
 batch_size = 20
 num_works = 8
