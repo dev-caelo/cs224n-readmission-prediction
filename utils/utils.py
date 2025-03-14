@@ -167,8 +167,8 @@ def Evaluate(model, test_loader, loss_func, cls, device, epoch, path,
         # 2. Class Distribution
         plt.subplot(2, 2, 2)
         class_counts = np.bincount(y_true)
-        plt.bar(range(len(cls)), class_counts)
-        plt.xticks(range(len(cls)), cls, rotation=45)
+        plt.bar(range(cls), class_counts)
+        plt.xticks(range(cls), cls, rotation=45)
         plt.xlabel('Class')
         plt.ylabel('Count')
         plt.title('Class Distribution')
