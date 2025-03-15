@@ -7,6 +7,24 @@ from torch import Tensor
 from torch import nn
 from torch.nn import functional as F
 
+class CombinedFocalLoss(nn.Module):
+    """
+    Combination of Cross-Entropy loss and Focal Loss (defined below from original paper)
+    - alpha: Tensor-type, used in FocalLoss for class weightings
+    - scale: float, used in forming linear combination of FocalLoss and Cross-Entropy Loss
+        - Defined as: L = scale * FocalLoss + (1 - scale)  * Cross-Entropy Loss  
+    """
+    def __init__(self, alpha: Optional[Tensor] = None, scale: float = 0.5):
+        self.alpha = alpha
+        self.focal_loss = focal_loss(alpha=alpha)
+        self.cross_entropy_loss = nn.CrossEntropyLoss()
+        self.scale = scale
+    
+    def forward(self, x: Tensor, y: Tensor) -> Tensor:
+        focal = self.focal_loss(x, y)
+        ce = self.cross_entropy_loss(x, y)
+        return (self.scale * focal) + (self.scale * ce)
+
 
 class FocalLoss(nn.Module):
     """ Focal Loss, as described in https://arxiv.org/abs/1708.02002.

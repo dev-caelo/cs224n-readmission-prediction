@@ -4,7 +4,7 @@ from models.hybrid_fusion import Hybrid_Fusion
 from dataset.torch_diag import DiagTorch
 from config import config
 from utils.utils import Evaluate
-from utils.focal_loss import FocalLoss
+from utils.focal_loss import FocalLoss, CombinedFocalLoss
 from tqdm import tqdm
 from models.hybrid_fusion.debug_model import analyze_model_predictions, check_gradients, EnhancedHybridFusion
 import argparse
@@ -106,7 +106,7 @@ if __name__ == "__main__":
 
     """"""
 
-    loss_func = nn.FocalLoss(weight=class_weights)
+    loss_func = CombinedFocalLoss(alpha=class_weights, scale=0.8)
     
     # Since BERT is frozen, optimize only the rest of the network
     optimizer = torch.optim.Adam([

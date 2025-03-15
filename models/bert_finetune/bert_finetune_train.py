@@ -11,6 +11,7 @@ from torch.utils.data import DataLoader
 from transformers import AutoTokenizer
 from models.bert_finetune import ClinicalBERTClassifier
 from dataset.torch_diag import DiagTorch
+from utils.focal_loss import CombinedFocalLoss
 
 def train_clinical_bert(model, train_dataloader, val_dataloader, epochs=3, lr=2e-5, device="cuda"):
     """
