@@ -1,0 +1,26 @@
+
+Epoch: 1  Acc: 36.15 %  Top2 Acc: 37.99 %  Top3 Acc: 40.11 %  F1 Global: 36.15 %  F1 Unweighted: 0.29 %  F1 Weighted: 53.11 %
+Epoch: 10  Acc: 36.15 %  Top2 Acc: 38.27 %  Top3 Acc: 40.32 %  F1 Global: 36.15 %  F1 Unweighted: 0.29 %  F1 Weighted: 53.11 %
+Epoch: 3  Acc: 17.36 %  Top2 Acc: 27.50 %  Top3 Acc: 37.34 %  F1 Global: 17.36 %  F1 Unweighted: 4.93 %  F1 Weighted: 29.58 %
+Epoch: 5
+  Acc: 65.70 %
+  Top2 Acc: 100.00 %
+  Top3 Acc: 0.00 %
+  F1 Weighted: 52.10 %
+  F1 Unweighted: 39.65 %
+  Precision: 0.66 %
+  Recall: 1.00 %
+  roc_auc: 54.44 %
+  Sensitivity: 1.0000
+  Specificity: 0.0000
+  PPV: 0.6570
+  NPV: 0.0000
+
+Epoch: 1
+  Acc: 33.17 %
+  Top2 Acc: 61.53 %
+  F1 Weighted: 16.53 %
+  F1 Unweighted: 8.30 %
+  Precision: 0.11 %
+  Recall: 0.33 %
+  roc_auc: 52.84 %

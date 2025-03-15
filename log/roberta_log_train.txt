@@ -1,0 +1,1648 @@
+Sun Mar  9 06:27:23 2025
+Epoch: [1][10]    Batch: [800][4787]    Loss: 3.612910
+Sun Mar  9 06:29:09 2025
+Epoch: [1][10]    Batch: [1600][4787]    Loss: 3.427544
+Sun Mar  9 06:30:55 2025
+Epoch: [1][10]    Batch: [2400][4787]    Loss: 3.397443
+Sun Mar  9 06:32:41 2025
+Epoch: [1][10]    Batch: [3200][4787]    Loss: 3.400167
+Sun Mar  9 06:34:27 2025
+Epoch: [1][10]    Batch: [4000][4787]    Loss: 3.384578
+Sun Mar  9 06:50:04 2025
+Epoch: [1][10]    Batch: [800][4787]    Loss: 3.674794
+Sun Mar  9 06:51:50 2025
+Epoch: [1][10]    Batch: [1600][4787]    Loss: 3.428953
+Sun Mar  9 06:53:36 2025
+Epoch: [1][10]    Batch: [2400][4787]    Loss: 3.374513
+Sun Mar  9 06:55:22 2025
+Epoch: [1][10]    Batch: [3200][4787]    Loss: 3.385526
+Sun Mar  9 06:57:08 2025
+Epoch: [1][10]    Batch: [4000][4787]    Loss: 3.376086
+Sun Mar  9 07:23:30 2025
+Epoch: [1][10]    Batch: [800][4787]    Loss: 3.607194
+Sun Mar  9 07:25:16 2025
+Epoch: [1][10]    Batch: [1600][4787]    Loss: 3.417022
+Sun Mar  9 07:27:02 2025
+Epoch: [1][10]    Batch: [2400][4787]    Loss: 3.375604
+Sun Mar  9 08:10:32 2025
+Epoch: [1][10]    Batch: [800][4787]    Loss: 3.599978
+Sun Mar  9 08:12:17 2025
+Epoch: [1][10]    Batch: [1600][4787]    Loss: 3.428613
+Sun Mar  9 08:14:03 2025
+Epoch: [1][10]    Batch: [2400][4787]    Loss: 3.382245
+Sun Mar  9 08:15:49 2025
+Epoch: [1][10]    Batch: [3200][4787]    Loss: 3.407975
+Sun Mar  9 08:17:34 2025
+Epoch: [1][10]    Batch: [4000][4787]    Loss: 3.381287
+Sun Mar  9 08:26:31 2025
+Epoch: [2][10]    Batch: [800][4787]    Loss: 6.712461
+Sun Mar  9 08:28:17 2025
+Epoch: [2][10]    Batch: [1600][4787]    Loss: 3.355167
+Sun Mar  9 08:30:03 2025
+Epoch: [2][10]    Batch: [2400][4787]    Loss: 3.389893
+Sun Mar  9 08:31:48 2025
+Epoch: [2][10]    Batch: [3200][4787]    Loss: 3.359101
+Sun Mar  9 08:33:34 2025
+Epoch: [2][10]    Batch: [4000][4787]    Loss: 3.368662
+Sun Mar  9 08:42:25 2025
+Epoch: [3][10]    Batch: [800][4787]    Loss: 6.673767
+Sun Mar  9 08:44:11 2025
+Epoch: [3][10]    Batch: [1600][4787]    Loss: 3.348912
+Sun Mar  9 08:45:56 2025
+Epoch: [3][10]    Batch: [2400][4787]    Loss: 3.397760
+Sun Mar  9 08:47:42 2025
+Epoch: [3][10]    Batch: [3200][4787]    Loss: 3.373120
+Sun Mar  9 08:49:28 2025
+Epoch: [3][10]    Batch: [4000][4787]    Loss: 3.378304
+Sun Mar  9 09:15:55 2025
+Epoch: [1][10]    Batch: [800][4787]    Loss: 3.413692
+Sun Mar  9 09:17:41 2025
+Epoch: [1][10]    Batch: [1600][4787]    Loss: 3.385870
+Sun Mar  9 09:19:26 2025
+Epoch: [1][10]    Batch: [2400][4787]    Loss: 3.414384
+Sun Mar  9 09:21:12 2025
+Epoch: [1][10]    Batch: [3200][4787]    Loss: 3.400296
+Sun Mar  9 09:22:58 2025
+Epoch: [1][10]    Batch: [4000][4787]    Loss: 3.393021
+Sun Mar  9 09:31:51 2025
+Epoch: [2][10]    Batch: [800][4787]    Loss: 6.748310
+Sun Mar  9 09:33:37 2025
+Epoch: [2][10]    Batch: [1600][4787]    Loss: 3.343057
+Sun Mar  9 09:35:23 2025
+Epoch: [2][10]    Batch: [2400][4787]    Loss: 3.405220
+Sun Mar  9 09:37:08 2025
+Epoch: [2][10]    Batch: [3200][4787]    Loss: 3.407215
+Sun Mar  9 09:38:54 2025
+Epoch: [2][10]    Batch: [4000][4787]    Loss: 3.365541
+Sun Mar  9 09:47:43 2025
+Epoch: [3][10]    Batch: [800][4787]    Loss: 6.684348
+Sun Mar  9 09:49:29 2025
+Epoch: [3][10]    Batch: [1600][4787]    Loss: 3.379411
+Sun Mar  9 09:51:15 2025
+Epoch: [3][10]    Batch: [2400][4787]    Loss: 3.378451
+Sun Mar  9 09:53:00 2025
+Epoch: [3][10]    Batch: [3200][4787]    Loss: 3.363644
+Sun Mar  9 09:54:46 2025
+Epoch: [3][10]    Batch: [4000][4787]    Loss: 3.372490
+Sun Mar  9 10:54:57 2025
+Epoch: [1][10]    Batch: [800][4787]    Loss: 3.443873
+Sun Mar  9 10:56:43 2025
+Epoch: [1][10]    Batch: [1600][4787]    Loss: 3.355311
+Sun Mar  9 10:58:29 2025
+Epoch: [1][10]    Batch: [2400][4787]    Loss: 3.429544
+Sun Mar  9 11:00:15 2025
+Epoch: [1][10]    Batch: [3200][4787]    Loss: 3.367609
+Sun Mar  9 11:02:00 2025
+Epoch: [1][10]    Batch: [4000][4787]    Loss: 3.399089
+Sun Mar  9 11:10:53 2025
+Epoch: [2][10]    Batch: [800][4787]    Loss: 6.731821
+Sun Mar  9 11:12:39 2025
+Epoch: [2][10]    Batch: [1600][4787]    Loss: 3.369530
+Sun Mar  9 11:14:24 2025
+Epoch: [2][10]    Batch: [2400][4787]    Loss: 3.400590
+Sun Mar  9 11:16:10 2025
+Epoch: [2][10]    Batch: [3200][4787]    Loss: 3.373378
+Sun Mar  9 11:17:56 2025
+Epoch: [2][10]    Batch: [4000][4787]    Loss: 3.355764
+Sun Mar  9 11:26:43 2025
+Epoch: [3][10]    Batch: [800][4787]    Loss: 6.684691
+Sun Mar  9 11:28:29 2025
+Epoch: [3][10]    Batch: [1600][4787]    Loss: 3.360339
+Sun Mar  9 11:30:15 2025
+Epoch: [3][10]    Batch: [2400][4787]    Loss: 3.358324
+Sun Mar  9 11:32:01 2025
+Epoch: [3][10]    Batch: [3200][4787]    Loss: 3.378119
+Sun Mar  9 11:33:47 2025
+Epoch: [3][10]    Batch: [4000][4787]    Loss: 3.377412
+Sun Mar  9 11:43:11 2025
+Epoch: [1][10]    Batch: [800][4787]    Loss: 3.721690
+Sun Mar  9 11:44:56 2025
+Epoch: [1][10]    Batch: [1600][4787]    Loss: 3.664682
+Sun Mar  9 11:46:42 2025
+Epoch: [1][10]    Batch: [2400][4787]    Loss: 3.650368
+Sun Mar  9 11:48:28 2025
+Epoch: [1][10]    Batch: [3200][4787]    Loss: 3.654361
+Sun Mar  9 11:50:14 2025
+Epoch: [1][10]    Batch: [4000][4787]    Loss: 3.654280
+Sun Mar  9 11:59:08 2025
+Epoch: [2][10]    Batch: [800][4787]    Loss: 7.240044
+Sun Mar  9 12:00:54 2025
+Epoch: [2][10]    Batch: [1600][4787]    Loss: 3.641742
+Sun Mar  9 12:02:40 2025
+Epoch: [2][10]    Batch: [2400][4787]    Loss: 3.662469
+Sun Mar  9 12:04:26 2025
+Epoch: [2][10]    Batch: [3200][4787]    Loss: 3.643340
+Sun Mar  9 12:06:11 2025
+Epoch: [2][10]    Batch: [4000][4787]    Loss: 3.657156
+Sun Mar  9 12:15:01 2025
+Epoch: [3][10]    Batch: [800][4787]    Loss: 7.246098
+Sun Mar  9 12:16:47 2025
+Epoch: [3][10]    Batch: [1600][4787]    Loss: 3.647770
+Sun Mar  9 12:18:32 2025
+Epoch: [3][10]    Batch: [2400][4787]    Loss: 3.642401
+Sun Mar  9 12:20:18 2025
+Epoch: [3][10]    Batch: [3200][4787]    Loss: 3.638533
+Sun Mar  9 12:22:04 2025
+Epoch: [3][10]    Batch: [4000][4787]    Loss: 3.638659
+Sun Mar  9 12:30:53 2025
+Epoch: [4][10]    Batch: [800][4787]    Loss: 7.213668
+Sun Mar  9 12:32:39 2025
+Epoch: [4][10]    Batch: [1600][4787]    Loss: 3.638687
+Sun Mar  9 12:34:25 2025
+Epoch: [4][10]    Batch: [2400][4787]    Loss: 3.642605
+Sun Mar  9 12:36:10 2025
+Epoch: [4][10]    Batch: [3200][4787]    Loss: 3.603919
+Sun Mar  9 12:37:56 2025
+Epoch: [4][10]    Batch: [4000][4787]    Loss: 3.670702
+Sun Mar  9 12:46:46 2025
+Epoch: [5][10]    Batch: [800][4787]    Loss: 7.219920
+Sun Mar  9 12:48:31 2025
+Epoch: [5][10]    Batch: [1600][4787]    Loss: 3.649160
+Sun Mar  9 12:50:17 2025
+Epoch: [5][10]    Batch: [2400][4787]    Loss: 3.633095
+Sun Mar  9 12:52:03 2025
+Epoch: [5][10]    Batch: [3200][4787]    Loss: 3.656538
+Sun Mar  9 12:53:48 2025
+Epoch: [5][10]    Batch: [4000][4787]    Loss: 3.664368
+Sun Mar  9 13:02:38 2025
+Epoch: [6][10]    Batch: [800][4787]    Loss: 7.201711
+Sun Mar  9 13:04:23 2025
+Epoch: [6][10]    Batch: [1600][4787]    Loss: 3.628238
+Sun Mar  9 13:06:09 2025
+Epoch: [6][10]    Batch: [2400][4787]    Loss: 3.664757
+Sun Mar  9 13:07:55 2025
+Epoch: [6][10]    Batch: [3200][4787]    Loss: 3.636663
+Sun Mar  9 13:09:41 2025
+Epoch: [6][10]    Batch: [4000][4787]    Loss: 3.648409
+Sun Mar  9 13:18:29 2025
+Epoch: [7][10]    Batch: [800][4787]    Loss: 7.196057
+Sun Mar  9 13:20:14 2025
+Epoch: [7][10]    Batch: [1600][4787]    Loss: 3.656070
+Sun Mar  9 13:22:00 2025
+Epoch: [7][10]    Batch: [2400][4787]    Loss: 3.636549
+Sun Mar  9 13:23:46 2025
+Epoch: [7][10]    Batch: [3200][4787]    Loss: 3.649658
+Sun Mar  9 13:25:32 2025
+Epoch: [7][10]    Batch: [4000][4787]    Loss: 3.630010
+Sun Mar  9 13:34:16 2025
+Epoch: [8][10]    Batch: [800][4787]    Loss: 7.258844
+Sun Mar  9 13:36:02 2025
+Epoch: [8][10]    Batch: [1600][4787]    Loss: 3.626019
+Sun Mar  9 13:37:48 2025
+Epoch: [8][10]    Batch: [2400][4787]    Loss: 3.672909
+Sun Mar  9 13:39:33 2025
+Epoch: [8][10]    Batch: [3200][4787]    Loss: 3.615662
+Sun Mar  9 13:41:19 2025
+Epoch: [8][10]    Batch: [4000][4787]    Loss: 3.641775
+Sun Mar  9 13:50:05 2025
+Epoch: [9][10]    Batch: [800][4787]    Loss: 7.224623
+Sun Mar  9 13:51:50 2025
+Epoch: [9][10]    Batch: [1600][4787]    Loss: 3.631866
+Sun Mar  9 13:53:36 2025
+Epoch: [9][10]    Batch: [2400][4787]    Loss: 3.649341
+Sun Mar  9 13:55:22 2025
+Epoch: [9][10]    Batch: [3200][4787]    Loss: 3.640945
+Sun Mar  9 13:57:07 2025
+Epoch: [9][10]    Batch: [4000][4787]    Loss: 3.645168
+Sun Mar  9 14:05:54 2025
+Epoch: [10][10]    Batch: [800][4787]    Loss: 7.217500
+Sun Mar  9 14:07:39 2025
+Epoch: [10][10]    Batch: [1600][4787]    Loss: 3.614073
+Sun Mar  9 14:09:25 2025
+Epoch: [10][10]    Batch: [2400][4787]    Loss: 3.626529
+Sun Mar  9 14:11:11 2025
+Epoch: [10][10]    Batch: [3200][4787]    Loss: 3.665919
+Sun Mar  9 14:12:56 2025
+Epoch: [10][10]    Batch: [4000][4787]    Loss: 3.633480
+Sun Mar  9 22:20:14 2025
+Epoch: [1][10]    Batch: [800][4787]    Loss: 3.710828
+Sun Mar  9 22:22:00 2025
+Epoch: [1][10]    Batch: [1600][4787]    Loss: 3.650721
+Sun Mar  9 22:23:46 2025
+Epoch: [1][10]    Batch: [2400][4787]    Loss: 3.679851
+Sun Mar  9 22:25:31 2025
+Epoch: [1][10]    Batch: [3200][4787]    Loss: 3.638071
+Sun Mar  9 22:27:17 2025
+Epoch: [1][10]    Batch: [4000][4787]    Loss: 3.686230
+Sun Mar  9 22:36:09 2025
+Epoch: [2][10]    Batch: [800][4787]    Loss: 7.224927
+Sun Mar  9 22:37:55 2025
+Epoch: [2][10]    Batch: [1600][4787]    Loss: 3.630963
+Sun Mar  9 22:39:41 2025
+Epoch: [2][10]    Batch: [2400][4787]    Loss: 3.668484
+Sun Mar  9 22:41:27 2025
+Epoch: [2][10]    Batch: [3200][4787]    Loss: 3.629893
+Sun Mar  9 22:43:12 2025
+Epoch: [2][10]    Batch: [4000][4787]    Loss: 3.678020
+Sun Mar  9 23:10:56 2025
+Epoch: [1/15] Batch: [100/5984] Loss: 4.005704 Accuracy: 37.50%
+Sun Mar  9 23:11:32 2025
+Epoch: [1/15] Batch: [200/5984] Loss: 3.738785 Accuracy: 43.75%
+Sun Mar  9 23:12:09 2025
+Epoch: [1/15] Batch: [300/5984] Loss: 3.632635 Accuracy: 18.75%
+Sun Mar  9 23:12:46 2025
+Epoch: [1/15] Batch: [400/5984] Loss: 3.681111 Accuracy: 37.50%
+Sun Mar  9 23:13:22 2025
+Epoch: [1/15] Batch: [500/5984] Loss: 3.683494 Accuracy: 50.00%
+Sun Mar  9 23:13:59 2025
+Epoch: [1/15] Batch: [600/5984] Loss: 3.658519 Accuracy: 37.50%
+Sun Mar  9 23:14:35 2025
+Epoch: [1/15] Batch: [700/5984] Loss: 3.673742 Accuracy: 50.00%
+Sun Mar  9 23:15:12 2025
+Epoch: [1/15] Batch: [800/5984] Loss: 3.731216 Accuracy: 31.25%
+Sun Mar  9 23:15:48 2025
+Epoch: [1/15] Batch: [900/5984] Loss: 3.735351 Accuracy: 25.00%
+Sun Mar  9 23:16:25 2025
+Epoch: [1/15] Batch: [1000/5984] Loss: 3.792035 Accuracy: 18.75%
+Sun Mar  9 23:17:02 2025
+Epoch: [1/15] Batch: [1100/5984] Loss: 3.655485 Accuracy: 50.00%
+Sun Mar  9 23:17:38 2025
+Epoch: [1/15] Batch: [1200/5984] Loss: 3.711567 Accuracy: 43.75%
+Sun Mar  9 23:27:36 2025
+Epoch: [1/15] Batch: [100/4787] Loss: 3.980882 Accuracy: 45.00%
+Sun Mar  9 23:27:49 2025
+Epoch: [1/15] Batch: [200/4787] Loss: 3.745059 Accuracy: 20.00%
+Sun Mar  9 23:28:02 2025
+Epoch: [1/15] Batch: [300/4787] Loss: 3.649931 Accuracy: 25.00%
+Sun Mar  9 23:28:15 2025
+Epoch: [1/15] Batch: [400/4787] Loss: 3.609387 Accuracy: 30.00%
+Sun Mar  9 23:28:28 2025
+Epoch: [1/15] Batch: [500/4787] Loss: 3.698102 Accuracy: 50.00%
+Sun Mar  9 23:28:41 2025
+Epoch: [1/15] Batch: [600/4787] Loss: 3.696350 Accuracy: 35.00%
+Sun Mar  9 23:28:54 2025
+Epoch: [1/15] Batch: [700/4787] Loss: 3.717858 Accuracy: 30.00%
+Sun Mar  9 23:29:07 2025
+Epoch: [1/15] Batch: [800/4787] Loss: 3.750911 Accuracy: 30.00%
+Sun Mar  9 23:29:20 2025
+Epoch: [1/15] Batch: [900/4787] Loss: 3.717977 Accuracy: 25.00%
+Sun Mar  9 23:29:33 2025
+Epoch: [1/15] Batch: [1000/4787] Loss: 3.791108 Accuracy: 35.00%
+Sun Mar  9 23:29:46 2025
+Epoch: [1/15] Batch: [1100/4787] Loss: 3.656615 Accuracy: 45.00%
+Sun Mar  9 23:29:59 2025
+Epoch: [1/15] Batch: [1200/4787] Loss: 3.622967 Accuracy: 25.00%
+Sun Mar  9 23:30:12 2025
+Epoch: [1/15] Batch: [1300/4787] Loss: 3.812811 Accuracy: 35.00%
+Sun Mar  9 23:30:25 2025
+Epoch: [1/15] Batch: [1400/4787] Loss: 3.683829 Accuracy: 25.00%
+Sun Mar  9 23:30:38 2025
+Epoch: [1/15] Batch: [1500/4787] Loss: 3.644392 Accuracy: 40.00%
+Sun Mar  9 23:30:51 2025
+Epoch: [1/15] Batch: [1600/4787] Loss: 3.640200 Accuracy: 55.00%
+Sun Mar  9 23:31:04 2025
+Epoch: [1/15] Batch: [1700/4787] Loss: 3.667395 Accuracy: 55.00%
+Sun Mar  9 23:31:17 2025
+Epoch: [1/15] Batch: [1800/4787] Loss: 3.650622 Accuracy: 40.00%
+Sun Mar  9 23:31:30 2025
+Epoch: [1/15] Batch: [1900/4787] Loss: 3.661776 Accuracy: 40.00%
+Sun Mar  9 23:31:43 2025
+Epoch: [1/15] Batch: [2000/4787] Loss: 3.636692 Accuracy: 30.00%
+Sun Mar  9 23:31:56 2025
+Epoch: [1/15] Batch: [2100/4787] Loss: 3.746818 Accuracy: 40.00%
+Sun Mar  9 23:32:09 2025
+Epoch: [1/15] Batch: [2200/4787] Loss: 3.632780 Accuracy: 45.00%
+Sun Mar  9 23:32:22 2025
+Epoch: [1/15] Batch: [2300/4787] Loss: 3.631346 Accuracy: 35.00%
+Sun Mar  9 23:32:35 2025
+Epoch: [1/15] Batch: [2400/4787] Loss: 3.591674 Accuracy: 40.00%
+Sun Mar  9 23:32:48 2025
+Epoch: [1/15] Batch: [2500/4787] Loss: 3.640435 Accuracy: 55.00%
+Sun Mar  9 23:33:01 2025
+Epoch: [1/15] Batch: [2600/4787] Loss: 3.550973 Accuracy: 20.00%
+Sun Mar  9 23:33:14 2025
+Epoch: [1/15] Batch: [2700/4787] Loss: 3.642223 Accuracy: 30.00%
+Sun Mar  9 23:33:27 2025
+Epoch: [1/15] Batch: [2800/4787] Loss: 3.687072 Accuracy: 35.00%
+Sun Mar  9 23:33:40 2025
+Epoch: [1/15] Batch: [2900/4787] Loss: 3.659577 Accuracy: 40.00%
+Sun Mar  9 23:33:53 2025
+Epoch: [1/15] Batch: [3000/4787] Loss: 3.620416 Accuracy: 20.00%
+Sun Mar  9 23:34:06 2025
+Epoch: [1/15] Batch: [3100/4787] Loss: 3.737726 Accuracy: 40.00%
+Sun Mar  9 23:34:19 2025
+Epoch: [1/15] Batch: [3200/4787] Loss: 3.580116 Accuracy: 25.00%
+Sun Mar  9 23:34:32 2025
+Epoch: [1/15] Batch: [3300/4787] Loss: 3.711686 Accuracy: 40.00%
+Sun Mar  9 23:34:45 2025
+Epoch: [1/15] Batch: [3400/4787] Loss: 3.687510 Accuracy: 40.00%
+Sun Mar  9 23:34:58 2025
+Epoch: [1/15] Batch: [3500/4787] Loss: 3.589735 Accuracy: 30.00%
+Sun Mar  9 23:35:11 2025
+Epoch: [1/15] Batch: [3600/4787] Loss: 3.643941 Accuracy: 35.00%
+Sun Mar  9 23:35:24 2025
+Epoch: [1/15] Batch: [3700/4787] Loss: 3.610578 Accuracy: 30.00%
+Sun Mar  9 23:35:37 2025
+Epoch: [1/15] Batch: [3800/4787] Loss: 3.775609 Accuracy: 35.00%
+Sun Mar  9 23:35:50 2025
+Epoch: [1/15] Batch: [3900/4787] Loss: 3.643194 Accuracy: 50.00%
+Sun Mar  9 23:36:03 2025
+Epoch: [1/15] Batch: [4000/4787] Loss: 3.669631 Accuracy: 25.00%
+Sun Mar  9 23:36:16 2025
+Epoch: [1/15] Batch: [4100/4787] Loss: 3.744616 Accuracy: 35.00%
+Sun Mar  9 23:36:29 2025
+Epoch: [1/15] Batch: [4200/4787] Loss: 3.692413 Accuracy: 55.00%
+Sun Mar  9 23:36:42 2025
+Epoch: [1/15] Batch: [4300/4787] Loss: 3.664255 Accuracy: 40.00%
+Sun Mar  9 23:36:55 2025
+Epoch: [1/15] Batch: [4400/4787] Loss: 3.568632 Accuracy: 35.00%
+Sun Mar  9 23:37:08 2025
+Epoch: [1/15] Batch: [4500/4787] Loss: 3.676140 Accuracy: 20.00%
+Sun Mar  9 23:37:21 2025
+Epoch: [1/15] Batch: [4600/4787] Loss: 3.660873 Accuracy: 35.00%
+Sun Mar  9 23:37:34 2025
+Epoch: [1/15] Batch: [4700/4787] Loss: 3.651386 Accuracy: 30.00%
+Sun Mar  9 23:43:25 2025
+Epoch: [2/15] Batch: [100/4787] Loss: 6.910646 Accuracy: 35.00%
+Sun Mar  9 23:43:39 2025
+Epoch: [2/15] Batch: [200/4787] Loss: 3.635498 Accuracy: 35.00%
+Sun Mar  9 23:43:52 2025
+Epoch: [2/15] Batch: [300/4787] Loss: 3.654503 Accuracy: 40.00%
+Sun Mar  9 23:50:48 2025
+Epoch: [1/15] Batch: [100/4787] Loss: 4.061139 Accuracy: 35.00%
+Sun Mar  9 23:51:02 2025
+Epoch: [1/15] Batch: [200/4787] Loss: 3.678353 Accuracy: 35.00%
+Sun Mar  9 23:51:15 2025
+Epoch: [1/15] Batch: [300/4787] Loss: 3.685999 Accuracy: 40.00%
+Sun Mar  9 23:51:28 2025
+Epoch: [1/15] Batch: [400/4787] Loss: 3.667473 Accuracy: 50.00%
+Sun Mar  9 23:51:41 2025
+Epoch: [1/15] Batch: [500/4787] Loss: 3.641847 Accuracy: 35.00%
+Sun Mar  9 23:51:53 2025
+Epoch: [1/15] Batch: [600/4787] Loss: 3.706396 Accuracy: 35.00%
+Sun Mar  9 23:52:06 2025
+Epoch: [1/15] Batch: [700/4787] Loss: 3.747620 Accuracy: 25.00%
+Sun Mar  9 23:52:19 2025
+Epoch: [1/15] Batch: [800/4787] Loss: 3.759240 Accuracy: 25.00%
+Sun Mar  9 23:52:32 2025
+Epoch: [1/15] Batch: [900/4787] Loss: 3.667226 Accuracy: 30.00%
+Sun Mar  9 23:52:45 2025
+Epoch: [1/15] Batch: [1000/4787] Loss: 3.733124 Accuracy: 50.00%
+Sun Mar  9 23:52:58 2025
+Epoch: [1/15] Batch: [1100/4787] Loss: 3.662352 Accuracy: 40.00%
+Sun Mar  9 23:53:11 2025
+Epoch: [1/15] Batch: [1200/4787] Loss: 3.686900 Accuracy: 50.00%
+Sun Mar  9 23:53:24 2025
+Epoch: [1/15] Batch: [1300/4787] Loss: 3.751016 Accuracy: 25.00%
+Sun Mar  9 23:53:37 2025
+Epoch: [1/15] Batch: [1400/4787] Loss: 3.713843 Accuracy: 30.00%
+Sun Mar  9 23:53:50 2025
+Epoch: [1/15] Batch: [1500/4787] Loss: 3.694957 Accuracy: 15.00%
+Sun Mar  9 23:54:03 2025
+Epoch: [1/15] Batch: [1600/4787] Loss: 3.685007 Accuracy: 30.00%
+Sun Mar  9 23:54:16 2025
+Epoch: [1/15] Batch: [1700/4787] Loss: 3.618148 Accuracy: 35.00%
+Sun Mar  9 23:54:29 2025
+Epoch: [1/15] Batch: [1800/4787] Loss: 3.646125 Accuracy: 25.00%
+Sun Mar  9 23:54:42 2025
+Epoch: [1/15] Batch: [1900/4787] Loss: 3.645705 Accuracy: 45.00%
+Sun Mar  9 23:54:55 2025
+Epoch: [1/15] Batch: [2000/4787] Loss: 3.734140 Accuracy: 10.00%
+Sun Mar  9 23:55:08 2025
+Epoch: [1/15] Batch: [2100/4787] Loss: 3.680301 Accuracy: 40.00%
+Sun Mar  9 23:55:21 2025
+Epoch: [1/15] Batch: [2200/4787] Loss: 3.700988 Accuracy: 45.00%
+Sun Mar  9 23:55:34 2025
+Epoch: [1/15] Batch: [2300/4787] Loss: 3.665638 Accuracy: 25.00%
+Sun Mar  9 23:55:47 2025
+Epoch: [1/15] Batch: [2400/4787] Loss: 3.672766 Accuracy: 60.00%
+Sun Mar  9 23:56:00 2025
+Epoch: [1/15] Batch: [2500/4787] Loss: 3.650019 Accuracy: 15.00%
+Sun Mar  9 23:56:13 2025
+Epoch: [1/15] Batch: [2600/4787] Loss: 3.651760 Accuracy: 25.00%
+Sun Mar  9 23:56:26 2025
+Epoch: [1/15] Batch: [2700/4787] Loss: 3.740864 Accuracy: 20.00%
+Sun Mar  9 23:56:39 2025
+Epoch: [1/15] Batch: [2800/4787] Loss: 3.681899 Accuracy: 30.00%
+Sun Mar  9 23:56:52 2025
+Epoch: [1/15] Batch: [2900/4787] Loss: 3.717573 Accuracy: 50.00%
+Sun Mar  9 23:57:05 2025
+Epoch: [1/15] Batch: [3000/4787] Loss: 3.713570 Accuracy: 50.00%
+Mon Mar 10 00:11:51 2025
+Epoch: [1/20] Batch: [500/4787] Loss: 3.729430 Accuracy: 50.00%
+Mon Mar 10 00:12:55 2025
+Epoch: [1/20] Batch: [1000/4787] Loss: 3.745317 Accuracy: 35.00%
+Mon Mar 10 00:14:00 2025
+Epoch: [1/20] Batch: [1500/4787] Loss: 3.703017 Accuracy: 40.00%
+Mon Mar 10 00:15:05 2025
+Epoch: [1/20] Batch: [2000/4787] Loss: 3.657987 Accuracy: 30.00%
+Mon Mar 10 00:16:10 2025
+Epoch: [1/20] Batch: [2500/4787] Loss: 3.652618 Accuracy: 55.00%
+Mon Mar 10 00:17:15 2025
+Epoch: [1/20] Batch: [3000/4787] Loss: 3.643604 Accuracy: 20.00%
+Mon Mar 10 00:18:20 2025
+Epoch: [1/20] Batch: [3500/4787] Loss: 3.664211 Accuracy: 30.00%
+Mon Mar 10 00:19:25 2025
+Epoch: [1/20] Batch: [4000/4787] Loss: 3.671101 Accuracy: 25.00%
+Mon Mar 10 00:20:30 2025
+Epoch: [1/20] Batch: [4500/4787] Loss: 3.671544 Accuracy: 20.00%
+Mon Mar 10 00:27:35 2025
+Epoch: [2/20] Batch: [500/4787] Loss: 5.759632 Accuracy: 35.00%
+Mon Mar 10 00:28:40 2025
+Epoch: [2/20] Batch: [1000/4787] Loss: 3.708598 Accuracy: 50.00%
+Mon Mar 10 00:29:44 2025
+Epoch: [2/20] Batch: [1500/4787] Loss: 3.693419 Accuracy: 15.00%
+Mon Mar 10 00:30:49 2025
+Epoch: [2/20] Batch: [2000/4787] Loss: 3.659230 Accuracy: 10.00%
+Mon Mar 10 00:31:54 2025
+Epoch: [2/20] Batch: [2500/4787] Loss: 3.657446 Accuracy: 15.00%
+Mon Mar 10 00:33:39 2025
+Epoch: [2/20] Batch: [3000/4787] Loss: 3.696812 Accuracy: 50.00%
+Mon Mar 10 00:35:26 2025
+Epoch: [2/20] Batch: [3500/4787] Loss: 3.622220 Accuracy: 30.00%
+Mon Mar 10 00:36:52 2025
+Epoch: [2/20] Batch: [4000/4787] Loss: 3.608973 Accuracy: 40.00%
+Mon Mar 10 00:38:39 2025
+Epoch: [2/20] Batch: [4500/4787] Loss: 3.623628 Accuracy: 40.00%
+Mon Mar 10 00:46:01 2025
+Epoch: [3/20] Batch: [500/4787] Loss: 5.792406 Accuracy: 25.00%
+Mon Mar 10 00:47:44 2025
+Epoch: [3/20] Batch: [1000/4787] Loss: 3.640896 Accuracy: 55.00%
+Mon Mar 10 00:49:31 2025
+Epoch: [3/20] Batch: [1500/4787] Loss: 3.655958 Accuracy: 45.00%
+Mon Mar 10 00:50:58 2025
+Epoch: [3/20] Batch: [2000/4787] Loss: 3.654517 Accuracy: 50.00%
+Mon Mar 10 00:52:45 2025
+Epoch: [3/20] Batch: [2500/4787] Loss: 3.643698 Accuracy: 35.00%
+Mon Mar 10 00:54:33 2025
+Epoch: [3/20] Batch: [3000/4787] Loss: 3.634797 Accuracy: 25.00%
+Mon Mar 10 00:56:00 2025
+Epoch: [3/20] Batch: [3500/4787] Loss: 3.654420 Accuracy: 30.00%
+Mon Mar 10 00:57:47 2025
+Epoch: [3/20] Batch: [4000/4787] Loss: 3.626039 Accuracy: 15.00%
+Mon Mar 10 00:59:34 2025
+Epoch: [3/20] Batch: [4500/4787] Loss: 3.642563 Accuracy: 45.00%
+Mon Mar 10 01:12:26 2025
+Epoch: [4/20] Batch: [500/4787] Loss: 5.736614 Accuracy: 45.00%
+Mon Mar 10 01:13:52 2025
+Epoch: [4/20] Batch: [1000/4787] Loss: 3.660673 Accuracy: 45.00%
+Mon Mar 10 01:15:39 2025
+Epoch: [4/20] Batch: [1500/4787] Loss: 3.655234 Accuracy: 40.00%
+Mon Mar 10 01:17:27 2025
+Epoch: [4/20] Batch: [2000/4787] Loss: 3.647678 Accuracy: 40.00%
+Mon Mar 10 01:18:53 2025
+Epoch: [4/20] Batch: [2500/4787] Loss: 3.627303 Accuracy: 40.00%
+Mon Mar 10 01:20:41 2025
+Epoch: [4/20] Batch: [3000/4787] Loss: 3.656065 Accuracy: 45.00%
+Mon Mar 10 01:22:28 2025
+Epoch: [4/20] Batch: [3500/4787] Loss: 3.643901 Accuracy: 30.00%
+Mon Mar 10 01:23:55 2025
+Epoch: [4/20] Batch: [4000/4787] Loss: 3.611915 Accuracy: 45.00%
+Mon Mar 10 01:25:42 2025
+Epoch: [4/20] Batch: [4500/4787] Loss: 3.649959 Accuracy: 55.00%
+Mon Mar 10 01:33:22 2025
+Epoch: [5/20] Batch: [500/4787] Loss: 5.717059 Accuracy: 45.00%
+Mon Mar 10 01:34:49 2025
+Epoch: [5/20] Batch: [1000/4787] Loss: 3.661856 Accuracy: 30.00%
+Mon Mar 10 01:36:36 2025
+Epoch: [5/20] Batch: [1500/4787] Loss: 3.610260 Accuracy: 45.00%
+Mon Mar 10 01:38:23 2025
+Epoch: [5/20] Batch: [2000/4787] Loss: 3.622107 Accuracy: 55.00%
+Mon Mar 10 01:39:49 2025
+Epoch: [5/20] Batch: [2500/4787] Loss: 3.620030 Accuracy: 50.00%
+Mon Mar 10 01:41:38 2025
+Epoch: [5/20] Batch: [3000/4787] Loss: 3.648342 Accuracy: 35.00%
+Mon Mar 10 01:43:25 2025
+Epoch: [5/20] Batch: [3500/4787] Loss: 3.658521 Accuracy: 25.00%
+Mon Mar 10 01:44:51 2025
+Epoch: [5/20] Batch: [4000/4787] Loss: 3.655202 Accuracy: 40.00%
+Mon Mar 10 01:46:38 2025
+Epoch: [5/20] Batch: [4500/4787] Loss: 3.674850 Accuracy: 15.00%
+Mon Mar 10 01:54:02 2025
+Epoch: [6/20] Batch: [500/4787] Loss: 5.771693 Accuracy: 35.00%
+Mon Mar 10 01:55:45 2025
+Epoch: [6/20] Batch: [1000/4787] Loss: 3.667442 Accuracy: 25.00%
+Mon Mar 10 01:57:32 2025
+Epoch: [6/20] Batch: [1500/4787] Loss: 3.656954 Accuracy: 35.00%
+Mon Mar 10 01:58:58 2025
+Epoch: [6/20] Batch: [2000/4787] Loss: 3.637291 Accuracy: 45.00%
+Mon Mar 10 02:00:46 2025
+Epoch: [6/20] Batch: [2500/4787] Loss: 3.641619 Accuracy: 30.00%
+Mon Mar 10 02:02:34 2025
+Epoch: [6/20] Batch: [3000/4787] Loss: 3.636323 Accuracy: 25.00%
+Mon Mar 10 02:04:21 2025
+Epoch: [6/20] Batch: [3500/4787] Loss: 3.640689 Accuracy: 25.00%
+Mon Mar 10 02:05:47 2025
+Epoch: [6/20] Batch: [4000/4787] Loss: 3.640900 Accuracy: 20.00%
+Mon Mar 10 02:07:34 2025
+Epoch: [6/20] Batch: [4500/4787] Loss: 3.631170 Accuracy: 25.00%
+Mon Mar 10 02:20:28 2025
+Epoch: [7/20] Batch: [500/4787] Loss: 5.718413 Accuracy: 25.00%
+Mon Mar 10 02:21:55 2025
+Epoch: [7/20] Batch: [1000/4787] Loss: 3.663806 Accuracy: 45.00%
+Mon Mar 10 02:23:42 2025
+Epoch: [7/20] Batch: [1500/4787] Loss: 3.649379 Accuracy: 30.00%
+Mon Mar 10 02:25:29 2025
+Epoch: [7/20] Batch: [2000/4787] Loss: 3.585262 Accuracy: 55.00%
+Mon Mar 10 02:26:56 2025
+Epoch: [7/20] Batch: [2500/4787] Loss: 3.652598 Accuracy: 30.00%
+Mon Mar 10 02:28:44 2025
+Epoch: [7/20] Batch: [3000/4787] Loss: 3.659979 Accuracy: 40.00%
+Mon Mar 10 02:30:31 2025
+Epoch: [7/20] Batch: [3500/4787] Loss: 3.654637 Accuracy: 40.00%
+Mon Mar 10 02:31:57 2025
+Epoch: [7/20] Batch: [4000/4787] Loss: 3.650466 Accuracy: 40.00%
+Mon Mar 10 02:33:44 2025
+Epoch: [7/20] Batch: [4500/4787] Loss: 3.651593 Accuracy: 35.00%
+Mon Mar 10 02:41:25 2025
+Epoch: [8/20] Batch: [500/4787] Loss: 5.746958 Accuracy: 30.00%
+Mon Mar 10 02:42:51 2025
+Epoch: [8/20] Batch: [1000/4787] Loss: 3.620512 Accuracy: 35.00%
+Mon Mar 10 02:44:38 2025
+Epoch: [8/20] Batch: [1500/4787] Loss: 3.630420 Accuracy: 55.00%
+Mon Mar 10 02:46:26 2025
+Epoch: [8/20] Batch: [2000/4787] Loss: 3.641529 Accuracy: 35.00%
+Mon Mar 10 02:47:52 2025
+Epoch: [8/20] Batch: [2500/4787] Loss: 3.643837 Accuracy: 35.00%
+Mon Mar 10 02:49:40 2025
+Epoch: [8/20] Batch: [3000/4787] Loss: 3.669228 Accuracy: 40.00%
+Mon Mar 10 02:51:27 2025
+Epoch: [8/20] Batch: [3500/4787] Loss: 3.691789 Accuracy: 20.00%
+Mon Mar 10 02:52:54 2025
+Epoch: [8/20] Batch: [4000/4787] Loss: 3.617782 Accuracy: 55.00%
+Mon Mar 10 02:54:41 2025
+Epoch: [8/20] Batch: [4500/4787] Loss: 3.617064 Accuracy: 35.00%
+Mon Mar 10 03:02:02 2025
+Epoch: [9/20] Batch: [500/4787] Loss: 5.684986 Accuracy: 35.00%
+Mon Mar 10 03:03:46 2025
+Epoch: [9/20] Batch: [1000/4787] Loss: 3.657841 Accuracy: 35.00%
+Mon Mar 10 03:05:33 2025
+Epoch: [9/20] Batch: [1500/4787] Loss: 3.649263 Accuracy: 25.00%
+Mon Mar 10 03:06:59 2025
+Epoch: [9/20] Batch: [2000/4787] Loss: 3.649453 Accuracy: 25.00%
+Mon Mar 10 03:08:46 2025
+Epoch: [9/20] Batch: [2500/4787] Loss: 3.651433 Accuracy: 35.00%
+Mon Mar 10 03:10:34 2025
+Epoch: [9/20] Batch: [3000/4787] Loss: 3.670275 Accuracy: 35.00%
+Mon Mar 10 03:12:22 2025
+Epoch: [9/20] Batch: [3500/4787] Loss: 3.609740 Accuracy: 50.00%
+Mon Mar 10 03:13:48 2025
+Epoch: [9/20] Batch: [4000/4787] Loss: 3.650945 Accuracy: 45.00%
+Mon Mar 10 03:15:35 2025
+Epoch: [9/20] Batch: [4500/4787] Loss: 3.642274 Accuracy: 35.00%
+Mon Mar 10 03:28:27 2025
+Epoch: [10/20] Batch: [500/4787] Loss: 5.779587 Accuracy: 25.00%
+Mon Mar 10 03:29:54 2025
+Epoch: [10/20] Batch: [1000/4787] Loss: 3.657805 Accuracy: 40.00%
+Mon Mar 10 03:31:41 2025
+Epoch: [10/20] Batch: [1500/4787] Loss: 3.646207 Accuracy: 45.00%
+Mon Mar 10 03:33:28 2025
+Epoch: [10/20] Batch: [2000/4787] Loss: 3.614865 Accuracy: 35.00%
+Mon Mar 10 03:34:54 2025
+Epoch: [10/20] Batch: [2500/4787] Loss: 3.620966 Accuracy: 50.00%
+Mon Mar 10 03:36:42 2025
+Epoch: [10/20] Batch: [3000/4787] Loss: 3.671693 Accuracy: 25.00%
+Mon Mar 10 03:38:30 2025
+Epoch: [10/20] Batch: [3500/4787] Loss: 3.655421 Accuracy: 35.00%
+Mon Mar 10 03:39:56 2025
+Epoch: [10/20] Batch: [4000/4787] Loss: 3.629484 Accuracy: 30.00%
+Mon Mar 10 03:41:43 2025
+Epoch: [10/20] Batch: [4500/4787] Loss: 3.612632 Accuracy: 45.00%
+Mon Mar 10 03:49:22 2025
+Epoch: [11/20] Batch: [500/4787] Loss: 5.753349 Accuracy: 30.00%
+Mon Mar 10 03:50:48 2025
+Epoch: [11/20] Batch: [1000/4787] Loss: 3.644062 Accuracy: 40.00%
+Mon Mar 10 03:52:35 2025
+Epoch: [11/20] Batch: [1500/4787] Loss: 3.635216 Accuracy: 35.00%
+Mon Mar 10 03:54:22 2025
+Epoch: [11/20] Batch: [2000/4787] Loss: 3.611500 Accuracy: 25.00%
+Mon Mar 10 03:55:49 2025
+Epoch: [11/20] Batch: [2500/4787] Loss: 3.669443 Accuracy: 35.00%
+Mon Mar 10 03:57:37 2025
+Epoch: [11/20] Batch: [3000/4787] Loss: 3.629084 Accuracy: 35.00%
+Mon Mar 10 03:59:24 2025
+Epoch: [11/20] Batch: [3500/4787] Loss: 3.657359 Accuracy: 40.00%
+Mon Mar 10 04:00:51 2025
+Epoch: [11/20] Batch: [4000/4787] Loss: 3.633486 Accuracy: 40.00%
+Mon Mar 10 04:02:37 2025
+Epoch: [11/20] Batch: [4500/4787] Loss: 3.648951 Accuracy: 50.00%
+Mon Mar 10 04:09:57 2025
+Epoch: [12/20] Batch: [500/4787] Loss: 5.752063 Accuracy: 25.00%
+Mon Mar 10 04:11:02 2025
+Epoch: [12/20] Batch: [1000/4787] Loss: 3.644003 Accuracy: 40.00%
+Mon Mar 10 04:12:45 2025
+Epoch: [12/20] Batch: [1500/4787] Loss: 3.626828 Accuracy: 35.00%
+Mon Mar 10 04:14:32 2025
+Epoch: [12/20] Batch: [2000/4787] Loss: 3.616171 Accuracy: 30.00%
+Mon Mar 10 04:15:59 2025
+Epoch: [12/20] Batch: [2500/4787] Loss: 3.644189 Accuracy: 35.00%
+Mon Mar 10 04:17:47 2025
+Epoch: [12/20] Batch: [3000/4787] Loss: 3.625098 Accuracy: 30.00%
+Mon Mar 10 04:19:34 2025
+Epoch: [12/20] Batch: [3500/4787] Loss: 3.664188 Accuracy: 30.00%
+Mon Mar 10 04:21:21 2025
+Epoch: [12/20] Batch: [4000/4787] Loss: 3.678435 Accuracy: 45.00%
+Mon Mar 10 04:22:48 2025
+Epoch: [12/20] Batch: [4500/4787] Loss: 3.646091 Accuracy: 50.00%
+Mon Mar 10 04:35:29 2025
+Epoch: [13/20] Batch: [500/4787] Loss: 5.733672 Accuracy: 25.00%
+Mon Mar 10 04:36:34 2025
+Epoch: [13/20] Batch: [1000/4787] Loss: 3.641648 Accuracy: 25.00%
+Mon Mar 10 04:37:56 2025
+Epoch: [13/20] Batch: [1500/4787] Loss: 3.601949 Accuracy: 30.00%
+Mon Mar 10 04:39:43 2025
+Epoch: [13/20] Batch: [2000/4787] Loss: 3.630730 Accuracy: 30.00%
+Mon Mar 10 04:41:31 2025
+Epoch: [13/20] Batch: [2500/4787] Loss: 3.635452 Accuracy: 25.00%
+Mon Mar 10 04:42:58 2025
+Epoch: [13/20] Batch: [3000/4787] Loss: 3.633406 Accuracy: 30.00%
+Mon Mar 10 04:44:17 2025
+Epoch: [13/20] Batch: [3500/4787] Loss: 3.638376 Accuracy: 30.00%
+Mon Mar 10 04:45:21 2025
+Epoch: [13/20] Batch: [4000/4787] Loss: 3.662692 Accuracy: 45.00%
+Mon Mar 10 04:46:26 2025
+Epoch: [13/20] Batch: [4500/4787] Loss: 3.681296 Accuracy: 45.00%
+Mon Mar 10 04:53:23 2025
+Epoch: [14/20] Batch: [500/4787] Loss: 5.757214 Accuracy: 30.00%
+Mon Mar 10 04:54:45 2025
+Epoch: [14/20] Batch: [1000/4787] Loss: 3.638412 Accuracy: 45.00%
+Mon Mar 10 04:55:50 2025
+Epoch: [14/20] Batch: [1500/4787] Loss: 3.643783 Accuracy: 45.00%
+Mon Mar 10 04:56:55 2025
+Epoch: [14/20] Batch: [2000/4787] Loss: 3.650033 Accuracy: 30.00%
+Mon Mar 10 04:58:39 2025
+Epoch: [14/20] Batch: [2500/4787] Loss: 3.610878 Accuracy: 20.00%
+Mon Mar 10 05:00:27 2025
+Epoch: [14/20] Batch: [3000/4787] Loss: 3.682391 Accuracy: 40.00%
+Mon Mar 10 05:01:53 2025
+Epoch: [14/20] Batch: [3500/4787] Loss: 3.651590 Accuracy: 35.00%
+Mon Mar 10 05:02:58 2025
+Epoch: [14/20] Batch: [4000/4787] Loss: 3.632567 Accuracy: 35.00%
+Mon Mar 10 05:04:04 2025
+Epoch: [14/20] Batch: [4500/4787] Loss: 3.649854 Accuracy: 55.00%
+Mon Mar 10 05:21:09 2025
+Epoch: [1/20] Batch: [500/4787] Loss: 3.729430 Accuracy: 50.00%
+Mon Mar 10 05:22:29 2025
+Epoch: [1/20] Batch: [1000/4787] Loss: 3.745317 Accuracy: 35.00%
+Mon Mar 10 05:26:01 2025
+Epoch: [1/20] Batch: [500/4787] Loss: 3.729430 Accuracy: 50.00%
+Mon Mar 10 05:27:42 2025
+Epoch: [1/20] Batch: [1000/4787] Loss: 3.745317 Accuracy: 35.00%
+Mon Mar 10 05:29:07 2025
+Epoch: [1/20] Batch: [1500/4787] Loss: 3.703017 Accuracy: 40.00%
+Mon Mar 10 05:30:12 2025
+Epoch: [1/20] Batch: [2000/4787] Loss: 3.657987 Accuracy: 30.00%
+Mon Mar 10 05:31:17 2025
+Epoch: [1/20] Batch: [2500/4787] Loss: 3.652618 Accuracy: 55.00%
+Mon Mar 10 05:32:22 2025
+Epoch: [1/20] Batch: [3000/4787] Loss: 3.643604 Accuracy: 20.00%
+Mon Mar 10 06:26:44 2025
+Epoch: [1/20] Batch: [500/4787] Loss: 2.756861 Accuracy: 50.00%
+Mon Mar 10 06:28:10 2025
+Epoch: [1/20] Batch: [1000/4787] Loss: 2.735297 Accuracy: 35.00%
+Mon Mar 10 06:29:54 2025
+Epoch: [1/20] Batch: [1500/4787] Loss: 2.698047 Accuracy: 40.00%
+Mon Mar 10 06:31:20 2025
+Epoch: [1/20] Batch: [2000/4787] Loss: 2.693187 Accuracy: 30.00%
+Mon Mar 10 06:33:04 2025
+Epoch: [1/20] Batch: [2500/4787] Loss: 2.673919 Accuracy: 55.00%
+Mon Mar 10 06:34:50 2025
+Epoch: [1/20] Batch: [3000/4787] Loss: 2.658372 Accuracy: 20.00%
+Mon Mar 10 06:36:15 2025
+Epoch: [1/20] Batch: [3500/4787] Loss: 2.675986 Accuracy: 30.00%
+Mon Mar 10 06:38:00 2025
+Epoch: [1/20] Batch: [4000/4787] Loss: 2.677347 Accuracy: 25.00%
+Mon Mar 10 06:39:05 2025
+Epoch: [1/20] Batch: [4500/4787] Loss: 2.678737 Accuracy: 20.00%
+Mon Mar 10 06:46:15 2025
+Epoch: [2/20] Batch: [500/4787] Loss: 4.209097 Accuracy: 35.00%
+Mon Mar 10 06:47:20 2025
+Epoch: [2/20] Batch: [1000/4787] Loss: 2.706964 Accuracy: 50.00%
+Mon Mar 10 06:48:25 2025
+Epoch: [2/20] Batch: [1500/4787] Loss: 2.692572 Accuracy: 15.00%
+Mon Mar 10 06:49:30 2025
+Epoch: [2/20] Batch: [2000/4787] Loss: 2.669169 Accuracy: 10.00%
+Mon Mar 10 06:50:35 2025
+Epoch: [2/20] Batch: [2500/4787] Loss: 2.671878 Accuracy: 20.00%
+Mon Mar 10 06:51:56 2025
+Epoch: [2/20] Batch: [3000/4787] Loss: 2.697773 Accuracy: 50.00%
+Mon Mar 10 06:53:12 2025
+Epoch: [2/20] Batch: [3500/4787] Loss: 2.654195 Accuracy: 30.00%
+Mon Mar 10 06:54:17 2025
+Epoch: [2/20] Batch: [4000/4787] Loss: 2.634954 Accuracy: 40.00%
+Mon Mar 10 06:55:22 2025
+Epoch: [2/20] Batch: [4500/4787] Loss: 2.651896 Accuracy: 35.00%
+Mon Mar 10 07:02:36 2025
+Epoch: [3/20] Batch: [500/4787] Loss: 4.228747 Accuracy: 25.00%
+Mon Mar 10 07:03:41 2025
+Epoch: [3/20] Batch: [1000/4787] Loss: 2.664375 Accuracy: 55.00%
+Mon Mar 10 07:04:46 2025
+Epoch: [3/20] Batch: [1500/4787] Loss: 2.667525 Accuracy: 45.00%
+Mon Mar 10 07:05:51 2025
+Epoch: [3/20] Batch: [2000/4787] Loss: 2.669114 Accuracy: 50.00%
+Mon Mar 10 07:06:56 2025
+Epoch: [3/20] Batch: [2500/4787] Loss: 2.659793 Accuracy: 35.00%
+Mon Mar 10 07:08:01 2025
+Epoch: [3/20] Batch: [3000/4787] Loss: 2.658387 Accuracy: 25.00%
+Mon Mar 10 07:09:06 2025
+Epoch: [3/20] Batch: [3500/4787] Loss: 2.668678 Accuracy: 30.00%
+Mon Mar 10 07:10:11 2025
+Epoch: [3/20] Batch: [4000/4787] Loss: 2.650827 Accuracy: 15.00%
+Mon Mar 10 07:11:52 2025
+Epoch: [3/20] Batch: [4500/4787] Loss: 2.661894 Accuracy: 45.00%
+Mon Mar 10 07:27:40 2025
+Epoch: [1/10] Batch: [500/4787] Loss: 2.567835 Accuracy: 50.00%
+Wed Mar 12 04:43:01 2025
+Epoch: [1/10] Batch: [500/6585] Loss: 3.392935 Accuracy: 10.00%
+Wed Mar 12 04:44:02 2025
+Epoch: [1/10] Batch: [1000/6585] Loss: 3.374816 Accuracy: 25.00%
+Wed Mar 12 04:45:04 2025
+Epoch: [1/10] Batch: [1500/6585] Loss: 3.380954 Accuracy: 30.00%
+Wed Mar 12 04:46:05 2025
+Epoch: [1/10] Batch: [2000/6585] Loss: 3.409977 Accuracy: 35.00%
+Wed Mar 12 04:47:07 2025
+Epoch: [1/10] Batch: [2500/6585] Loss: 3.385668 Accuracy: 35.00%
+Wed Mar 12 04:48:08 2025
+Epoch: [1/10] Batch: [3000/6585] Loss: 3.357517 Accuracy: 30.00%
+Wed Mar 12 04:49:10 2025
+Epoch: [1/10] Batch: [3500/6585] Loss: 3.351654 Accuracy: 30.00%
+Wed Mar 12 04:50:11 2025
+Epoch: [1/10] Batch: [4000/6585] Loss: 3.382982 Accuracy: 10.00%
+Wed Mar 12 04:51:13 2025
+Epoch: [1/10] Batch: [4500/6585] Loss: 3.381649 Accuracy: 10.00%
+Wed Mar 12 04:52:17 2025
+Epoch: [1/10] Batch: [5000/6585] Loss: 3.336645 Accuracy: 50.00%
+Wed Mar 12 04:53:29 2025
+Epoch: [1/10] Batch: [5500/6585] Loss: 3.362596 Accuracy: 40.00%
+Wed Mar 12 04:54:42 2025
+Epoch: [1/10] Batch: [6000/6585] Loss: 3.366619 Accuracy: 15.00%
+Wed Mar 12 04:55:55 2025
+Epoch: [1/10] Batch: [6500/6585] Loss: 3.366235 Accuracy: 30.00%
+Wed Mar 12 05:11:50 2025
+Epoch: [2/10] Batch: [500/6585] Loss: 3.925754 Accuracy: 25.00%
+Wed Mar 12 05:17:43 2025
+Epoch: [1/3] Batch: [500/6585] Loss: 3.878844 Accuracy: 10.00%
+Wed Mar 12 05:18:45 2025
+Epoch: [1/3] Batch: [1000/6585] Loss: 3.864586 Accuracy: 25.00%
+Wed Mar 12 05:19:46 2025
+Epoch: [1/3] Batch: [1500/6585] Loss: 3.862016 Accuracy: 20.00%
+Wed Mar 12 05:20:48 2025
+Epoch: [1/3] Batch: [2000/6585] Loss: 3.866332 Accuracy: 10.00%
+Wed Mar 12 05:21:49 2025
+Epoch: [1/3] Batch: [2500/6585] Loss: 3.868448 Accuracy: 20.00%
+Wed Mar 12 05:22:51 2025
+Epoch: [1/3] Batch: [3000/6585] Loss: 3.855416 Accuracy: 20.00%
+Wed Mar 12 05:24:08 2025
+Epoch: [1/3] Batch: [3500/6585] Loss: 3.857361 Accuracy: 15.00%
+Wed Mar 12 05:25:09 2025
+Epoch: [1/3] Batch: [4000/6585] Loss: 3.861571 Accuracy: 10.00%
+Wed Mar 12 05:26:11 2025
+Epoch: [1/3] Batch: [4500/6585] Loss: 3.859721 Accuracy: 10.00%
+Wed Mar 12 05:27:12 2025
+Epoch: [1/3] Batch: [5000/6585] Loss: 3.845275 Accuracy: 10.00%
+Wed Mar 12 05:28:14 2025
+Epoch: [1/3] Batch: [5500/6585] Loss: 3.858907 Accuracy: 15.00%
+Wed Mar 12 05:29:16 2025
+Epoch: [1/3] Batch: [6000/6585] Loss: 3.858069 Accuracy: 10.00%
+Wed Mar 12 05:30:17 2025
+Epoch: [1/3] Batch: [6500/6585] Loss: 3.852355 Accuracy: 15.00%
+Wed Mar 12 05:45:19 2025
+Epoch: [2/3] Batch: [500/6585] Loss: 4.515059 Accuracy: 15.00%
+Wed Mar 12 05:46:33 2025
+Epoch: [2/3] Batch: [1000/6585] Loss: 3.862104 Accuracy: 15.00%
+Wed Mar 12 05:47:45 2025
+Epoch: [2/3] Batch: [1500/6585] Loss: 3.849017 Accuracy: 20.00%
+Wed Mar 12 05:48:58 2025
+Epoch: [2/3] Batch: [2000/6585] Loss: 3.855687 Accuracy: 5.00%
+Wed Mar 12 05:50:09 2025
+Epoch: [2/3] Batch: [2500/6585] Loss: 3.857809 Accuracy: 15.00%
+Wed Mar 12 05:51:22 2025
+Epoch: [2/3] Batch: [3000/6585] Loss: 3.852186 Accuracy: 15.00%
+Wed Mar 12 05:52:34 2025
+Epoch: [2/3] Batch: [3500/6585] Loss: 3.850511 Accuracy: 10.00%
+Wed Mar 12 05:53:48 2025
+Epoch: [2/3] Batch: [4000/6585] Loss: 3.852750 Accuracy: 10.00%
+Wed Mar 12 05:55:03 2025
+Epoch: [2/3] Batch: [4500/6585] Loss: 3.863528 Accuracy: 25.00%
+Wed Mar 12 05:56:17 2025
+Epoch: [2/3] Batch: [5000/6585] Loss: 3.851539 Accuracy: 10.00%
+Wed Mar 12 05:57:29 2025
+Epoch: [2/3] Batch: [5500/6585] Loss: 3.853072 Accuracy: 15.00%
+Wed Mar 12 05:58:38 2025
+Epoch: [2/3] Batch: [6000/6585] Loss: 3.861595 Accuracy: 15.00%
+Wed Mar 12 05:59:40 2025
+Epoch: [2/3] Batch: [6500/6585] Loss: 3.845743 Accuracy: 10.00%
+Wed Mar 12 09:36:29 2025
+Epoch: [1/3] Batch: [500/6585] Loss: 1.747543 Accuracy: 15.00%
+Wed Mar 12 09:37:56 2025
+Epoch: [1/3] Batch: [1000/6585] Loss: 1.750308 Accuracy: 20.00%
+Wed Mar 12 09:39:24 2025
+Epoch: [1/3] Batch: [1500/6585] Loss: 1.760803 Accuracy: 15.00%
+Wed Mar 12 09:40:55 2025
+Epoch: [1/3] Batch: [2000/6585] Loss: 1.755138 Accuracy: 10.00%
+Wed Mar 12 09:42:24 2025
+Epoch: [1/3] Batch: [2500/6585] Loss: 1.735781 Accuracy: 10.00%
+Wed Mar 12 09:43:52 2025
+Epoch: [1/3] Batch: [3000/6585] Loss: 1.750153 Accuracy: 30.00%
+Wed Mar 12 09:45:21 2025
+Epoch: [1/3] Batch: [3500/6585] Loss: 1.741071 Accuracy: 25.00%
+Wed Mar 12 09:46:50 2025
+Epoch: [1/3] Batch: [4000/6585] Loss: 1.761168 Accuracy: 20.00%
+Wed Mar 12 09:48:17 2025
+Epoch: [1/3] Batch: [4500/6585] Loss: 1.749359 Accuracy: 20.00%
+Wed Mar 12 09:49:47 2025
+Epoch: [1/3] Batch: [5000/6585] Loss: 1.751593 Accuracy: 5.00%
+Wed Mar 12 09:51:16 2025
+Epoch: [1/3] Batch: [5500/6585] Loss: 1.751196 Accuracy: 5.00%
+Wed Mar 12 09:52:44 2025
+Epoch: [1/3] Batch: [6000/6585] Loss: 1.741983 Accuracy: 10.00%
+Wed Mar 12 09:54:12 2025
+Epoch: [1/3] Batch: [6500/6585] Loss: 1.746373 Accuracy: 30.00%
+Wed Mar 12 10:19:44 2025
+Epoch: [2/3] Batch: [500/6585] Loss: 2.043654 Accuracy: 25.00%
+Wed Mar 12 10:21:11 2025
+Epoch: [2/3] Batch: [1000/6585] Loss: 1.741619 Accuracy: 20.00%
+Wed Mar 12 10:22:38 2025
+Epoch: [2/3] Batch: [1500/6585] Loss: 1.729343 Accuracy: 5.00%
+Wed Mar 12 10:24:06 2025
+Epoch: [2/3] Batch: [2000/6585] Loss: 1.735911 Accuracy: 0.00%
+Wed Mar 12 10:25:34 2025
+Epoch: [2/3] Batch: [2500/6585] Loss: 1.743723 Accuracy: 20.00%
+Wed Mar 12 10:27:00 2025
+Epoch: [2/3] Batch: [3000/6585] Loss: 1.738682 Accuracy: 25.00%
+Wed Mar 12 10:28:28 2025
+Epoch: [2/3] Batch: [3500/6585] Loss: 1.748968 Accuracy: 15.00%
+Wed Mar 12 10:29:58 2025
+Epoch: [2/3] Batch: [4000/6585] Loss: 1.730936 Accuracy: 10.00%
+Wed Mar 12 10:31:26 2025
+Epoch: [2/3] Batch: [4500/6585] Loss: 1.744767 Accuracy: 10.00%
+Wed Mar 12 10:32:53 2025
+Epoch: [2/3] Batch: [5000/6585] Loss: 1.737395 Accuracy: 25.00%
+Wed Mar 12 10:34:20 2025
+Epoch: [2/3] Batch: [5500/6585] Loss: 1.745736 Accuracy: 25.00%
+Wed Mar 12 10:35:46 2025
+Epoch: [2/3] Batch: [6000/6585] Loss: 1.744418 Accuracy: 25.00%
+Wed Mar 12 10:37:13 2025
+Epoch: [2/3] Batch: [6500/6585] Loss: 1.737605 Accuracy: 15.00%
+Wed Mar 12 11:02:13 2025
+Epoch: [3/3] Batch: [500/6585] Loss: 2.029793 Accuracy: 5.00%
+Wed Mar 12 11:03:49 2025
+Epoch: [3/3] Batch: [1000/6585] Loss: 1.747937 Accuracy: 25.00%
+Wed Mar 12 11:05:25 2025
+Epoch: [3/3] Batch: [1500/6585] Loss: 1.734037 Accuracy: 20.00%
+Wed Mar 12 11:07:07 2025
+Epoch: [3/3] Batch: [2000/6585] Loss: 1.733635 Accuracy: 25.00%
+Wed Mar 12 11:08:50 2025
+Epoch: [3/3] Batch: [2500/6585] Loss: 1.723462 Accuracy: 5.00%
+Wed Mar 12 11:10:25 2025
+Epoch: [3/3] Batch: [3000/6585] Loss: 1.719324 Accuracy: 20.00%
+Wed Mar 12 11:12:10 2025
+Epoch: [3/3] Batch: [3500/6585] Loss: 1.732641 Accuracy: 25.00%
+Wed Mar 12 11:13:53 2025
+Epoch: [3/3] Batch: [4000/6585] Loss: 1.742709 Accuracy: 25.00%
+Wed Mar 12 11:15:36 2025
+Epoch: [3/3] Batch: [4500/6585] Loss: 1.730885 Accuracy: 30.00%
+Wed Mar 12 11:17:10 2025
+Epoch: [3/3] Batch: [5000/6585] Loss: 1.742887 Accuracy: 25.00%
+Wed Mar 12 11:18:53 2025
+Epoch: [3/3] Batch: [5500/6585] Loss: 1.744095 Accuracy: 10.00%
+Wed Mar 12 11:20:37 2025
+Epoch: [3/3] Batch: [6000/6585] Loss: 1.737581 Accuracy: 20.00%
+Wed Mar 12 11:22:12 2025
+Epoch: [3/3] Batch: [6500/6585] Loss: 1.733520 Accuracy: 15.00%
+Thu Mar 13 07:10:24 2025
+Epoch: [1/3] Batch: [500/6585] Loss: 0.643315 Accuracy: 70.00%
+Thu Mar 13 07:11:45 2025
+Epoch: [1/3] Batch: [1000/6585] Loss: 0.648760 Accuracy: 50.00%
+Thu Mar 13 07:13:33 2025
+Epoch: [1/3] Batch: [1500/6585] Loss: 0.639414 Accuracy: 55.00%
+Thu Mar 13 07:15:20 2025
+Epoch: [1/3] Batch: [2000/6585] Loss: 0.648159 Accuracy: 75.00%
+Thu Mar 13 07:16:22 2025
+Epoch: [1/3] Batch: [2500/6585] Loss: 0.643106 Accuracy: 65.00%
+Thu Mar 13 07:33:08 2025
+Epoch: [1/3] Batch: [3000/6585] Loss: 0.638691 Accuracy: 75.00%
+Thu Mar 13 10:04:34 2025
+Epoch: [1/1] Batch: [500/6585] Loss: 0.643299 Accuracy: 70.00%
+Thu Mar 13 10:05:37 2025
+Epoch: [1/1] Batch: [1000/6585] Loss: 0.648748 Accuracy: 50.00%
+Thu Mar 13 10:06:40 2025
+Epoch: [1/1] Batch: [1500/6585] Loss: 0.639733 Accuracy: 55.00%
+Thu Mar 13 10:07:43 2025
+Epoch: [1/1] Batch: [2000/6585] Loss: 0.648152 Accuracy: 75.00%
+Thu Mar 13 10:08:46 2025
+Epoch: [1/1] Batch: [2500/6585] Loss: 0.643109 Accuracy: 65.00%
+Thu Mar 13 10:09:49 2025
+Epoch: [1/1] Batch: [3000/6585] Loss: 0.638845 Accuracy: 75.00%
+Thu Mar 13 10:10:52 2025
+Epoch: [1/1] Batch: [3500/6585] Loss: 0.644814 Accuracy: 40.00%
+Thu Mar 13 10:11:56 2025
+Epoch: [1/1] Batch: [4000/6585] Loss: 0.645585 Accuracy: 45.00%
+Thu Mar 13 10:12:59 2025
+Epoch: [1/1] Batch: [4500/6585] Loss: 0.639863 Accuracy: 80.00%
+Thu Mar 13 10:14:03 2025
+Epoch: [1/1] Batch: [5000/6585] Loss: 0.642639 Accuracy: 55.00%
+Thu Mar 13 10:15:06 2025
+Epoch: [1/1] Batch: [5500/6585] Loss: 0.639588 Accuracy: 75.00%
+Thu Mar 13 10:16:09 2025
+Epoch: [1/1] Batch: [6000/6585] Loss: 0.644225 Accuracy: 60.00%
+Thu Mar 13 10:17:12 2025
+Epoch: [1/1] Batch: [6500/6585] Loss: 0.641749 Accuracy: 65.00%
+Thu Mar 13 10:47:04 2025
+Epoch: [1/5] Batch: [500/6585] Loss: 0.643299 Accuracy: 70.00%
+Thu Mar 13 10:48:07 2025
+Epoch: [1/5] Batch: [1000/6585] Loss: 0.648748 Accuracy: 50.00%
+Thu Mar 13 10:49:10 2025
+Epoch: [1/5] Batch: [1500/6585] Loss: 0.639733 Accuracy: 55.00%
+Thu Mar 13 10:50:13 2025
+Epoch: [1/5] Batch: [2000/6585] Loss: 0.648152 Accuracy: 75.00%
+Thu Mar 13 10:51:16 2025
+Epoch: [1/5] Batch: [2500/6585] Loss: 0.643109 Accuracy: 65.00%
+Thu Mar 13 10:52:19 2025
+Epoch: [1/5] Batch: [3000/6585] Loss: 0.638845 Accuracy: 75.00%
+Thu Mar 13 10:53:22 2025
+Epoch: [1/5] Batch: [3500/6585] Loss: 0.644814 Accuracy: 40.00%
+Thu Mar 13 10:54:25 2025
+Epoch: [1/5] Batch: [4000/6585] Loss: 0.645585 Accuracy: 45.00%
+Thu Mar 13 10:55:29 2025
+Epoch: [1/5] Batch: [4500/6585] Loss: 0.639863 Accuracy: 80.00%
+Thu Mar 13 10:56:32 2025
+Epoch: [1/5] Batch: [5000/6585] Loss: 0.642639 Accuracy: 55.00%
+Thu Mar 13 10:57:35 2025
+Epoch: [1/5] Batch: [5500/6585] Loss: 0.639588 Accuracy: 75.00%
+Thu Mar 13 10:58:38 2025
+Epoch: [1/5] Batch: [6000/6585] Loss: 0.644225 Accuracy: 60.00%
+Thu Mar 13 10:59:41 2025
+Epoch: [1/5] Batch: [6500/6585] Loss: 0.641749 Accuracy: 65.00%
+Thu Mar 13 11:03:57 2025
+Epoch: [1/5] Batch: [500/6585] Loss: 0.643299 Accuracy: 70.00%
+Thu Mar 13 11:05:00 2025
+Epoch: [1/5] Batch: [1000/6585] Loss: 0.648748 Accuracy: 50.00%
+Thu Mar 13 11:06:03 2025
+Epoch: [1/5] Batch: [1500/6585] Loss: 0.639733 Accuracy: 55.00%
+Thu Mar 13 11:07:06 2025
+Epoch: [1/5] Batch: [2000/6585] Loss: 0.648152 Accuracy: 75.00%
+Thu Mar 13 11:08:09 2025
+Epoch: [1/5] Batch: [2500/6585] Loss: 0.643109 Accuracy: 65.00%
+Thu Mar 13 11:09:12 2025
+Epoch: [1/5] Batch: [3000/6585] Loss: 0.638845 Accuracy: 75.00%
+Thu Mar 13 11:10:15 2025
+Epoch: [1/5] Batch: [3500/6585] Loss: 0.644814 Accuracy: 40.00%
+Thu Mar 13 11:11:18 2025
+Epoch: [1/5] Batch: [4000/6585] Loss: 0.645585 Accuracy: 45.00%
+Thu Mar 13 11:12:21 2025
+Epoch: [1/5] Batch: [4500/6585] Loss: 0.639863 Accuracy: 80.00%
+Thu Mar 13 11:13:24 2025
+Epoch: [1/5] Batch: [5000/6585] Loss: 0.642639 Accuracy: 55.00%
+Thu Mar 13 11:14:28 2025
+Epoch: [1/5] Batch: [5500/6585] Loss: 0.639588 Accuracy: 75.00%
+Thu Mar 13 11:15:31 2025
+Epoch: [1/5] Batch: [6000/6585] Loss: 0.644225 Accuracy: 60.00%
+Thu Mar 13 11:16:34 2025
+Epoch: [1/5] Batch: [6500/6585] Loss: 0.641749 Accuracy: 65.00%
+Thu Mar 13 11:24:29 2025
+Epoch: [1/5] Batch: [500/6585] Loss: 1.560386 Accuracy: 25.00%
+Thu Mar 13 11:25:32 2025
+Epoch: [1/5] Batch: [1000/6585] Loss: 1.550528 Accuracy: 30.00%
+Thu Mar 13 11:26:35 2025
+Epoch: [1/5] Batch: [1500/6585] Loss: 1.538485 Accuracy: 15.00%
+Thu Mar 13 11:27:38 2025
+Epoch: [1/5] Batch: [2000/6585] Loss: 1.544831 Accuracy: 50.00%
+Thu Mar 13 11:28:41 2025
+Epoch: [1/5] Batch: [2500/6585] Loss: 1.534917 Accuracy: 40.00%
+Thu Mar 13 11:29:44 2025
+Epoch: [1/5] Batch: [3000/6585] Loss: 1.531887 Accuracy: 25.00%
+Thu Mar 13 11:30:47 2025
+Epoch: [1/5] Batch: [3500/6585] Loss: 1.552805 Accuracy: 25.00%
+Thu Mar 13 11:31:50 2025
+Epoch: [1/5] Batch: [4000/6585] Loss: 1.557463 Accuracy: 40.00%
+Thu Mar 13 11:32:53 2025
+Epoch: [1/5] Batch: [4500/6585] Loss: 1.543106 Accuracy: 25.00%
+Thu Mar 13 11:33:56 2025
+Epoch: [1/5] Batch: [5000/6585] Loss: 1.541077 Accuracy: 40.00%
+Thu Mar 13 11:34:59 2025
+Epoch: [1/5] Batch: [5500/6585] Loss: 1.548378 Accuracy: 30.00%
+Thu Mar 13 11:36:02 2025
+Epoch: [1/5] Batch: [6000/6585] Loss: 1.540864 Accuracy: 40.00%
+Thu Mar 13 11:37:05 2025
+Epoch: [1/5] Batch: [6500/6585] Loss: 1.541139 Accuracy: 40.00%
+Thu Mar 13 17:21:18 2025
+Epoch: [1/5] Batch: [500/6585] Loss: 0.643299 Accuracy: 70.00%
+Thu Mar 13 17:22:20 2025
+Epoch: [1/5] Batch: [1000/6585] Loss: 0.648748 Accuracy: 50.00%
+Thu Mar 13 17:23:23 2025
+Epoch: [1/5] Batch: [1500/6585] Loss: 0.639733 Accuracy: 55.00%
+Thu Mar 13 17:24:26 2025
+Epoch: [1/5] Batch: [2000/6585] Loss: 0.648152 Accuracy: 75.00%
+Thu Mar 13 17:25:29 2025
+Epoch: [1/5] Batch: [2500/6585] Loss: 0.643109 Accuracy: 65.00%
+Thu Mar 13 17:26:33 2025
+Epoch: [1/5] Batch: [3000/6585] Loss: 0.638845 Accuracy: 75.00%
+Thu Mar 13 17:27:36 2025
+Epoch: [1/5] Batch: [3500/6585] Loss: 0.644814 Accuracy: 40.00%
+Thu Mar 13 17:28:39 2025
+Epoch: [1/5] Batch: [4000/6585] Loss: 0.645585 Accuracy: 45.00%
+Thu Mar 13 17:29:42 2025
+Epoch: [1/5] Batch: [4500/6585] Loss: 0.639863 Accuracy: 80.00%
+Thu Mar 13 17:30:45 2025
+Epoch: [1/5] Batch: [5000/6585] Loss: 0.642639 Accuracy: 55.00%
+Thu Mar 13 17:31:48 2025
+Epoch: [1/5] Batch: [5500/6585] Loss: 0.639588 Accuracy: 75.00%
+Thu Mar 13 17:32:51 2025
+Epoch: [1/5] Batch: [6000/6585] Loss: 0.644225 Accuracy: 60.00%
+Thu Mar 13 17:33:54 2025
+Epoch: [1/5] Batch: [6500/6585] Loss: 0.641749 Accuracy: 65.00%
+Thu Mar 13 17:41:51 2025
+Epoch: [1/5] Batch: [500/6585] Loss: 1.560386 Accuracy: 25.00%
+Thu Mar 13 17:42:54 2025
+Epoch: [1/5] Batch: [1000/6585] Loss: 1.550528 Accuracy: 30.00%
+Thu Mar 13 17:43:57 2025
+Epoch: [1/5] Batch: [1500/6585] Loss: 1.538485 Accuracy: 15.00%
+Thu Mar 13 17:45:00 2025
+Epoch: [1/5] Batch: [2000/6585] Loss: 1.544831 Accuracy: 50.00%
+Thu Mar 13 17:46:04 2025
+Epoch: [1/5] Batch: [2500/6585] Loss: 1.534917 Accuracy: 40.00%
+Thu Mar 13 17:47:07 2025
+Epoch: [1/5] Batch: [3000/6585] Loss: 1.531887 Accuracy: 25.00%
+Thu Mar 13 17:48:10 2025
+Epoch: [1/5] Batch: [3500/6585] Loss: 1.552805 Accuracy: 25.00%
+Thu Mar 13 17:49:13 2025
+Epoch: [1/5] Batch: [4000/6585] Loss: 1.557463 Accuracy: 40.00%
+Thu Mar 13 17:50:16 2025
+Epoch: [1/5] Batch: [4500/6585] Loss: 1.543106 Accuracy: 25.00%
+Thu Mar 13 17:51:19 2025
+Epoch: [1/5] Batch: [5000/6585] Loss: 1.541077 Accuracy: 40.00%
+Thu Mar 13 17:52:23 2025
+Epoch: [1/5] Batch: [5500/6585] Loss: 1.548378 Accuracy: 30.00%
+Thu Mar 13 17:53:26 2025
+Epoch: [1/5] Batch: [6000/6585] Loss: 1.540864 Accuracy: 40.00%
+Thu Mar 13 17:54:29 2025
+Epoch: [1/5] Batch: [6500/6585] Loss: 1.541139 Accuracy: 40.00%
+Thu Mar 13 19:22:47 2025
+Epoch: [1/5] Batch: [500/6585] Loss: 0.643299 Accuracy: 70.00%
+Thu Mar 13 19:23:47 2025
+Epoch: [1/5] Batch: [500/6585] Loss: 0.643299 Accuracy: 70.00%
+Thu Mar 13 19:25:01 2025
+Epoch: [1/5] Batch: [1000/6585] Loss: 0.648748 Accuracy: 50.00%
+Thu Mar 13 19:26:01 2025
+Epoch: [1/5] Batch: [1000/6585] Loss: 0.648748 Accuracy: 50.00%
+Thu Mar 13 19:27:15 2025
+Epoch: [1/5] Batch: [1500/6585] Loss: 0.639733 Accuracy: 55.00%
+Thu Mar 13 19:28:15 2025
+Epoch: [1/5] Batch: [1500/6585] Loss: 0.639733 Accuracy: 55.00%
+Thu Mar 13 19:29:30 2025
+Epoch: [1/5] Batch: [2000/6585] Loss: 0.648152 Accuracy: 75.00%
+Thu Mar 13 19:30:31 2025
+Epoch: [1/5] Batch: [2000/6585] Loss: 0.648152 Accuracy: 75.00%
+Thu Mar 13 19:31:45 2025
+Epoch: [1/5] Batch: [2500/6585] Loss: 0.643109 Accuracy: 65.00%
+Thu Mar 13 19:32:57 2025
+Epoch: [1/5] Batch: [2500/6585] Loss: 0.643109 Accuracy: 65.00%
+Thu Mar 13 19:34:48 2025
+Epoch: [1/5] Batch: [3000/6585] Loss: 0.638845 Accuracy: 75.00%
+Thu Mar 13 19:35:44 2025
+Epoch: [1/5] Batch: [500/6585] Loss: 0.643299 Accuracy: 70.00%
+Thu Mar 13 19:36:19 2025
+Epoch: [1/5] Batch: [3000/6585] Loss: 0.638845 Accuracy: 75.00%
+Thu Mar 13 20:57:27 2025
+Epoch: [1/5] Batch: [500/6585] Loss: 0.643299 Accuracy: 70.00%
+Thu Mar 13 20:58:29 2025
+Epoch: [1/5] Batch: [1000/6585] Loss: 0.648748 Accuracy: 50.00%
+Thu Mar 13 20:59:32 2025
+Epoch: [1/5] Batch: [1500/6585] Loss: 0.639733 Accuracy: 55.00%
+Thu Mar 13 21:00:35 2025
+Epoch: [1/5] Batch: [2000/6585] Loss: 0.648152 Accuracy: 75.00%
+Thu Mar 13 21:04:58 2025
+Epoch: [1/5] Batch: [500/6585] Loss: 0.643299 Accuracy: 70.00%
+Thu Mar 13 21:06:01 2025
+Epoch: [1/5] Batch: [1000/6585] Loss: 0.648748 Accuracy: 50.00%
+Thu Mar 13 21:07:04 2025
+Epoch: [1/5] Batch: [1500/6585] Loss: 0.639733 Accuracy: 55.00%
+Thu Mar 13 21:08:07 2025
+Epoch: [1/5] Batch: [2000/6585] Loss: 0.648152 Accuracy: 75.00%
+Thu Mar 13 21:09:10 2025
+Epoch: [1/5] Batch: [2500/6585] Loss: 0.643109 Accuracy: 65.00%
+Thu Mar 13 21:10:13 2025
+Epoch: [1/5] Batch: [3000/6585] Loss: 0.638845 Accuracy: 75.00%
+Thu Mar 13 21:11:16 2025
+Epoch: [1/5] Batch: [3500/6585] Loss: 0.644814 Accuracy: 40.00%
+Thu Mar 13 21:12:19 2025
+Epoch: [1/5] Batch: [4000/6585] Loss: 0.645585 Accuracy: 45.00%
+Thu Mar 13 21:13:21 2025
+Epoch: [1/5] Batch: [4500/6585] Loss: 0.639863 Accuracy: 80.00%
+Thu Mar 13 21:14:24 2025
+Epoch: [1/5] Batch: [5000/6585] Loss: 0.642639 Accuracy: 55.00%
+Thu Mar 13 21:15:56 2025
+Epoch: [1/5] Batch: [5500/6585] Loss: 0.639588 Accuracy: 75.00%
+Thu Mar 13 21:16:59 2025
+Epoch: [1/5] Batch: [6000/6585] Loss: 0.644225 Accuracy: 60.00%
+Thu Mar 13 21:18:02 2025
+Epoch: [1/5] Batch: [6500/6585] Loss: 0.641749 Accuracy: 65.00%
+Thu Mar 13 21:25:04 2025
+Epoch: [1/5] Batch: [500/6585] Loss: 0.643299 Accuracy: 70.00%
+Thu Mar 13 21:26:21 2025
+Epoch: [1/5] Batch: [1000/6585] Loss: 0.648748 Accuracy: 50.00%
+Thu Mar 13 21:27:36 2025
+Epoch: [1/5] Batch: [1500/6585] Loss: 0.639733 Accuracy: 55.00%
+Thu Mar 13 21:29:06 2025
+Epoch: [1/5] Batch: [2000/6585] Loss: 0.648152 Accuracy: 75.00%
+Thu Mar 13 21:30:24 2025
+Epoch: [1/5] Batch: [2500/6585] Loss: 0.643109 Accuracy: 65.00%
+Thu Mar 13 21:31:40 2025
+Epoch: [1/5] Batch: [3000/6585] Loss: 0.638845 Accuracy: 75.00%
+Thu Mar 13 21:43:22 2025
+Epoch: [1/5] Batch: [3500/6585] Loss: 0.644814 Accuracy: 40.00%
+Thu Mar 13 21:44:25 2025
+Epoch: [1/5] Batch: [4000/6585] Loss: 0.645585 Accuracy: 45.00%
+Thu Mar 13 21:45:28 2025
+Epoch: [1/5] Batch: [4500/6585] Loss: 0.639863 Accuracy: 80.00%
+Thu Mar 13 21:46:31 2025
+Epoch: [1/5] Batch: [5000/6585] Loss: 0.642639 Accuracy: 55.00%
+Thu Mar 13 21:47:33 2025
+Epoch: [1/5] Batch: [5500/6585] Loss: 0.639588 Accuracy: 75.00%
+Thu Mar 13 21:48:36 2025
+Epoch: [1/5] Batch: [6000/6585] Loss: 0.644225 Accuracy: 60.00%
+Thu Mar 13 21:49:39 2025
+Epoch: [1/5] Batch: [6500/6585] Loss: 0.641749 Accuracy: 65.00%
+Thu Mar 13 21:57:40 2025
+Epoch: [2/5] Batch: [500/6585] Loss: 0.752118 Accuracy: 70.00%
+Thu Mar 13 21:58:43 2025
+Epoch: [2/5] Batch: [1000/6585] Loss: 0.646925 Accuracy: 55.00%
+Thu Mar 13 21:59:46 2025
+Epoch: [2/5] Batch: [1500/6585] Loss: 0.638816 Accuracy: 55.00%
+Thu Mar 13 22:00:48 2025
+Epoch: [2/5] Batch: [2000/6585] Loss: 0.641061 Accuracy: 75.00%
+Thu Mar 13 22:01:51 2025
+Epoch: [2/5] Batch: [2500/6585] Loss: 0.640255 Accuracy: 80.00%
+Thu Mar 13 22:02:54 2025
+Epoch: [2/5] Batch: [3000/6585] Loss: 0.645017 Accuracy: 60.00%
+Thu Mar 13 22:04:06 2025
+Epoch: [2/5] Batch: [3500/6585] Loss: 0.642789 Accuracy: 50.00%
+Thu Mar 13 22:05:35 2025
+Epoch: [2/5] Batch: [4000/6585] Loss: 0.645556 Accuracy: 65.00%
+Thu Mar 13 22:06:51 2025
+Epoch: [2/5] Batch: [4500/6585] Loss: 0.643921 Accuracy: 55.00%
+Thu Mar 13 22:08:07 2025
+Epoch: [2/5] Batch: [5000/6585] Loss: 0.642884 Accuracy: 55.00%
+Thu Mar 13 22:09:36 2025
+Epoch: [2/5] Batch: [5500/6585] Loss: 0.643868 Accuracy: 70.00%
+Thu Mar 13 22:10:52 2025
+Epoch: [2/5] Batch: [6000/6585] Loss: 0.641797 Accuracy: 75.00%
+Thu Mar 13 22:12:08 2025
+Epoch: [2/5] Batch: [6500/6585] Loss: 0.639030 Accuracy: 75.00%
+Thu Mar 13 22:20:11 2025
+Epoch: [3/5] Batch: [500/6585] Loss: 0.751037 Accuracy: 50.00%
+Thu Mar 13 22:21:33 2025
+Epoch: [3/5] Batch: [1000/6585] Loss: 0.640462 Accuracy: 65.00%
+Thu Mar 13 22:22:49 2025
+Epoch: [3/5] Batch: [1500/6585] Loss: 0.640413 Accuracy: 75.00%
+Thu Mar 13 22:24:05 2025
+Epoch: [3/5] Batch: [2000/6585] Loss: 0.639552 Accuracy: 95.00%
+Thu Mar 13 22:25:36 2025
+Epoch: [3/5] Batch: [2500/6585] Loss: 0.638308 Accuracy: 75.00%
+Thu Mar 13 22:26:52 2025
+Epoch: [3/5] Batch: [3000/6585] Loss: 0.641882 Accuracy: 55.00%
+Thu Mar 13 22:28:08 2025
+Epoch: [3/5] Batch: [3500/6585] Loss: 0.643791 Accuracy: 75.00%
+Thu Mar 13 22:29:37 2025
+Epoch: [3/5] Batch: [4000/6585] Loss: 0.646167 Accuracy: 75.00%
+Thu Mar 13 22:30:53 2025
+Epoch: [3/5] Batch: [4500/6585] Loss: 0.638614 Accuracy: 75.00%
+Thu Mar 13 22:31:56 2025
+Epoch: [3/5] Batch: [5000/6585] Loss: 0.641944 Accuracy: 65.00%
+Thu Mar 13 22:32:58 2025
+Epoch: [3/5] Batch: [5500/6585] Loss: 0.642694 Accuracy: 45.00%
+Thu Mar 13 22:34:01 2025
+Epoch: [3/5] Batch: [6000/6585] Loss: 0.639226 Accuracy: 65.00%
+Thu Mar 13 22:35:13 2025
+Epoch: [3/5] Batch: [6500/6585] Loss: 0.647946 Accuracy: 60.00%
+Thu Mar 13 22:49:37 2025
+Epoch: [4/5] Batch: [500/6585] Loss: 0.749317 Accuracy: 85.00%
+Thu Mar 13 22:50:40 2025
+Epoch: [4/5] Batch: [1000/6585] Loss: 0.649322 Accuracy: 65.00%
+Thu Mar 13 22:51:42 2025
+Epoch: [4/5] Batch: [1500/6585] Loss: 0.639093 Accuracy: 65.00%
+Thu Mar 13 22:52:45 2025
+Epoch: [4/5] Batch: [2000/6585] Loss: 0.645200 Accuracy: 85.00%
+Thu Mar 13 22:53:48 2025
+Epoch: [4/5] Batch: [2500/6585] Loss: 0.642314 Accuracy: 55.00%
+Thu Mar 13 22:54:52 2025
+Epoch: [4/5] Batch: [3000/6585] Loss: 0.639394 Accuracy: 65.00%
+Thu Mar 13 22:55:55 2025
+Epoch: [4/5] Batch: [3500/6585] Loss: 0.644442 Accuracy: 80.00%
+Thu Mar 13 22:56:58 2025
+Epoch: [4/5] Batch: [4000/6585] Loss: 0.638194 Accuracy: 70.00%
+Thu Mar 13 22:58:01 2025
+Epoch: [4/5] Batch: [4500/6585] Loss: 0.642296 Accuracy: 70.00%
+Thu Mar 13 22:59:03 2025
+Epoch: [4/5] Batch: [5000/6585] Loss: 0.637557 Accuracy: 65.00%
+Thu Mar 13 23:00:06 2025
+Epoch: [4/5] Batch: [5500/6585] Loss: 0.642635 Accuracy: 75.00%
+Thu Mar 13 23:01:09 2025
+Epoch: [4/5] Batch: [6000/6585] Loss: 0.641047 Accuracy: 55.00%
+Thu Mar 13 23:02:12 2025
+Epoch: [4/5] Batch: [6500/6585] Loss: 0.640909 Accuracy: 80.00%
+Thu Mar 13 23:10:04 2025
+Epoch: [5/5] Batch: [500/6585] Loss: 0.744659 Accuracy: 75.00%
+Thu Mar 13 23:11:06 2025
+Epoch: [5/5] Batch: [1000/6585] Loss: 0.640508 Accuracy: 60.00%
+Thu Mar 13 23:12:09 2025
+Epoch: [5/5] Batch: [1500/6585] Loss: 0.641950 Accuracy: 55.00%
+Thu Mar 13 23:13:12 2025
+Epoch: [5/5] Batch: [2000/6585] Loss: 0.642838 Accuracy: 55.00%
+Thu Mar 13 23:14:15 2025
+Epoch: [5/5] Batch: [2500/6585] Loss: 0.641029 Accuracy: 60.00%
+Thu Mar 13 23:15:18 2025
+Epoch: [5/5] Batch: [3000/6585] Loss: 0.649232 Accuracy: 60.00%
+Thu Mar 13 23:16:21 2025
+Epoch: [5/5] Batch: [3500/6585] Loss: 0.642398 Accuracy: 60.00%
+Thu Mar 13 23:17:23 2025
+Epoch: [5/5] Batch: [4000/6585] Loss: 0.642323 Accuracy: 80.00%
+Thu Mar 13 23:18:26 2025
+Epoch: [5/5] Batch: [4500/6585] Loss: 0.644359 Accuracy: 80.00%
+Thu Mar 13 23:19:39 2025
+Epoch: [5/5] Batch: [5000/6585] Loss: 0.643808 Accuracy: 75.00%
+Thu Mar 13 23:20:42 2025
+Epoch: [5/5] Batch: [5500/6585] Loss: 0.638533 Accuracy: 75.00%
+Thu Mar 13 23:21:44 2025
+Epoch: [5/5] Batch: [6000/6585] Loss: 0.641876 Accuracy: 80.00%
+Thu Mar 13 23:22:56 2025
+Epoch: [5/5] Batch: [6500/6585] Loss: 0.639001 Accuracy: 55.00%
+Thu Mar 13 23:49:16 2025
+Epoch: [1/3] Batch: [500/6585] Loss: 1.560386 Accuracy: 25.00%
+Thu Mar 13 23:50:18 2025
+Epoch: [1/3] Batch: [1000/6585] Loss: 1.550528 Accuracy: 30.00%
+Thu Mar 13 23:51:21 2025
+Epoch: [1/3] Batch: [1500/6585] Loss: 1.538485 Accuracy: 15.00%
+Thu Mar 13 23:52:24 2025
+Epoch: [1/3] Batch: [2000/6585] Loss: 1.544831 Accuracy: 50.00%
+Thu Mar 13 23:53:27 2025
+Epoch: [1/3] Batch: [2500/6585] Loss: 1.534917 Accuracy: 40.00%
+Thu Mar 13 23:54:30 2025
+Epoch: [1/3] Batch: [3000/6585] Loss: 1.531887 Accuracy: 25.00%
+Thu Mar 13 23:57:36 2025
+Epoch: [1/3] Batch: [500/6585] Loss: 1.560386 Accuracy: 25.00%
+Thu Mar 13 23:58:39 2025
+Epoch: [1/3] Batch: [1000/6585] Loss: 1.550528 Accuracy: 30.00%
+Thu Mar 13 23:59:42 2025
+Epoch: [1/3] Batch: [1500/6585] Loss: 1.538485 Accuracy: 15.00%
+Fri Mar 14 00:00:45 2025
+Epoch: [1/3] Batch: [2000/6585] Loss: 1.544831 Accuracy: 50.00%
+Fri Mar 14 00:02:10 2025
+Epoch: [1/3] Batch: [2500/6585] Loss: 1.534917 Accuracy: 40.00%
+Fri Mar 14 00:03:26 2025
+Epoch: [1/3] Batch: [3000/6585] Loss: 1.531887 Accuracy: 25.00%
+Fri Mar 14 00:04:42 2025
+Epoch: [1/3] Batch: [3500/6585] Loss: 1.552805 Accuracy: 25.00%
+Fri Mar 14 00:06:11 2025
+Epoch: [1/3] Batch: [4000/6585] Loss: 1.557463 Accuracy: 40.00%
+Fri Mar 14 00:07:26 2025
+Epoch: [1/3] Batch: [4500/6585] Loss: 1.543106 Accuracy: 25.00%
+Fri Mar 14 00:08:29 2025
+Epoch: [1/3] Batch: [5000/6585] Loss: 1.541077 Accuracy: 40.00%
+Fri Mar 14 00:09:32 2025
+Epoch: [1/3] Batch: [5500/6585] Loss: 1.548378 Accuracy: 30.00%
+Fri Mar 14 00:37:44 2025
+Epoch: [1/3] Batch: [6000/6585] Loss: 1.540864 Accuracy: 40.00%
+Fri Mar 14 00:45:00 2025
+Epoch: [1/3] Batch: [6500/6585] Loss: 1.541139 Accuracy: 40.00%
+Fri Mar 14 02:26:43 2025
+Epoch: [1/3] Batch: [500/6585] Loss: 1.560386 Accuracy: 25.00%
+Fri Mar 14 02:27:45 2025
+Epoch: [1/3] Batch: [1000/6585] Loss: 1.550528 Accuracy: 30.00%
+Fri Mar 14 02:32:28 2025
+Epoch: [1/3] Batch: [500/6585] Loss: 1.560386 Accuracy: 25.00%
+Fri Mar 14 03:03:27 2025
+Epoch: [1/3] Batch: [1000/6585] Loss: 1.550528 Accuracy: 30.00%
+Fri Mar 14 03:07:13 2025
+Epoch: [1/3] Batch: [1500/6585] Loss: 1.538485 Accuracy: 15.00%
+Fri Mar 14 03:08:15 2025
+Epoch: [1/3] Batch: [2000/6585] Loss: 1.544831 Accuracy: 50.00%
+Fri Mar 14 03:09:18 2025
+Epoch: [1/3] Batch: [2500/6585] Loss: 1.534917 Accuracy: 40.00%
+Fri Mar 14 03:10:21 2025
+Epoch: [1/3] Batch: [3000/6585] Loss: 1.531887 Accuracy: 25.00%
+Fri Mar 14 03:11:23 2025
+Epoch: [1/3] Batch: [3500/6585] Loss: 1.552805 Accuracy: 25.00%
+Fri Mar 14 03:12:26 2025
+Epoch: [1/3] Batch: [4000/6585] Loss: 1.557463 Accuracy: 40.00%
+Fri Mar 14 03:13:29 2025
+Epoch: [1/3] Batch: [4500/6585] Loss: 1.543106 Accuracy: 25.00%
+Fri Mar 14 03:14:31 2025
+Epoch: [1/3] Batch: [5000/6585] Loss: 1.541077 Accuracy: 40.00%
+Fri Mar 14 03:15:34 2025
+Epoch: [1/3] Batch: [5500/6585] Loss: 1.548378 Accuracy: 30.00%
+Fri Mar 14 03:16:37 2025
+Epoch: [1/3] Batch: [6000/6585] Loss: 1.540864 Accuracy: 40.00%
+Fri Mar 14 03:17:39 2025
+Epoch: [1/3] Batch: [6500/6585] Loss: 1.541139 Accuracy: 40.00%
+Fri Mar 14 04:03:29 2025
+Epoch: [1/3] Batch: [500/6585] Loss: 1.560386 Accuracy: 25.00%
+Fri Mar 14 04:04:38 2025
+Epoch: [1/3] Batch: [1000/6585] Loss: 1.550528 Accuracy: 30.00%
+Fri Mar 14 04:05:55 2025
+Epoch: [1/3] Batch: [1500/6585] Loss: 1.538485 Accuracy: 15.00%
+Fri Mar 14 04:07:24 2025
+Epoch: [1/3] Batch: [2000/6585] Loss: 1.544831 Accuracy: 50.00%
+Fri Mar 14 04:08:42 2025
+Epoch: [1/3] Batch: [2500/6585] Loss: 1.534917 Accuracy: 40.00%
+Fri Mar 14 04:09:57 2025
+Epoch: [1/3] Batch: [3000/6585] Loss: 1.531887 Accuracy: 25.00%
+Fri Mar 14 04:11:27 2025
+Epoch: [1/3] Batch: [3500/6585] Loss: 1.552805 Accuracy: 25.00%
+Fri Mar 14 04:12:43 2025
+Epoch: [1/3] Batch: [4000/6585] Loss: 1.557463 Accuracy: 40.00%
+Fri Mar 14 04:13:59 2025
+Epoch: [1/3] Batch: [4500/6585] Loss: 1.543106 Accuracy: 25.00%
+Fri Mar 14 04:15:28 2025
+Epoch: [1/3] Batch: [5000/6585] Loss: 1.541077 Accuracy: 40.00%
+Fri Mar 14 04:16:44 2025
+Epoch: [1/3] Batch: [5500/6585] Loss: 1.548378 Accuracy: 30.00%
+Fri Mar 14 04:18:00 2025
+Epoch: [1/3] Batch: [6000/6585] Loss: 1.540864 Accuracy: 40.00%
+Fri Mar 14 04:19:29 2025
+Epoch: [1/3] Batch: [6500/6585] Loss: 1.541139 Accuracy: 40.00%
+Fri Mar 14 04:27:51 2025
+Epoch: [1/3] Batch: [500/6585] Loss: 1.560386 Accuracy: 25.00%
+Fri Mar 14 04:29:01 2025
+Epoch: [1/3] Batch: [1000/6585] Loss: 1.550528 Accuracy: 30.00%
+Fri Mar 14 04:30:16 2025
+Epoch: [1/3] Batch: [1500/6585] Loss: 1.538485 Accuracy: 15.00%
+Fri Mar 14 04:31:19 2025
+Epoch: [1/3] Batch: [2000/6585] Loss: 1.544831 Accuracy: 50.00%
+Fri Mar 14 04:32:22 2025
+Epoch: [1/3] Batch: [2500/6585] Loss: 1.534917 Accuracy: 40.00%
+Fri Mar 14 04:33:24 2025
+Epoch: [1/3] Batch: [3000/6585] Loss: 1.531887 Accuracy: 25.00%
+Fri Mar 14 04:34:27 2025
+Epoch: [1/3] Batch: [3500/6585] Loss: 1.552805 Accuracy: 25.00%
+Fri Mar 14 04:35:30 2025
+Epoch: [1/3] Batch: [4000/6585] Loss: 1.557463 Accuracy: 40.00%
+Fri Mar 14 04:36:33 2025
+Epoch: [1/3] Batch: [4500/6585] Loss: 1.543106 Accuracy: 25.00%
+Fri Mar 14 04:37:35 2025
+Epoch: [1/3] Batch: [5000/6585] Loss: 1.541077 Accuracy: 40.00%
+Fri Mar 14 04:38:38 2025
+Epoch: [1/3] Batch: [5500/6585] Loss: 1.548378 Accuracy: 30.00%
+Fri Mar 14 04:39:41 2025
+Epoch: [1/3] Batch: [6000/6585] Loss: 1.540864 Accuracy: 40.00%
+Fri Mar 14 04:40:44 2025
+Epoch: [1/3] Batch: [6500/6585] Loss: 1.541139 Accuracy: 40.00%
+Fri Mar 14 04:55:30 2025
+Epoch: [1/3] Batch: [500/6585] Loss: 1.560386 Accuracy: 25.00%
+Fri Mar 14 05:01:58 2025
+Epoch: [1/3] Batch: [500/6585] Loss: 1.560386 Accuracy: 25.00%
+Fri Mar 14 05:03:00 2025
+Epoch: [1/3] Batch: [1000/6585] Loss: 1.550528 Accuracy: 30.00%
+Fri Mar 14 05:04:03 2025
+Epoch: [1/3] Batch: [1500/6585] Loss: 1.538485 Accuracy: 15.00%
+Fri Mar 14 05:05:06 2025
+Epoch: [1/3] Batch: [2000/6585] Loss: 1.544831 Accuracy: 50.00%
+Fri Mar 14 05:06:09 2025
+Epoch: [1/3] Batch: [2500/6585] Loss: 1.534917 Accuracy: 40.00%
+Fri Mar 14 05:07:11 2025
+Epoch: [1/3] Batch: [3000/6585] Loss: 1.531887 Accuracy: 25.00%
+Fri Mar 14 05:08:14 2025
+Epoch: [1/3] Batch: [3500/6585] Loss: 1.552805 Accuracy: 25.00%
+Fri Mar 14 05:09:17 2025
+Epoch: [1/3] Batch: [4000/6585] Loss: 1.557463 Accuracy: 40.00%
+Fri Mar 14 05:10:19 2025
+Epoch: [1/3] Batch: [4500/6585] Loss: 1.543106 Accuracy: 25.00%
+Fri Mar 14 05:11:22 2025
+Epoch: [1/3] Batch: [5000/6585] Loss: 1.541077 Accuracy: 40.00%
+Fri Mar 14 05:12:34 2025
+Epoch: [1/3] Batch: [5500/6585] Loss: 1.548378 Accuracy: 30.00%
+Fri Mar 14 05:13:50 2025
+Epoch: [1/3] Batch: [6000/6585] Loss: 1.540864 Accuracy: 40.00%
+Fri Mar 14 05:14:52 2025
+Epoch: [1/3] Batch: [6500/6585] Loss: 1.541139 Accuracy: 40.00%
+Fri Mar 14 05:24:45 2025
+Epoch: [1/3] Batch: [500/6585] Loss: 1.560386 Accuracy: 25.00%
+Fri Mar 14 05:25:47 2025
+Epoch: [1/3] Batch: [1000/6585] Loss: 1.550528 Accuracy: 30.00%
+Fri Mar 14 05:26:50 2025
+Epoch: [1/3] Batch: [1500/6585] Loss: 1.538485 Accuracy: 15.00%
+Fri Mar 14 05:27:53 2025
+Epoch: [1/3] Batch: [2000/6585] Loss: 1.544831 Accuracy: 50.00%
+Fri Mar 14 05:28:55 2025
+Epoch: [1/3] Batch: [2500/6585] Loss: 1.534917 Accuracy: 40.00%
+Fri Mar 14 05:29:58 2025
+Epoch: [1/3] Batch: [3000/6585] Loss: 1.531887 Accuracy: 25.00%
+Fri Mar 14 05:31:01 2025
+Epoch: [1/3] Batch: [3500/6585] Loss: 1.552805 Accuracy: 25.00%
+Fri Mar 14 05:32:04 2025
+Epoch: [1/3] Batch: [4000/6585] Loss: 1.557463 Accuracy: 40.00%
+Fri Mar 14 05:33:15 2025
+Epoch: [1/3] Batch: [4500/6585] Loss: 1.543106 Accuracy: 25.00%
+Fri Mar 14 05:34:31 2025
+Epoch: [1/3] Batch: [5000/6585] Loss: 1.541077 Accuracy: 40.00%
+Fri Mar 14 05:35:47 2025
+Epoch: [1/3] Batch: [5500/6585] Loss: 1.548378 Accuracy: 30.00%
+Fri Mar 14 05:36:49 2025
+Epoch: [1/3] Batch: [6000/6585] Loss: 1.540864 Accuracy: 40.00%
+Fri Mar 14 05:37:52 2025
+Epoch: [1/3] Batch: [6500/6585] Loss: 1.541139 Accuracy: 40.00%
+Fri Mar 14 05:46:06 2025
+Epoch: [2/3] Batch: [500/6585] Loss: 1.804844 Accuracy: 15.00%
+Fri Mar 14 05:47:29 2025
+Epoch: [2/3] Batch: [1000/6585] Loss: 1.545444 Accuracy: 25.00%
+Fri Mar 14 05:48:32 2025
+Epoch: [2/3] Batch: [1500/6585] Loss: 1.543278 Accuracy: 40.00%
+Fri Mar 14 05:49:34 2025
+Epoch: [2/3] Batch: [2000/6585] Loss: 1.533461 Accuracy: 35.00%
+Fri Mar 14 05:50:37 2025
+Epoch: [2/3] Batch: [2500/6585] Loss: 1.540487 Accuracy: 25.00%
+Fri Mar 14 05:51:40 2025
+Epoch: [2/3] Batch: [3000/6585] Loss: 1.549466 Accuracy: 30.00%
+Fri Mar 14 05:52:43 2025
+Epoch: [2/3] Batch: [3500/6585] Loss: 1.547914 Accuracy: 30.00%
+Fri Mar 14 05:53:46 2025
+Epoch: [2/3] Batch: [4000/6585] Loss: 1.552815 Accuracy: 40.00%
+Fri Mar 14 05:54:49 2025
+Epoch: [2/3] Batch: [4500/6585] Loss: 1.546542 Accuracy: 20.00%
+Fri Mar 14 05:55:51 2025
+Epoch: [2/3] Batch: [5000/6585] Loss: 1.551903 Accuracy: 25.00%
+Fri Mar 14 05:56:54 2025
+Epoch: [2/3] Batch: [5500/6585] Loss: 1.536686 Accuracy: 30.00%
+Fri Mar 14 05:57:57 2025
+Epoch: [2/3] Batch: [6000/6585] Loss: 1.538524 Accuracy: 35.00%
+Fri Mar 14 05:59:00 2025
+Epoch: [2/3] Batch: [6500/6585] Loss: 1.536353 Accuracy: 30.00%
+Fri Mar 14 06:05:41 2025
+Epoch: [3/3] Batch: [500/6585] Loss: 1.805894 Accuracy: 35.00%
+Fri Mar 14 06:06:44 2025
+Epoch: [3/3] Batch: [1000/6585] Loss: 1.548646 Accuracy: 25.00%
+Fri Mar 14 06:07:47 2025
+Epoch: [3/3] Batch: [1500/6585] Loss: 1.538525 Accuracy: 20.00%
+Fri Mar 14 06:15:40 2025
+Epoch: [1/3] Batch: [500/6585] Loss: 1.560386 Accuracy: 25.00%
+Fri Mar 14 06:16:42 2025
+Epoch: [1/3] Batch: [1000/6585] Loss: 1.550528 Accuracy: 30.00%
+Fri Mar 14 06:17:45 2025
+Epoch: [1/3] Batch: [1500/6585] Loss: 1.538485 Accuracy: 15.00%
+Fri Mar 14 06:18:48 2025
+Epoch: [1/3] Batch: [2000/6585] Loss: 1.544831 Accuracy: 50.00%
+Fri Mar 14 06:19:51 2025
+Epoch: [1/3] Batch: [2500/6585] Loss: 1.534917 Accuracy: 40.00%
+Fri Mar 14 06:20:54 2025
+Epoch: [1/3] Batch: [3000/6585] Loss: 1.531887 Accuracy: 25.00%
+Fri Mar 14 06:22:18 2025
+Epoch: [1/3] Batch: [3500/6585] Loss: 1.552805 Accuracy: 25.00%
+Fri Mar 14 06:23:34 2025
+Epoch: [1/3] Batch: [4000/6585] Loss: 1.557463 Accuracy: 40.00%
+Fri Mar 14 06:24:51 2025
+Epoch: [1/3] Batch: [4500/6585] Loss: 1.543106 Accuracy: 25.00%
+Fri Mar 14 06:26:06 2025
+Epoch: [1/3] Batch: [5000/6585] Loss: 1.541077 Accuracy: 40.00%
+Fri Mar 14 06:27:08 2025
+Epoch: [1/3] Batch: [5500/6585] Loss: 1.548378 Accuracy: 30.00%
+Fri Mar 14 06:28:11 2025
+Epoch: [1/3] Batch: [6000/6585] Loss: 1.540864 Accuracy: 40.00%
+Fri Mar 14 06:29:14 2025
+Epoch: [1/3] Batch: [6500/6585] Loss: 1.541139 Accuracy: 40.00%
+Fri Mar 14 06:36:00 2025
+Epoch: [2/3] Batch: [500/6585] Loss: 1.804844 Accuracy: 15.00%
+Fri Mar 14 06:37:02 2025
+Epoch: [2/3] Batch: [1000/6585] Loss: 1.545444 Accuracy: 25.00%
+Fri Mar 14 06:38:05 2025
+Epoch: [2/3] Batch: [1500/6585] Loss: 1.543278 Accuracy: 40.00%
+Fri Mar 14 06:39:08 2025
+Epoch: [2/3] Batch: [2000/6585] Loss: 1.533461 Accuracy: 35.00%
+Fri Mar 14 06:40:11 2025
+Epoch: [2/3] Batch: [2500/6585] Loss: 1.540487 Accuracy: 25.00%
+Fri Mar 14 06:41:13 2025
+Epoch: [2/3] Batch: [3000/6585] Loss: 1.549466 Accuracy: 30.00%
+Fri Mar 14 06:42:16 2025
+Epoch: [2/3] Batch: [3500/6585] Loss: 1.547914 Accuracy: 30.00%
+Fri Mar 14 06:43:19 2025
+Epoch: [2/3] Batch: [4000/6585] Loss: 1.552815 Accuracy: 40.00%
+Fri Mar 14 06:44:22 2025
+Epoch: [2/3] Batch: [4500/6585] Loss: 1.546542 Accuracy: 20.00%
+Fri Mar 14 06:45:25 2025
+Epoch: [2/3] Batch: [5000/6585] Loss: 1.551903 Accuracy: 25.00%
+Fri Mar 14 06:46:28 2025
+Epoch: [2/3] Batch: [5500/6585] Loss: 1.536686 Accuracy: 30.00%
+Fri Mar 14 06:49:45 2025
+Epoch: [1/3] Batch: [500/6585] Loss: 1.560386 Accuracy: 25.00%
+Fri Mar 14 06:50:47 2025
+Epoch: [1/3] Batch: [1000/6585] Loss: 1.550528 Accuracy: 30.00%
+Fri Mar 14 06:51:57 2025
+Epoch: [1/3] Batch: [1500/6585] Loss: 1.538485 Accuracy: 15.00%
+Fri Mar 14 06:53:26 2025
+Epoch: [1/3] Batch: [2000/6585] Loss: 1.544831 Accuracy: 50.00%
+Fri Mar 14 06:54:44 2025
+Epoch: [1/3] Batch: [2500/6585] Loss: 1.534917 Accuracy: 40.00%
+Fri Mar 14 06:56:00 2025
+Epoch: [1/3] Batch: [3000/6585] Loss: 1.531887 Accuracy: 25.00%
+Fri Mar 14 06:57:29 2025
+Epoch: [1/3] Batch: [3500/6585] Loss: 1.552805 Accuracy: 25.00%
+Fri Mar 14 06:58:32 2025
+Epoch: [1/3] Batch: [4000/6585] Loss: 1.557463 Accuracy: 40.00%
+Fri Mar 14 06:59:34 2025
+Epoch: [1/3] Batch: [4500/6585] Loss: 1.543106 Accuracy: 25.00%
+Fri Mar 14 07:00:37 2025
+Epoch: [1/3] Batch: [5000/6585] Loss: 1.541077 Accuracy: 40.00%
+Fri Mar 14 07:01:40 2025
+Epoch: [1/3] Batch: [5500/6585] Loss: 1.548378 Accuracy: 30.00%
+Fri Mar 14 07:02:42 2025
+Epoch: [1/3] Batch: [6000/6585] Loss: 1.540864 Accuracy: 40.00%
+Fri Mar 14 07:03:45 2025
+Epoch: [1/3] Batch: [6500/6585] Loss: 1.541139 Accuracy: 40.00%
+Fri Mar 14 07:10:28 2025
+Epoch: [2/3] Batch: [500/6585] Loss: 1.804844 Accuracy: 15.00%
+Fri Mar 14 07:11:30 2025
+Epoch: [2/3] Batch: [1000/6585] Loss: 1.545444 Accuracy: 25.00%
+Fri Mar 14 07:12:39 2025
+Epoch: [2/3] Batch: [1500/6585] Loss: 1.543278 Accuracy: 40.00%
+Fri Mar 14 07:13:42 2025
+Epoch: [2/3] Batch: [2000/6585] Loss: 1.533461 Accuracy: 35.00%
+Fri Mar 14 07:14:44 2025
+Epoch: [2/3] Batch: [2500/6585] Loss: 1.540487 Accuracy: 25.00%
+Fri Mar 14 07:15:47 2025
+Epoch: [2/3] Batch: [3000/6585] Loss: 1.549466 Accuracy: 30.00%
+Fri Mar 14 07:16:50 2025
+Epoch: [2/3] Batch: [3500/6585] Loss: 1.547914 Accuracy: 30.00%
+Fri Mar 14 07:17:53 2025
+Epoch: [2/3] Batch: [4000/6585] Loss: 1.552815 Accuracy: 40.00%
+Fri Mar 14 07:18:56 2025
+Epoch: [2/3] Batch: [4500/6585] Loss: 1.546542 Accuracy: 20.00%
+Fri Mar 14 07:19:58 2025
+Epoch: [2/3] Batch: [5000/6585] Loss: 1.551903 Accuracy: 25.00%
+Fri Mar 14 07:21:01 2025
+Epoch: [2/3] Batch: [5500/6585] Loss: 1.536686 Accuracy: 30.00%
+Fri Mar 14 07:22:04 2025
+Epoch: [2/3] Batch: [6000/6585] Loss: 1.538524 Accuracy: 35.00%
+Fri Mar 14 07:23:07 2025
+Epoch: [2/3] Batch: [6500/6585] Loss: 1.536353 Accuracy: 30.00%
+Fri Mar 14 07:29:48 2025
+Epoch: [3/3] Batch: [500/6585] Loss: 1.805894 Accuracy: 35.00%
+Fri Mar 14 07:30:50 2025
+Epoch: [3/3] Batch: [1000/6585] Loss: 1.548646 Accuracy: 25.00%
+Fri Mar 14 07:31:53 2025
+Epoch: [3/3] Batch: [1500/6585] Loss: 1.538525 Accuracy: 20.00%
+Fri Mar 14 07:32:56 2025
+Epoch: [3/3] Batch: [2000/6585] Loss: 1.542259 Accuracy: 50.00%
+Fri Mar 14 07:33:59 2025
+Epoch: [3/3] Batch: [2500/6585] Loss: 1.538529 Accuracy: 65.00%
+Fri Mar 14 07:35:02 2025
+Epoch: [3/3] Batch: [3000/6585] Loss: 1.537392 Accuracy: 60.00%
+Fri Mar 14 07:36:04 2025
+Epoch: [3/3] Batch: [3500/6585] Loss: 1.545211 Accuracy: 20.00%
+Fri Mar 14 07:37:07 2025
+Epoch: [3/3] Batch: [4000/6585] Loss: 1.539401 Accuracy: 5.00%
+Fri Mar 14 07:38:10 2025
+Epoch: [3/3] Batch: [4500/6585] Loss: 1.551131 Accuracy: 30.00%
+Fri Mar 14 07:50:30 2025
+Epoch: [1/3] Batch: [500/6585] Loss: 1.560386 Accuracy: 25.00%
+Fri Mar 14 07:51:33 2025
+Epoch: [1/3] Batch: [1000/6585] Loss: 1.550528 Accuracy: 30.00%
+Fri Mar 14 07:52:36 2025
+Epoch: [1/3] Batch: [1500/6585] Loss: 1.538485 Accuracy: 15.00%
+Fri Mar 14 07:53:39 2025
+Epoch: [1/3] Batch: [2000/6585] Loss: 1.544831 Accuracy: 50.00%
+Fri Mar 14 07:55:03 2025
+Epoch: [3/3] Batch: [5000/6585] Loss: 1.533132 Accuracy: 35.00%
+Fri Mar 14 07:55:45 2025
+Epoch: [1/3] Batch: [2500/6585] Loss: 1.534917 Accuracy: 40.00%
+Fri Mar 14 07:59:21 2025
+Epoch: [1/3] Batch: [3000/6585] Loss: 1.531887 Accuracy: 25.00%
+Fri Mar 14 08:00:24 2025
+Epoch: [1/3] Batch: [3500/6585] Loss: 1.552805 Accuracy: 25.00%
+Fri Mar 14 08:02:05 2025
+Epoch: [1/3] Batch: [4000/6585] Loss: 1.557463 Accuracy: 40.00%
+Fri Mar 14 08:03:07 2025
+Epoch: [1/3] Batch: [4500/6585] Loss: 1.543106 Accuracy: 25.00%
+Fri Mar 14 08:05:18 2025
+Epoch: [1/3] Batch: [5000/6585] Loss: 1.541077 Accuracy: 40.00%
+Fri Mar 14 08:06:15 2025
+Epoch: [3/3] Batch: [5500/6585] Loss: 1.544081 Accuracy: 30.00%
+Fri Mar 14 08:07:43 2025
+Epoch: [1/3] Batch: [5500/6585] Loss: 1.548378 Accuracy: 30.00%
+Fri Mar 14 08:09:20 2025
+Epoch: [1/3] Batch: [6000/6585] Loss: 1.540864 Accuracy: 40.00%
+Fri Mar 14 08:10:23 2025
+Epoch: [1/3] Batch: [6500/6585] Loss: 1.541139 Accuracy: 40.00%
+Fri Mar 14 08:38:21 2025
+Epoch: [2/3] Batch: [500/6585] Loss: 1.804844 Accuracy: 15.00%
+Fri Mar 14 08:41:38 2025
+Epoch: [2/3] Batch: [1000/6585] Loss: 1.545444 Accuracy: 25.00%
+Fri Mar 14 08:42:41 2025
+Epoch: [2/3] Batch: [1500/6585] Loss: 1.543278 Accuracy: 40.00%
+Fri Mar 14 08:59:34 2025
+Epoch: [2/3] Batch: [2000/6585] Loss: 1.533461 Accuracy: 35.00%
+Fri Mar 14 15:17:02 2025
+Epoch: [1/1] Batch: [500/6585] Loss: 1.560386 Accuracy: 25.00%
+Fri Mar 14 15:18:05 2025
+Epoch: [1/1] Batch: [1000/6585] Loss: 1.550528 Accuracy: 30.00%
+Fri Mar 14 15:19:08 2025
+Epoch: [1/1] Batch: [1500/6585] Loss: 1.538485 Accuracy: 15.00%
+Fri Mar 14 15:20:11 2025
+Epoch: [1/1] Batch: [2000/6585] Loss: 1.544831 Accuracy: 50.00%
+Fri Mar 14 15:21:14 2025
+Epoch: [1/1] Batch: [2500/6585] Loss: 1.534917 Accuracy: 40.00%
+Fri Mar 14 15:22:17 2025
+Epoch: [1/1] Batch: [3000/6585] Loss: 1.531887 Accuracy: 25.00%
+Fri Mar 14 15:23:20 2025
+Epoch: [1/1] Batch: [3500/6585] Loss: 1.552805 Accuracy: 25.00%
+Fri Mar 14 15:24:23 2025
+Epoch: [1/1] Batch: [4000/6585] Loss: 1.557463 Accuracy: 40.00%
+Fri Mar 14 15:25:27 2025
+Epoch: [1/1] Batch: [4500/6585] Loss: 1.543106 Accuracy: 25.00%
+Fri Mar 14 15:26:30 2025
+Epoch: [1/1] Batch: [5000/6585] Loss: 1.541077 Accuracy: 40.00%
+Fri Mar 14 15:27:33 2025
+Epoch: [1/1] Batch: [5500/6585] Loss: 1.548378 Accuracy: 30.00%
+Fri Mar 14 15:28:36 2025
+Epoch: [1/1] Batch: [6000/6585] Loss: 1.540864 Accuracy: 40.00%
+Fri Mar 14 15:29:39 2025
+Epoch: [1/1] Batch: [6500/6585] Loss: 1.541139 Accuracy: 40.00%

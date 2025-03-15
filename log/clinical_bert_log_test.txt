@@ -1,0 +1,9 @@
+
+Epoch: 1
+  Acc: 33.17 %
+  Top2 Acc: 61.53 %
+  F1 Weighted: 16.53 %
+  F1 Unweighted: 8.30 %
+  Precision: 0.11 %
+  Recall: 0.33 %
+  roc_auc: 52.69 %

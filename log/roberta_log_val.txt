@@ -1,0 +1,228 @@
+
+Epoch: 1  Acc: 37.33 %  Top2 Acc: 39.18 %  Top3 Acc: 41.36 %  F1 Global: 37.33 %  F1 Unweighted: 0.30 %  F1 Weighted: 54.36 %  save=True
+Epoch: 1  Acc: 37.33 %  Top2 Acc: 39.51 %  Top3 Acc: 41.48 %  F1 Global: 37.33 %  F1 Unweighted: 0.30 %  F1 Weighted: 54.36 %  save=True
+Epoch: 2  Acc: 37.33 %  Top2 Acc: 39.28 %  Top3 Acc: 41.46 %  F1 Global: 37.33 %  F1 Unweighted: 0.30 %  F1 Weighted: 54.36 %  save=True
+Epoch: 3  Acc: 37.33 %  Top2 Acc: 39.47 %  Top3 Acc: 41.46 %  F1 Global: 37.33 %  F1 Unweighted: 0.30 %  F1 Weighted: 54.36 %  save=True
+Epoch: 1  Acc: 37.33 %  Top2 Acc: 39.36 %  Top3 Acc: 41.03 %  F1 Global: 37.33 %  F1 Unweighted: 0.30 %  F1 Weighted: 54.36 %  save=True
+Epoch: 2  Acc: 37.33 %  Top2 Acc: 39.51 %  Top3 Acc: 41.36 %  F1 Global: 37.33 %  F1 Unweighted: 0.30 %  F1 Weighted: 54.36 %  save=True
+Epoch: 3  Acc: 37.33 %  Top2 Acc: 39.51 %  Top3 Acc: 41.42 %  F1 Global: 37.33 %  F1 Unweighted: 0.30 %  F1 Weighted: 54.36 %  save=True
+Epoch: 1  Acc: 37.33 %  Top2 Acc: 39.28 %  Top3 Acc: 41.46 %  F1 Global: 37.33 %  F1 Unweighted: 0.30 %  F1 Weighted: 54.36 %  save=True
+Epoch: 2  Acc: 37.33 %  Top2 Acc: 39.18 %  Top3 Acc: 41.14 %  F1 Global: 37.33 %  F1 Unweighted: 0.30 %  F1 Weighted: 54.36 %  save=True
+Epoch: 1  Acc: 37.33 %  Top2 Acc: 39.51 %  Top3 Acc: 41.46 %  F1 Global: 37.33 %  F1 Unweighted: 0.30 %  F1 Weighted: 54.36 %  save=True
+Epoch: 2  Acc: 37.33 %  Top2 Acc: 39.51 %  Top3 Acc: 41.46 %  F1 Global: 37.33 %  F1 Unweighted: 0.30 %  F1 Weighted: 54.36 %  save=True
+Epoch: 3  Acc: 37.33 %  Top2 Acc: 39.28 %  Top3 Acc: 41.46 %  F1 Global: 37.33 %  F1 Unweighted: 0.30 %  F1 Weighted: 54.36 %  save=True
+Epoch: 4  Acc: 37.33 %  Top2 Acc: 39.28 %  Top3 Acc: 41.46 %  F1 Global: 37.33 %  F1 Unweighted: 0.30 %  F1 Weighted: 54.36 %  save=True
+Epoch: 5  Acc: 37.33 %  Top2 Acc: 39.51 %  Top3 Acc: 40.94 %  F1 Global: 37.33 %  F1 Unweighted: 0.30 %  F1 Weighted: 54.36 %  save=True
+Epoch: 6  Acc: 37.33 %  Top2 Acc: 39.51 %  Top3 Acc: 41.36 %  F1 Global: 37.33 %  F1 Unweighted: 0.30 %  F1 Weighted: 54.36 %  save=True
+Epoch: 7  Acc: 37.33 %  Top2 Acc: 39.51 %  Top3 Acc: 41.19 %  F1 Global: 37.33 %  F1 Unweighted: 0.30 %  F1 Weighted: 54.36 %  save=True
+Epoch: 8  Acc: 37.33 %  Top2 Acc: 39.28 %  Top3 Acc: 41.15 %  F1 Global: 37.33 %  F1 Unweighted: 0.30 %  F1 Weighted: 54.36 %  save=True
+Epoch: 9  Acc: 37.33 %  Top2 Acc: 39.28 %  Top3 Acc: 41.46 %  F1 Global: 37.33 %  F1 Unweighted: 0.30 %  F1 Weighted: 54.36 %  save=True
+Epoch: 10  Acc: 37.33 %  Top2 Acc: 39.51 %  Top3 Acc: 41.46 %  F1 Global: 37.33 %  F1 Unweighted: 0.30 %  F1 Weighted: 54.36 %  save=True
+Epoch: 1  Acc: 37.33 %  Top2 Acc: 39.18 %  Top3 Acc: 41.14 %  F1 Global: 37.33 %  F1 Unweighted: 0.30 %  F1 Weighted: 54.36 %  save=True
+Epoch: 2  Acc: 37.33 %  Top2 Acc: 39.28 %  Top3 Acc: 41.14 %  F1 Global: 37.33 %  F1 Unweighted: 0.30 %  F1 Weighted: 54.36 %  save=True
+Epoch: 1  Acc: 37.33 %  Top2 Acc: 39.28 %  Top3 Acc: 41.18 %  F1 Global: 37.33 %  F1 Unweighted: 0.30 %  F1 Weighted: 54.36 %  save=True
+Epoch: 1  Acc: 37.33 %  Top2 Acc: 39.28 %  Top3 Acc: 41.08 %  F1 Global: 37.33 %  F1 Unweighted: 0.30 %  F1 Weighted: 54.36 %  save=True
+Epoch: 2  Acc: 37.33 %  Top2 Acc: 39.51 %  Top3 Acc: 41.46 %  F1 Global: 37.33 %  F1 Unweighted: 0.30 %  F1 Weighted: 54.36 %  save=True
+Epoch: 3  Acc: 37.33 %  Top2 Acc: 39.28 %  Top3 Acc: 41.46 %  F1 Global: 37.33 %  F1 Unweighted: 0.30 %  F1 Weighted: 54.36 %  save=True
+Epoch: 4  Acc: 37.33 %  Top2 Acc: 39.28 %  Top3 Acc: 41.46 %  F1 Global: 37.33 %  F1 Unweighted: 0.30 %  F1 Weighted: 54.36 %  save=True
+Epoch: 5  Acc: 37.33 %  Top2 Acc: 39.28 %  Top3 Acc: 41.46 %  F1 Global: 37.33 %  F1 Unweighted: 0.30 %  F1 Weighted: 54.36 %  save=True
+Epoch: 6  Acc: 37.33 %  Top2 Acc: 39.28 %  Top3 Acc: 41.46 %  F1 Global: 37.33 %  F1 Unweighted: 0.30 %  F1 Weighted: 54.36 %  save=True
+Epoch: 7  Acc: 37.33 %  Top2 Acc: 39.28 %  Top3 Acc: 41.46 %  F1 Global: 37.33 %  F1 Unweighted: 0.30 %  F1 Weighted: 54.36 %  save=True
+Epoch: 8  Acc: 37.33 %  Top2 Acc: 39.28 %  Top3 Acc: 41.46 %  F1 Global: 37.33 %  F1 Unweighted: 0.30 %  F1 Weighted: 54.36 %  save=True
+Epoch: 9  Acc: 37.33 %  Top2 Acc: 39.28 %  Top3 Acc: 41.46 %  F1 Global: 37.33 %  F1 Unweighted: 0.30 %  F1 Weighted: 54.36 %  save=True
+Epoch: 10  Acc: 37.33 %  Top2 Acc: 39.28 %  Top3 Acc: 41.46 %  F1 Global: 37.33 %  F1 Unweighted: 0.30 %  F1 Weighted: 54.36 %  save=True
+Epoch: 11  Acc: 37.33 %  Top2 Acc: 39.28 %  Top3 Acc: 41.46 %  F1 Global: 37.33 %  F1 Unweighted: 0.30 %  F1 Weighted: 54.36 %  save=True
+Epoch: 12  Acc: 37.33 %  Top2 Acc: 39.28 %  Top3 Acc: 41.46 %  F1 Global: 37.33 %  F1 Unweighted: 0.30 %  F1 Weighted: 54.36 %  save=True
+Epoch: 13  Acc: 37.33 %  Top2 Acc: 39.28 %  Top3 Acc: 41.46 %  F1 Global: 37.33 %  F1 Unweighted: 0.30 %  F1 Weighted: 54.36 %  save=True
+Epoch: 1  Acc: 37.42 %  Top2 Acc: 46.37 %  Top3 Acc: 53.23 %  F1 Global: 37.42 %  F1 Unweighted: 1.47 %  F1 Weighted: 54.46 %  save=True
+Epoch: 2  Acc: 37.42 %  Top2 Acc: 46.37 %  Top3 Acc: 53.23 %  F1 Global: 37.42 %  F1 Unweighted: 1.47 %  F1 Weighted: 54.46 %  save=True
+Epoch: 3  Acc: 37.42 %  Top2 Acc: 46.37 %  Top3 Acc: 53.23 %  F1 Global: 37.42 %  F1 Unweighted: 1.47 %  F1 Weighted: 54.46 %  save=True
+Epoch: 1  Acc: 27.37 %  Top2 Acc: 39.71 %  Top3 Acc: 48.92 %  F1 Global: 27.37 %  F1 Unweighted: 0.81 %  F1 Weighted: 42.97 %  save=True
+Epoch: 1  Acc: 12.34 %  Top2 Acc: 21.55 %  Top3 Acc: 28.43 %  F1 Global: 12.34 %  F1 Unweighted: 0.41 %  F1 Weighted: 21.98 %  save=True
+Epoch: 2  Acc: 12.34 %  Top2 Acc: 21.55 %  Top3 Acc: 28.43 %  F1 Global: 12.34 %  F1 Unweighted: 0.41 %  F1 Weighted: 21.98 %  save=True
+Epoch: 1  Acc: 16.95 %  Top2 Acc: 27.29 %  Top3 Acc: 38.02 %  F1 Global: 16.95 %  F1 Unweighted: 4.83 %  F1 Weighted: 28.99 %  save=True
+Epoch: 2  Acc: 16.95 %  Top2 Acc: 27.44 %  Top3 Acc: 38.02 %  F1 Global: 16.95 %  F1 Unweighted: 4.83 %  F1 Weighted: 28.99 %  save=True
+Epoch: 3  Acc: 16.95 %  Top2 Acc: 27.29 %  Top3 Acc: 38.02 %  F1 Global: 16.95 %  F1 Unweighted: 4.83 %  F1 Weighted: 28.99 %  save=True
+Epoch: 1
+  Acc: 64.08 %
+  Top2 Acc: 100.00 %
+  Top3 Acc: 0.00 %
+  F1 Weighted: 50.05 %
+  F1 Unweighted: 39.05 %
+  Precision: 0.64 %
+  Recall: 1.00 %
+  roc_auc: 50.38 %
+
+Epoch: 1
+  Acc: 65.33 %
+  Top2 Acc: 100.00 %
+  Top3 Acc: 0.00 %
+  F1 Weighted: 51.63 %
+  F1 Unweighted: 39.51 %
+  Precision: 0.65 %
+  Recall: 1.00 %
+  roc_auc: 53.04 %
+  Sensitivity: 1.0000
+  Specificity: 0.0000
+  PPV: 0.6533
+  NPV: 0.0000
+
+Epoch: 1
+  Acc: 65.33 %
+  Top2 Acc: 100.00 %
+  Top3 Acc: 0.00 %
+  F1 Weighted: 51.63 %
+  F1 Unweighted: 39.51 %
+  Precision: 0.65 %
+  Recall: 1.00 %
+  roc_auc: 53.04 %
+  Sensitivity: 1.0000
+  Specificity: 0.0000
+  PPV: 0.6533
+  NPV: 0.0000
+
+Epoch: 1
+  Acc: 65.33 %
+  Top2 Acc: 100.00 %
+  Top3 Acc: 0.00 %
+  F1 Weighted: 51.63 %
+  F1 Unweighted: 39.51 %
+  Precision: 0.65 %
+  Recall: 1.00 %
+  roc_auc: 53.04 %
+  Sensitivity: 1.0000
+  Specificity: 0.0000
+  PPV: 0.6533
+  NPV: 0.0000
+  save=True
+Epoch: 2
+  Acc: 65.33 %
+  Top2 Acc: 100.00 %
+  Top3 Acc: 0.00 %
+  F1 Weighted: 51.63 %
+  F1 Unweighted: 39.51 %
+  Precision: 0.65 %
+  Recall: 1.00 %
+  roc_auc: 53.80 %
+  Sensitivity: 1.0000
+  Specificity: 0.0000
+  PPV: 0.6533
+  NPV: 0.0000
+  save=True
+Epoch: 3
+  Acc: 65.33 %
+  Top2 Acc: 100.00 %
+  Top3 Acc: 0.00 %
+  F1 Weighted: 51.63 %
+  F1 Unweighted: 39.51 %
+  Precision: 0.65 %
+  Recall: 1.00 %
+  roc_auc: 52.40 %
+  Sensitivity: 1.0000
+  Specificity: 0.0000
+  PPV: 0.6533
+  NPV: 0.0000
+  save=True
+Epoch: 4
+  Acc: 65.33 %
+  Top2 Acc: 100.00 %
+  Top3 Acc: 0.00 %
+  F1 Weighted: 51.63 %
+  F1 Unweighted: 39.51 %
+  Precision: 0.65 %
+  Recall: 1.00 %
+  roc_auc: 53.21 %
+  Sensitivity: 1.0000
+  Specificity: 0.0000
+  PPV: 0.6533
+  NPV: 0.0000
+  save=True
+Epoch: 5
+  Acc: 65.33 %
+  Top2 Acc: 100.00 %
+  Top3 Acc: 0.00 %
+  F1 Weighted: 51.63 %
+  F1 Unweighted: 39.51 %
+  Precision: 0.65 %
+  Recall: 1.00 %
+  roc_auc: 53.52 %
+  Sensitivity: 1.0000
+  Specificity: 0.0000
+  PPV: 0.6533
+  NPV: 0.0000
+  save=True
+Epoch: 1
+  Acc: 65.33 %
+  Top2 Acc: 65.33 %
+  Top3 Acc: 0.00 %
+  F1 Weighted: 51.63 %
+  F1 Unweighted: 39.51 %
+
+Epoch: 1
+  Acc: 65.33 %
+  Top2 Acc: 65.33 %
+  Top3 Acc: 0.00 %
+  F1 Weighted: 51.63 %
+  F1 Unweighted: 39.51 %
+  Precision: 0.65 %
+  Recall: 1.00 %
+
+Epoch: 1
+  Acc: 65.33 %
+  Top2 Acc: 65.33 %
+  F1 Weighted: 51.63 %
+  F1 Unweighted: 39.51 %
+  Precision: 0.65 %
+  Recall: 1.00 %
+  save=True
+Epoch: 2
+  Acc: 65.33 %
+  Top2 Acc: 65.33 %
+  F1 Weighted: 51.63 %
+  F1 Unweighted: 39.51 %
+  Precision: 0.65 %
+  Recall: 1.00 %
+  save=True
+Epoch: 1
+  Acc: 65.33 %
+  Top2 Acc: 65.33 %
+  F1 Weighted: 51.63 %
+  F1 Unweighted: 39.51 %
+  Precision: 0.33 %
+  Recall: 0.50 %
+  save=True
+Epoch: 1
+  Acc: 65.33 %
+  Top2 Acc: 65.33 %
+  F1 Weighted: 51.63 %
+  F1 Unweighted: 39.51 %
+  Precision: 0.43 %
+  Recall: 0.65 %
+  roc_auc: nan %
+  save=True
+Epoch: 2
+  Acc: 65.33 %
+  Top2 Acc: 65.33 %
+  F1 Weighted: 51.63 %
+  F1 Unweighted: 39.51 %
+  Precision: 0.43 %
+  Recall: 0.65 %
+  roc_auc: nan %
+  save=True
+Epoch: 1
+  Acc: 33.63 %
+  Top2 Acc: 60.92 %
+  F1 Weighted: 16.93 %
+  F1 Unweighted: 8.39 %
+  Precision: 0.11 %
+  Recall: 0.34 %
+  roc_auc: 52.74 %
+  save=True
+Epoch: 1
+  Acc: 33.63 %
+  Top2 Acc: 60.92 %
+  F1 Weighted: 16.93 %
+  F1 Unweighted: 8.39 %
+  Precision: 0.11 %
+  Recall: 0.34 %
+  roc_auc: 52.74 %

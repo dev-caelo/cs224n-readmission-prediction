@@ -1,0 +1,51 @@
+
+Epoch: 1
+  Acc: 65.33 %
+  Top2 Acc: 100.00 %
+  Top3 Acc: 0.00 %
+  F1 Weighted: 51.63 %
+  F1 Unweighted: 39.51 %
+  Precision: 0.65 %
+  Recall: 1.00 %
+  roc_auc: 54.61 %
+  Sensitivity: 1.0000
+  Specificity: 0.0000
+  PPV: 0.6533
+  NPV: 0.0000
+
+Epoch: 1
+  Acc: 65.33 %
+  Top2 Acc: 100.00 %
+  Top3 Acc: 0.00 %
+  F1 Weighted: 51.63 %
+  F1 Unweighted: 39.51 %
+  Precision: 0.65 %
+  Recall: 1.00 %
+  roc_auc: 54.61 %
+  Sensitivity: 1.0000
+  Specificity: 0.0000
+  PPV: 0.6533
+  NPV: 0.0000
+
+Epoch: 1
+  Acc: 65.33 %
+  Top2 Acc: 100.00 %
+  Top3 Acc: 0.00 %
+  F1 Weighted: 51.63 %
+  F1 Unweighted: 39.51 %
+  Precision: 0.65 %
+  Recall: 1.00 %
+  roc_auc: 49.76 %
+  Sensitivity: 1.0000
+  Specificity: 0.0000
+  PPV: 0.6533
+  NPV: 0.0000
+  save=True
+Epoch: 1
+  Acc: 33.63 %
+  Top2 Acc: 60.92 %
+  F1 Weighted: 16.93 %
+  F1 Unweighted: 8.39 %
+  Precision: 0.11 %
+  Recall: 0.34 %
+  roc_auc: 51.99 %

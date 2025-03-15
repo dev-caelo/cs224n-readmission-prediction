@@ -1,0 +1,13 @@
+
+Epoch: 1
+  Acc: 59.16 %
+  Top2 Acc: 100.00 %
+  F1 Weighted: 59.83 %
+  F1 Unweighted: 56.36 %
+  Precision: 0.71 %
+  Recall: 0.64 %
+  roc_auc: 61.54 %
+  Sensitivity: 0.6432
+  Specificity: 0.4929
+  PPV: 0.7084
+  NPV: 0.4190

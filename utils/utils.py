@@ -20,6 +20,7 @@ def Evaluate(model, test_loader, loss_func, cls, device, epoch, path,
     top_2_correct = 0
     top_3_correct = 0
     total_samples = 0
+    roc_auc = None
 
     with torch.no_grad():
         for text, mask, age, label in tqdm(test_loader):
@@ -82,7 +83,7 @@ def Evaluate(model, test_loader, loss_func, cls, device, epoch, path,
     f1_unweighted = f1_score(y_true, y_pred, average='macro')
     
     # Detailed classification report
-    report = classification_report(y_true, y_pred, output_dict=True)
+    report = classification_report(y_true, y_pred, labels=range(cls), output_dict=True)
     
     # Print metrics
     print(f"\nModel Accuracy: {accuracy:.4f}")
@@ -161,58 +162,73 @@ def Evaluate(model, test_loader, loss_func, cls, device, epoch, path,
         print(f"Specificity: {specificity:.4f}")
         print(f"Positive Predictive Value (Precision): {ppv:.4f}")
         print(f"Negative Predictive Value: {npv:.4f}")
+    
     else:
-        # For multiclass, show different visualizations
+        # For multiclass, we need to use a different approach for ROC AUC
+        # We'll use one-vs-rest approach for multiclass ROC AUC
+        try:
+            # One-vs-Rest ROC AUC calculation
+            y_true_binarized = np.eye(cls)[y_true]  # Convert to one-hot encoding
+            roc_auc = roc_auc_score(y_true_binarized, y_pred_proba, multi_class='ovr', average='macro')
+            print(f"ROC AUC (OVR): {roc_auc:.4f}")
+        except Exception as e:
+            print(f"Could not calculate multiclass ROC AUC: {str(e)}")
+            roc_auc = None
+        
+        # Create visualizations for multiclass
+        plt.figure(figsize=(15, 15))
+        
+        # 1. Confusion Matrix - show a subset if too large
+        num_classes = cls
+        plt.subplot(2, 2, 1)
+        conf_matrix_subset = conf_matrix[:num_classes, :num_classes]
+        sns.heatmap(conf_matrix_subset, annot=True, fmt='d', cmap='Blues')
+        plt.xlabel('Predicted')
+        plt.ylabel('Actual')
+        plt.title(f'Confusion Matrix (First {num_classes} classes)')
         
         # 2. Class Distribution
         plt.subplot(2, 2, 2)
-        class_counts = np.bincount(y_true)
-        plt.bar(range(cls), class_counts)
-        plt.xticks(range(cls), cls, rotation=45)
+        class_counts = np.bincount(y_true, minlength=cls)
+        sns.barplot(x=list(range(cls)), y=class_counts)
+        plt.xticks(range(cls), range(cls))
         plt.xlabel('Class')
         plt.ylabel('Count')
         plt.title('Class Distribution')
         
-        # 3. Per-Class Metrics
+        # 3. Prediction Distribution
         plt.subplot(2, 2, 3)
-        class_metrics = []
-        for i, class_name in enumerate(cls):
-            if str(i) in report:
-                class_metrics.append({
-                    'Class': class_name,
-                    'Precision': report[str(i)]['precision'],
-                    'Recall': report[str(i)]['recall'],
-                    'F1-Score': report[str(i)]['f1-score']
-                })
+        pred_dist = pd.DataFrame({
+            'Actual': y_true,
+            'Predicted': y_pred
+        })
+        sns.histplot(data=pred_dist, x='Actual', kde=True, color='blue', label='Actual', alpha=0.5)
+        sns.histplot(data=pred_dist, x='Predicted', kde=True, color='red', label='Predicted', alpha=0.5)
+        plt.legend()
+        plt.title('Distribution of Actual vs Predicted Classes')
         
-        class_metrics_df = pd.DataFrame(class_metrics)
-        class_metrics_melted = pd.melt(
-            class_metrics_df, 
-            id_vars=['Class'], 
-            value_vars=['Precision', 'Recall', 'F1-Score'],
-            var_name='Metric', 
-            value_name='Value'
-        )
-        
-        sns.barplot(x='Class', y='Value', hue='Metric', data=class_metrics_melted)
-        plt.ylim(0, 1)
-        plt.title('Per-Class Performance Metrics')
-        plt.legend(loc='lower right')
-        
-        # 4. Prediction Probabilities Heatmap
+        # 4. Classification Metrics
         plt.subplot(2, 2, 4)
+        # Get the average metrics
+        avg_metrics = report['weighted avg']
+        metrics = pd.DataFrame({
+            'Metric': ['Accuracy', 'Precision', 'Recall', 'F1-Score'],
+            'Value': [accuracy, avg_metrics['precision'], avg_metrics['recall'], avg_metrics['f1-score']]
+        })
+        if roc_auc is not None:
+            metrics = pd.concat([metrics, pd.DataFrame({
+                'Metric': ['ROC AUC (OVR)'],
+                'Value': [roc_auc]
+            })], ignore_index=True)
+            
+        sns.barplot(x='Metric', y='Value', data=metrics)
+        plt.ylim(0, 1)
+        plt.title('Classification Metrics (Weighted Average)')
         
-        # Select a subset of samples for visualization if there are too many
-        max_samples = min(50, len(y_true))
-        sample_indices = np.random.choice(len(y_true), max_samples, replace=False)
-        
-        sample_probs = y_pred_proba[sample_indices]
-        sns.heatmap(sample_probs, cmap='Blues', 
-                    xticklabels=cls, 
-                    yticklabels=False)
-        plt.xlabel('Class')
-        plt.ylabel('Sample')
-        plt.title('Prediction Probabilities')
+        # Get precision, recall, f1 metrics - using weighted averaging for multiclass
+        precision = avg_metrics['precision']
+        recall = avg_metrics['recall']
+        f1 = avg_metrics['f1-score']
     
     plt.tight_layout()
     plt.savefig(f"{path}/{language_model}_{cls}_model_evaluation_epoch_{epoch}.png", dpi=600)
@@ -223,13 +239,14 @@ def Evaluate(model, test_loader, loss_func, cls, device, epoch, path,
         f.write(f'Epoch: {epoch + 1}\n')
         f.write(f'  Acc: {accuracy * 100:.2f} %\n')
         f.write(f'  Top2 Acc: {top_2_correct / total_samples * 100:.2f} %\n')
-        f.write(f'  Top3 Acc: {top_3_correct / total_samples * 100:.2f} %\n')
+        if top_3_correct is not None and top_3_correct > 0:
+            f.write(f'  Top3 Acc: {top_3_correct / total_samples * 100:.2f} %\n')
         f.write(f'  F1 Weighted: {f1_weighted * 100:.2f} %\n')
         f.write(f'  F1 Unweighted: {f1_unweighted * 100:.2f} %\n')
         f.write(f'  Precision: {precision:.2f} %\n')
         f.write(f'  Recall: {recall:.2f} %\n')
-        f.write(f'  roc_auc: {roc_auc * 100:.2f} %\n')
-        
+        if roc_auc is not None:
+            f.write(f'  roc_auc: {roc_auc * 100:.2f} %\n')
         if cls == 2:
             f.write(f'  Sensitivity: {sensitivity:.4f}\n')
             f.write(f'  Specificity: {specificity:.4f}\n')
