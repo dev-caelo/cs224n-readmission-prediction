@@ -20,4 +20,4 @@ We source our dataset from MIMIC-IV, and run a number of our models on processed
 
 ## Project Notes
 - Please see this [doc](https://docs.google.com/document/d/1k49T_YHEq8YNn3q_Eocalz-l9brFbkvZf66Ba4l1JI4/edit?usp=sharing) for more detailed calculations of LACE using MIMIC-IV.
-- 
+- Further research, with compute power to spare, should utilize less shallow classifier / other layers
