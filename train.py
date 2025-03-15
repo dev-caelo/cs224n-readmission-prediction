@@ -106,7 +106,7 @@ if __name__ == "__main__":
 
     """"""
 
-    loss_func = nn.CrossEntropyLoss(weight=class_weights)
+    loss_func = nn.FocalLoss(weight=class_weights)
     
     # Since BERT is frozen, optimize only the rest of the network
     optimizer = torch.optim.Adam([

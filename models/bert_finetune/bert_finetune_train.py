@@ -321,7 +321,7 @@ def main():
     )
     
     # Evaluate on test set
-    test_criterion = torch.nn.CrossEntropyLoss()
+    test_criterion = torch.nn.FocalLoss()
     test_loss, test_accuracy, test_f1 = evaluate(
         trained_model, 
         test_dataloader, 

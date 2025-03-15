@@ -302,7 +302,7 @@ def main():
         )
         
         # Define loss function
-        loss_func = nn.CrossEntropyLoss()
+        loss_func = nn.FocalLoss()
         
         # Run evaluation
         epoch = 0
